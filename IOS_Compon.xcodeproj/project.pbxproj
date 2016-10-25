@@ -51,6 +51,9 @@
 		90EF620A1DBF3CBE001C4C44 /* JSNetWork+GET.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62011DBF3CBE001C4C44 /* JSNetWork+GET.m */; };
 		90EF620B1DBF3CBE001C4C44 /* JSNetWork+POST.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62031DBF3CBE001C4C44 /* JSNetWork+POST.m */; };
 		90EF620C1DBF3CBE001C4C44 /* JSNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62051DBF3CBE001C4C44 /* JSNetWork.m */; };
+		90EF62131DBF403C001C4C44 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62101DBF403C001C4C44 /* JASidePanelController.m */; };
+		90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62121DBF403C001C4C44 /* UIViewController+JASidePanel.m */; };
+		90EF62181DBF4096001C4C44 /* JSSideSlippingControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */; };
 		90F441C81DBDFB3A0007C37E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441C71DBDFB3A0007C37E /* main.m */; };
 		90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441CA1DBDFB3A0007C37E /* AppDelegate.m */; };
 		90F441CE1DBDFB3A0007C37E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441CD1DBDFB3A0007C37E /* ViewController.m */; };
@@ -185,6 +188,12 @@
 		90EF62041DBF3CBE001C4C44 /* JSNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNetWork.h; sourceTree = "<group>"; };
 		90EF62051DBF3CBE001C4C44 /* JSNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNetWork.m; sourceTree = "<group>"; };
 		90EF62061DBF3CBE001C4C44 /* JSNetWorkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNetWorkHeader.h; sourceTree = "<group>"; };
+		90EF620F1DBF403C001C4C44 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		90EF62101DBF403C001C4C44 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		90EF62111DBF403C001C4C44 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		90EF62121DBF403C001C4C44 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		90EF62161DBF4096001C4C44 /* JSSideSlippingControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSideSlippingControllerConfig.h; sourceTree = "<group>"; };
+		90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSideSlippingControllerConfig.m; sourceTree = "<group>"; };
 		90F441C31DBDFB3A0007C37E /* IOS_Compon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Compon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F441C71DBDFB3A0007C37E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90F441C91DBDFB3A0007C37E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -261,6 +270,7 @@
 		90EF61411DBEF9AD001C4C44 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				90EF620E1DBF403C001C4C44 /* JASidePanels */,
 				90EF61501DBEFA2B001C4C44 /* MJRefresh */,
 				90EF61491DBEF9D0001C4C44 /* MGSwipeTableCell */,
 			);
@@ -604,6 +614,7 @@
 		90EF61F01DBF3C77001C4C44 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				90EF62151DBF4096001C4C44 /* SideSlippingController */,
 				90EF620D1DBF3F21001C4C44 /* FMDB */,
 				90EF61F11DBF3CBE001C4C44 /* NetWork */,
 			);
@@ -649,6 +660,26 @@
 			children = (
 			);
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		90EF620E1DBF403C001C4C44 /* JASidePanels */ = {
+			isa = PBXGroup;
+			children = (
+				90EF620F1DBF403C001C4C44 /* JASidePanelController.h */,
+				90EF62101DBF403C001C4C44 /* JASidePanelController.m */,
+				90EF62111DBF403C001C4C44 /* UIViewController+JASidePanel.h */,
+				90EF62121DBF403C001C4C44 /* UIViewController+JASidePanel.m */,
+			);
+			path = JASidePanels;
+			sourceTree = "<group>";
+		};
+		90EF62151DBF4096001C4C44 /* SideSlippingController */ = {
+			isa = PBXGroup;
+			children = (
+				90EF62161DBF4096001C4C44 /* JSSideSlippingControllerConfig.h */,
+				90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */,
+			);
+			path = SideSlippingController;
 			sourceTree = "<group>";
 		};
 		90F441BA1DBDFB3A0007C37E = {
@@ -1018,7 +1049,9 @@
 				90EF620B1DBF3CBE001C4C44 /* JSNetWork+POST.m in Sources */,
 				90F4423E1DBDFDC80007C37E /* NSString+Exception.m in Sources */,
 				90EF61CF1DBF2C67001C4C44 /* UIView+AnimationProperty.m in Sources */,
+				90EF62181DBF4096001C4C44 /* JSSideSlippingControllerConfig.m in Sources */,
 				90EF61811DBEFA2B001C4C44 /* MJRefreshComponent.m in Sources */,
+				90EF62131DBF403C001C4C44 /* JASidePanelController.m in Sources */,
 				90EF61EB1DBF3A95001C4C44 /* UIDevice+Extend.m in Sources */,
 				90EF620A1DBF3CBE001C4C44 /* JSNetWork+GET.m in Sources */,
 				90EF618B1DBEFA2B001C4C44 /* MJRefreshNormalHeader.m in Sources */,
@@ -1043,6 +1076,7 @@
 				90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */,
 				90EF62091DBF3CBE001C4C44 /* JSError.m in Sources */,
 				90EF61861DBEFA2B001C4C44 /* MJRefreshAutoStateFooter.m in Sources */,
+				90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */,
 				90F4423F1DBDFDC80007C37E /* UIButton+Exception.m in Sources */,
 				90EF618C1DBEFA2B001C4C44 /* MJRefreshStateHeader.m in Sources */,
 				90EF61B81DBF0D4F001C4C44 /* NSString+Password.m in Sources */,
