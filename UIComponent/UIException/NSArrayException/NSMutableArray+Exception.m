@@ -28,18 +28,18 @@
     //1.数组越界:无法处理
 
     //2.添加空对象
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_addObject:) originalMethodSelector:@selector(addObject:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(js_addObject:) originalMethodSelector:@selector(addObject:)];
     
     //3.添加空数组
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_addObjectsFromArray:) originalMethodSelector:@selector(addObjectsFromArray:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(js_addObjectsFromArray:) originalMethodSelector:@selector(addObjectsFromArray:)];
     
     
     //4.(setObject:atIndex: 设置空处理)
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_setObject:atIndex:) originalMethodSelector:@selector(setObject:atIndex:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(js_setObject:atIndex:) originalMethodSelector:@selector(setObject:atIndex:)];
     
     
     //5.(insertObject:atIndex: 插入空处理)
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_insertObject:atIndex:) originalMethodSelector:@selector(insertObject:atIndex:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(js_insertObject:atIndex:) originalMethodSelector:@selector(insertObject:atIndex:)];
     
     });
     
@@ -50,23 +50,8 @@
 
 #pragma mark  -对象方法区
 
-
-#pragma mark  -addObjectsFromArray
--(void)my_addObjectsFromArray:(NSArray *)otherArray{
-    
-    //不能添加空
-    if(otherArray==nil && self.count!=0){
-        
-        return;
-    }
-    
-    [self my_addObjectsFromArray:otherArray];
-}
-
-
-
-#pragma mark  处理添加空对象的异常
--(void)myAddNoExceptionObject:(id)anObject{
+#pragma mark  -addObject
+-(void)js_addObject:(id)anObject{
     
     if(anObject==nil){
         
@@ -84,12 +69,32 @@
         return;
     }
     
-    [self myAddNoExceptionObject:anObject];
+    [self js_addObject:anObject];
 }
 
 
 
-- (void)na_insertObject:(id)anObject atIndex:(NSUInteger)index {
+
+
+
+#pragma mark  -addObjectsFromArray
+-(void)js_addObjectsFromArray:(NSArray *)otherArray{
+    
+    //不能添加空
+    if(otherArray==nil && self.count!=0){
+        
+        return;
+    }
+    
+    [self js_addObjectsFromArray:otherArray];
+}
+
+
+
+
+#pragma mark  -insertObject:atIndex:
+
+- (void)js_insertObject:(id)anObject atIndex:(NSUInteger)index {
     if (!anObject)
     {
         NSLog(@"数组insertObject 为空");
@@ -106,10 +111,11 @@
         return;
         
     }
-    [self na_insertObject:anObject atIndex:index];
+    [self js_insertObject:anObject atIndex:index];
 }
 
-- (void)na_setObject:(id)anObject atIndex:(NSUInteger)index {
+#pragma mark  -setObject:atIndex:
+- (void)js_setObject:(id)anObject atIndex:(NSUInteger)index {
     if (!anObject)
     {
         NSLog(@"数组insertObject 为空");
@@ -126,7 +132,7 @@
         return;
         
     }
-    [self na_setObject:anObject atIndex:index];
+    [self js_setObject:anObject atIndex:index];
 }
 
 

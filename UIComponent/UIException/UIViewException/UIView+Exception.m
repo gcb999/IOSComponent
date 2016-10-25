@@ -14,26 +14,28 @@
 +(void)load{
 
     
-     [self exchangeOriginalMethod:[UIView methodOfSelector:@selector(addSubview:)] withNewMethod:[UIView methodOfSelector:@selector(safe_addSubview:)]];
+
+    //使用dispatch_once来执行方法交换，这样可以保证只运行一次
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        Class selfClass = [self class];
+        
+        [self swizzleInstanceMethodInClass:selfClass newMethodSelector:@selector(addSubview:) originalMethodSelector:@selector(js_addSubview:)];
+        
+        
+        
+    });
     
     
 }
 
-+ (void)exchangeOriginalMethod:(Method)originalMethod withNewMethod:(Method)newMethod
-{
-    method_exchangeImplementations(originalMethod, newMethod);
-}
 
 
-+ (Method)methodOfSelector:(SEL)selector
-{
-    return class_getInstanceMethod(NSClassFromString(@"UIView"),selector);
-}
-
-- (void)safe_addSubview:(UIView *)view
+- (void)js_addSubview:(UIView *)view
 {
     if ( view && [view isKindOfClass:[UIView class]] && self!=view) {
-        [self safe_addSubview:view];
+        [self js_addSubview:view];
     }
     else{
         @try {

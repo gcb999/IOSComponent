@@ -19,7 +19,7 @@
         
         Class selfClass = [self class];
         
-        [self swizzleInstanceMethodInClass:selfClass newMethodSelector:@selector(sendAction:to:forEvent:) originalMethodSelector:@selector(mySendAction:to:forEvent:)];
+        [self swizzleInstanceMethodInClass:selfClass newMethodSelector:@selector(sendAction:to:forEvent:) originalMethodSelector:@selector(js_sendAction:to:forEvent:)];
         
 
         
@@ -30,7 +30,7 @@
 #pragma mark -按钮点击事件
 
 
-- (void)mySendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
+- (void)js_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
 
     //统计(按钮）
     /*
@@ -43,7 +43,7 @@
     NSLog(@"---aa");
     
     
-    [self mySendAction:action to:target forEvent:event];
+    [self js_sendAction:action to:target forEvent:event];
 }
 
 

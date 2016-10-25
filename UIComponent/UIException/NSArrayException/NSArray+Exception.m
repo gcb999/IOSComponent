@@ -24,14 +24,14 @@
     
 #pragma mark - 类方法区
     //使用空数组初始化
-    [self swizzleClassMethodInClass:class newMethodSelector:@selector(myArrayWithArray:) originalMethodSelector:@selector(arrayWithArray:)];
+    [self swizzleClassMethodInClass:class newMethodSelector:@selector(js_arrayWithArray:) originalMethodSelector:@selector(arrayWithArray:)];
     
     
  
     
  #pragma mark - 对象方法区
     //数组越界 （实例方法）
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(myObjectAtIndex:) originalMethodSelector:@selector(objectAtIndex:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(js_objectAtIndex:) originalMethodSelector:@selector(objectAtIndex:)];
     
    
     });
@@ -44,7 +44,7 @@
 
 #pragma mark - 类方法区
 #pragma mark -  arrayWithArray 初始化错误
-+(instancetype)myArrayWithArray:(NSArray *)array{
++(instancetype)js_arrayWithArray:(NSArray *)array{
     
     if(![array isKindOfClass:[NSArray class]]){
         
@@ -64,7 +64,7 @@
         return nil;
     }
 
-    return [self myArrayWithArray:array];
+    return [self js_arrayWithArray:array];
 }
 
 
@@ -75,7 +75,7 @@
 
 #pragma mark  -对象方法区
 #pragma mark  处理数组越界的错误
--(id)myObjectAtIndex:(NSUInteger)index{
+-(id)js_objectAtIndex:(NSUInteger)index{
 
     NSUInteger count=self.count;
     
@@ -95,7 +95,7 @@
         return nil;
     }
     
-    return [self myObjectAtIndex:index];
+    return [self js_objectAtIndex:index];
 }
 
 

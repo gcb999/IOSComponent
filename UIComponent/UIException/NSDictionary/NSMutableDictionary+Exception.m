@@ -23,7 +23,7 @@
     //1.数组越界:无法处理
     
     //2.添加空对象
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(na_setObject:forKey:) originalMethodSelector:@selector(setObject:forKey:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(js_setObject:forKey:) originalMethodSelector:@selector(setObject:forKey:)];
     
     });
 }
@@ -33,10 +33,10 @@
 
 
 #pragma mark - setObject:forKey: 空对象的异常
-- (void)na_setObject:(id)anObject forKey:(id<NSCopying>)aKey
+- (void)js_setObject:(id)anObject forKey:(id<NSCopying>)aKey
 {
     if (anObject) {
-        [self na_setObject:anObject forKey:aKey];
+        [self js_setObject:anObject forKey:aKey];
     }
     else
     {
