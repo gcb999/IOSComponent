@@ -10,6 +10,8 @@
 #import "UIImageView+WebCache.h"
 
 
+typedef void(^JSSDWebImageCompletionBlock)(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL);
+
 @interface NSObject (SDWebImage)
 
 
@@ -28,13 +30,15 @@
 
 
 //动图
--(void)loadingScaleImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName;
+-(void)loadingScaleImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName completed:(JSSDWebImageCompletionBlock)completed;
 
 //静图
--(void)loadingImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName;
+-(void)loadingImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName completed:(JSSDWebImageCompletionBlock)completed;
+
+
 
 
 #pragma mark -加载信息图片,图片置灰
--(void)loadingGrayImageName:(NSString *)imageName imgview:(UIImageView *)imgview;
+-(void)loadingGrayImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName;
 
 @end

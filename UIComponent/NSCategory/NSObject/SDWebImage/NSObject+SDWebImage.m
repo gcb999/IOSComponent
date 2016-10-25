@@ -10,15 +10,15 @@
 #import "UIView+AnimationProperty.h"
 
 
+
 @implementation NSObject (SDWebImage)
 
 
 
-    
-#pragma mark -Banner
+
 
 //动图
--(void)loadingScaleImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName{
+-(void)loadingScaleImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName completed:(JSSDWebImageCompletionBlock)completed{
     
     if ([url hasPrefix:@"http"]){
         
@@ -33,6 +33,9 @@
               
             }
             else{
+                
+                
+   
                     wself.image = image;
                     wself.alpha = 0;
                     wself.scale = 1.1f;
@@ -42,6 +45,12 @@
                         wself.alpha = 1.f;
                         wself.scale = 1.f;
                     }];
+                
+                if (completed) {
+                    completed(image,error,cacheType,imageURL);
+                }
+                
+                
             }
         }];
         
@@ -56,7 +65,7 @@
     
 }
 //静图
--(void)loadingImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName{
+-(void)loadingImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName completed:(JSSDWebImageCompletionBlock)completed{
     if ([url hasPrefix:@"http"]){
         
         //        [imageview setShowActivityIndicatorView:true];
@@ -70,7 +79,13 @@
                 
             }
             else{
-                 wself.image = image;
+                
+                wself.image = image;
+                if (completed) {
+                    completed(image,error,cacheType,imageURL);
+                }
+  
+               
             }
         }];
         
@@ -86,48 +101,26 @@
 }
 
 
-
-
-
-
-
-
-
 #pragma mark -加载信息图片,图片置灰
 
--(void)loadingGrayImageName:(NSString *)imageName imgview:(UIImageView *)imgview{
+-(void)loadingGrayImageview:(UIImageView *)imageview url:(NSString *)url placeholderImageName:(NSString *)placeholderImageName failedImageName:(NSString *)failedImageName{
     
-    
-    if ([imageName hasPrefix:@"http"]){
-        
-//        [imgview setShowActivityIndicatorView:true];
-        [imgview setIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-        //商品图片
-        __weak UIImageView  *wself = imgview;
-        [imgview sd_setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:@"Cart_failed_to_load_pic"] options:SDWebImageRetryFailed|SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-            if (error) {
-                wself.image=[UIImage imageNamed:KNotWorkImagview];
-            }
-            else{//成功
-                wself.image = [self grayImage:image];
-                wself.alpha = 0;
-                wself.scale = 1.1f;
-                
-                [UIView animateWithDuration:0.5f animations:^{
-                    
-                    wself.alpha = 1.f;
-                    wself.scale = 1.f;
-                }];
-            }
-        }];
-        
-    }
-    else{
-        imgview.image=[UIImage imageNamed:imageName];
-    }
-    
-    
+    __weak UIImageView  *wself = imageview;
+    [self loadingImageview:imageview url:url placeholderImageName:placeholderImageName failedImageName:failedImageName completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        if (!error) {
+
+            wself.image = [self grayImage:image];
+            
+        }
+
+    }];
 }
+
+
+
+
+
+
 
 -(UIImage *)grayImage:(UIImage *)sourceImage
 {
