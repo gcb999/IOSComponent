@@ -33,14 +33,7 @@
 + (UIButton *)ButtonWithSystemImage:(CGRect)aFrame title:(NSString *)aTitle titleColor:(UIColor *)aColor font:(UIFont *)aFont target:(id)aTarget action:(SEL)aAction;
 @end
 
-#pragma mark ********** UIImageView *************
-@interface UIImageView (ext)
 
-+ (UIImageView *)ImageViewImageName:(NSString*)aImageName frame:(CGRect)aRect;
-
-
-
-@end
 
 
 #pragma mark ********** UITableView *************

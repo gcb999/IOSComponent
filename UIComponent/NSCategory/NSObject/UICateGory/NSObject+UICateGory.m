@@ -87,29 +87,7 @@
 
 @end
 
-@implementation UIImageView (ext)
 
-+ (UIImageView *)ImageViewImageName:(NSString*)aImageName frame:(CGRect)aRect{
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:aRect];
-    imageView.userInteractionEnabled = YES;
-    if(aImageName ==nil || [aImageName isEqualToString:@""] || aImageName.length==0){
-        return imageView;
-    }
-    else{
-        UIImage *aImage = [UIImage imageWithContentsOfFile:BUNDLE_PATH_IMAGENAME(aImageName)];
-        if (aImage==nil) {
-            aImage=[UIImage imageNamed:aImageName];
-        }
-        if ([aImage respondsToSelector:@selector(resizableImageWithCapInsets:)]) {
-            imageView.image = [aImage resizableImageWithCapInsets:UIEdgeInsetsMake(aImage.size.height/2, aImage.size.width/2, aImage.size.height/2, aImage.size.width/2)];
-        } else {
-            imageView.image = [aImage stretchableImageWithLeftCapWidth:aImage.size.width/2 topCapHeight:aImage.size.height/2];
-        }
-    }
-    return imageView;
-}
-
-@end
 
 
 @implementation UITableView (ext)

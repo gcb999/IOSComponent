@@ -34,7 +34,13 @@
 		90EF61A11DBEFF6A001C4C44 /* NSObject+FileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61A01DBEFF6A001C4C44 /* NSObject+FileStream.m */; };
 		90EF61A51DBF0087001C4C44 /* NSObject+TypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61A41DBF0087001C4C44 /* NSObject+TypeConversion.m */; };
 		90EF61AD1DBF0202001C4C44 /* NSObject+UICateGory.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61AC1DBF0202001C4C44 /* NSObject+UICateGory.m */; };
-		90EF61B21DBF0684001C4C44 /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61B11DBF0684001C4C44 /* UIView+AnimationProperty.m */; };
+		90EF61B81DBF0D4F001C4C44 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61B71DBF0D4F001C4C44 /* NSString+Password.m */; };
+		90EF61BC1DBF0DF9001C4C44 /* NSString+String.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61BB1DBF0DF9001C4C44 /* NSString+String.m */; };
+		90EF61C01DBF0EE5001C4C44 /* NSString+Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61BF1DBF0EE5001C4C44 /* NSString+Regular.m */; };
+		90EF61CF1DBF2C67001C4C44 /* UIView+AnimationProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61CD1DBF2C67001C4C44 /* UIView+AnimationProperty.m */; };
+		90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61D31DBF2CE1001C4C44 /* UIColor+Hex.m */; };
+		90EF61DA1DBF2D33001C4C44 /* UIImageView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61D91DBF2D33001C4C44 /* UIImageView+Gif.m */; };
+		90EF61DE1DBF33F2001C4C44 /* UIImageView+ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF61DD1DBF33F2001C4C44 /* UIImageView+ImageView.m */; };
 		90F441C81DBDFB3A0007C37E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441C71DBDFB3A0007C37E /* main.m */; };
 		90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441CA1DBDFB3A0007C37E /* AppDelegate.m */; };
 		90F441CE1DBDFB3A0007C37E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441CD1DBDFB3A0007C37E /* ViewController.m */; };
@@ -131,9 +137,22 @@
 		90EF61A91DBF0112001C4C44 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		90EF61AB1DBF0202001C4C44 /* NSObject+UICateGory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UICateGory.h"; sourceTree = "<group>"; };
 		90EF61AC1DBF0202001C4C44 /* NSObject+UICateGory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UICateGory.m"; sourceTree = "<group>"; };
-		90EF61B01DBF0684001C4C44 /* UIView+AnimationProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationProperty.h"; sourceTree = "<group>"; };
-		90EF61B11DBF0684001C4C44 /* UIView+AnimationProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationProperty.m"; sourceTree = "<group>"; };
 		90EF61B31DBF0718001C4C44 /* NSObjectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectHeader.h; sourceTree = "<group>"; };
+		90EF61B61DBF0D4F001C4C44 /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		90EF61B71DBF0D4F001C4C44 /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
+		90EF61BA1DBF0DF9001C4C44 /* NSString+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+String.h"; sourceTree = "<group>"; };
+		90EF61BB1DBF0DF9001C4C44 /* NSString+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+String.m"; sourceTree = "<group>"; };
+		90EF61BE1DBF0EE5001C4C44 /* NSString+Regular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regular.h"; sourceTree = "<group>"; };
+		90EF61BF1DBF0EE5001C4C44 /* NSString+Regular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regular.m"; sourceTree = "<group>"; };
+		90EF61C11DBF29FC001C4C44 /* NSStringHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringHeader.h; sourceTree = "<group>"; };
+		90EF61CC1DBF2C67001C4C44 /* UIView+AnimationProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationProperty.h"; sourceTree = "<group>"; };
+		90EF61CD1DBF2C67001C4C44 /* UIView+AnimationProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationProperty.m"; sourceTree = "<group>"; };
+		90EF61D21DBF2CE1001C4C44 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		90EF61D31DBF2CE1001C4C44 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		90EF61D81DBF2D33001C4C44 /* UIImageView+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Gif.h"; sourceTree = "<group>"; };
+		90EF61D91DBF2D33001C4C44 /* UIImageView+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Gif.m"; sourceTree = "<group>"; };
+		90EF61DC1DBF33F2001C4C44 /* UIImageView+ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageView.h"; sourceTree = "<group>"; };
+		90EF61DD1DBF33F2001C4C44 /* UIImageView+ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageView.m"; sourceTree = "<group>"; };
 		90F441C31DBDFB3A0007C37E /* IOS_Compon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Compon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F441C71DBDFB3A0007C37E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90F441C91DBDFB3A0007C37E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -325,7 +344,9 @@
 		90EF61931DBEFB34001C4C44 /* NSCategory */ = {
 			isa = PBXGroup;
 			children = (
-				90EF61AE1DBF067C001C4C44 /* UIView */,
+				90EF61D01DBF2CE1001C4C44 /* System */,
+				90EF61C61DBF2C67001C4C44 /* UI */,
+				90EF61B41DBF0CFD001C4C44 /* NSString */,
 				90EF61941DBEFC17001C4C44 /* NSObject */,
 			);
 			path = NSCategory;
@@ -388,21 +409,153 @@
 			path = UICateGory;
 			sourceTree = "<group>";
 		};
-		90EF61AE1DBF067C001C4C44 /* UIView */ = {
+		90EF61B41DBF0CFD001C4C44 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				90EF61AF1DBF067C001C4C44 /* AnimationProperty */,
+				90EF61BD1DBF0EDC001C4C44 /* Regular */,
+				90EF61B91DBF0DE7001C4C44 /* String */,
+				90EF61B51DBF0D4F001C4C44 /* Password */,
+				90EF61C11DBF29FC001C4C44 /* NSStringHeader.h */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		90EF61B51DBF0D4F001C4C44 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61B61DBF0D4F001C4C44 /* NSString+Password.h */,
+				90EF61B71DBF0D4F001C4C44 /* NSString+Password.m */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		90EF61B91DBF0DE7001C4C44 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61BA1DBF0DF9001C4C44 /* NSString+String.h */,
+				90EF61BB1DBF0DF9001C4C44 /* NSString+String.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		90EF61BD1DBF0EDC001C4C44 /* Regular */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61BE1DBF0EE5001C4C44 /* NSString+Regular.h */,
+				90EF61BF1DBF0EE5001C4C44 /* NSString+Regular.m */,
+			);
+			path = Regular;
+			sourceTree = "<group>";
+		};
+		90EF61C61DBF2C67001C4C44 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61C71DBF2C67001C4C44 /* MBProgressHUD */,
+				90EF61C81DBF2C67001C4C44 /* UIImage */,
+				90EF61C91DBF2C67001C4C44 /* UImageView */,
+				90EF61CA1DBF2C67001C4C44 /* UIView */,
+				90EF61CE1DBF2C67001C4C44 /* UIWindow */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		90EF61C71DBF2C67001C4C44 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		90EF61C81DBF2C67001C4C44 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		90EF61C91DBF2C67001C4C44 /* UImageView */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61DB1DBF33C5001C4C44 /* ImageView */,
+				90EF61D71DBF2D33001C4C44 /* GIF */,
+			);
+			name = UImageView;
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		90EF61CA1DBF2C67001C4C44 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61CB1DBF2C67001C4C44 /* AnimationProperty */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		90EF61AF1DBF067C001C4C44 /* AnimationProperty */ = {
+		90EF61CB1DBF2C67001C4C44 /* AnimationProperty */ = {
 			isa = PBXGroup;
 			children = (
-				90EF61B01DBF0684001C4C44 /* UIView+AnimationProperty.h */,
-				90EF61B11DBF0684001C4C44 /* UIView+AnimationProperty.m */,
+				90EF61CC1DBF2C67001C4C44 /* UIView+AnimationProperty.h */,
+				90EF61CD1DBF2C67001C4C44 /* UIView+AnimationProperty.m */,
 			);
 			path = AnimationProperty;
+			sourceTree = "<group>";
+		};
+		90EF61CE1DBF2C67001C4C44 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		90EF61D01DBF2CE1001C4C44 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61D11DBF2CE1001C4C44 /* UIColor */,
+				90EF61D41DBF2CE1001C4C44 /* UIDevice */,
+				90EF61D51DBF2CE1001C4C44 /* UIFont */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		90EF61D11DBF2CE1001C4C44 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61D21DBF2CE1001C4C44 /* UIColor+Hex.h */,
+				90EF61D31DBF2CE1001C4C44 /* UIColor+Hex.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		90EF61D41DBF2CE1001C4C44 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		90EF61D51DBF2CE1001C4C44 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		90EF61D71DBF2D33001C4C44 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61D81DBF2D33001C4C44 /* UIImageView+Gif.h */,
+				90EF61D91DBF2D33001C4C44 /* UIImageView+Gif.m */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
+		90EF61DB1DBF33C5001C4C44 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				90EF61DC1DBF33F2001C4C44 /* UIImageView+ImageView.h */,
+				90EF61DD1DBF33F2001C4C44 /* UIImageView+ImageView.m */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		90F441BA1DBDFB3A0007C37E = {
@@ -760,11 +913,13 @@
 				90EF61A11DBEFF6A001C4C44 /* NSObject+FileStream.m in Sources */,
 				90EF61841DBEFA2B001C4C44 /* MJRefreshAutoGifFooter.m in Sources */,
 				90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */,
+				90EF61C01DBF0EE5001C4C44 /* NSString+Regular.m in Sources */,
 				90EF61871DBEFA2B001C4C44 /* MJRefreshBackGifFooter.m in Sources */,
 				90F442391DBDFDC80007C37E /* NSMutableArray+Exception.m in Sources */,
 				90EF61AD1DBF0202001C4C44 /* NSObject+UICateGory.m in Sources */,
 				90F442381DBDFDC80007C37E /* NSArray+Exception.m in Sources */,
 				90F4423E1DBDFDC80007C37E /* NSString+Exception.m in Sources */,
+				90EF61CF1DBF2C67001C4C44 /* UIView+AnimationProperty.m in Sources */,
 				90EF61811DBEFA2B001C4C44 /* MJRefreshComponent.m in Sources */,
 				90EF618B1DBEFA2B001C4C44 /* MJRefreshNormalHeader.m in Sources */,
 				90F442401DBDFDC80007C37E /* UIView+Exception.m in Sources */,
@@ -773,12 +928,14 @@
 				90EF61801DBEFA2B001C4C44 /* MJRefreshBackFooter.m in Sources */,
 				90F4423C1DBDFDC80007C37E /* NSNull+Exception.m in Sources */,
 				90EF61881DBEFA2B001C4C44 /* MJRefreshBackNormalFooter.m in Sources */,
+				90EF61DE1DBF33F2001C4C44 /* UIImageView+ImageView.m in Sources */,
 				90EF61821DBEFA2B001C4C44 /* MJRefreshFooter.m in Sources */,
 				90EF61831DBEFA2B001C4C44 /* MJRefreshHeader.m in Sources */,
 				90F441CE1DBDFB3A0007C37E /* ViewController.m in Sources */,
 				90EF61851DBEFA2B001C4C44 /* MJRefreshAutoNormalFooter.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
+				90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */,
 				90F441C81DBDFB3A0007C37E /* main.m in Sources */,
 				90F4423D1DBDFDC80007C37E /* NSObject+Exception.m in Sources */,
 				90F4423B1DBDFDC80007C37E /* NSMutableDictionary+Exception.m in Sources */,
@@ -786,13 +943,15 @@
 				90EF61861DBEFA2B001C4C44 /* MJRefreshAutoStateFooter.m in Sources */,
 				90F4423F1DBDFDC80007C37E /* UIButton+Exception.m in Sources */,
 				90EF618C1DBEFA2B001C4C44 /* MJRefreshStateHeader.m in Sources */,
+				90EF61B81DBF0D4F001C4C44 /* NSString+Password.m in Sources */,
 				90EF618F1DBEFA2B001C4C44 /* NSBundle+MJRefresh.m in Sources */,
 				90EF618A1DBEFA2B001C4C44 /* MJRefreshGifHeader.m in Sources */,
+				90EF61DA1DBF2D33001C4C44 /* UIImageView+Gif.m in Sources */,
 				90EF619B1DBEFC34001C4C44 /* NSObject+SDWebImage.m in Sources */,
 				90EF61921DBEFA2B001C4C44 /* UIView+MJExtension.m in Sources */,
 				90EF61901DBEFA2B001C4C44 /* UIScrollView+MJExtension.m in Sources */,
 				90EF617F1DBEFA2B001C4C44 /* MJRefreshAutoFooter.m in Sources */,
-				90EF61B21DBF0684001C4C44 /* UIView+AnimationProperty.m in Sources */,
+				90EF61BC1DBF0DF9001C4C44 /* NSString+String.m in Sources */,
 				90EF61891DBEFA2B001C4C44 /* MJRefreshBackStateFooter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
