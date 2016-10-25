@@ -11,7 +11,11 @@
 
 @interface NSObject (Exception)
 
+#pragma mark - 实例方法
+
 +(void)swizzleInstanceMethodInClass:(Class)class newMethodSelector:(SEL)newMethodSelector originalMethodSelector:(SEL)originalMethodSelector;
+
+#pragma mark - 类方法
 
 +(void)swizzleClassMethodInClass:(Class)class newMethodSelector:(SEL)newMethodSelector originalMethodSelector:(SEL)originalMethodSelector;
 

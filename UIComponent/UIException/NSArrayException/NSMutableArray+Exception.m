@@ -28,18 +28,18 @@
     //1.数组越界:无法处理
 
     //2.添加空对象
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(addNoExceptionObject:) originalMethodSelector:@selector(addObject:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_addObject:) originalMethodSelector:@selector(addObject:)];
     
     //3.添加空数组
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(addNoExceptionObjectsFromArray:) originalMethodSelector:@selector(addObjectsFromArray:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_addObjectsFromArray:) originalMethodSelector:@selector(addObjectsFromArray:)];
     
     
     //4.(setObject:atIndex: 设置空处理)
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(na_setObject:atIndex:) originalMethodSelector:@selector(setObject:atIndex:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_setObject:atIndex:) originalMethodSelector:@selector(setObject:atIndex:)];
     
     
     //5.(insertObject:atIndex: 插入空处理)
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(na_insertObject:atIndex:) originalMethodSelector:@selector(insertObject:atIndex:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(my_insertObject:atIndex:) originalMethodSelector:@selector(insertObject:atIndex:)];
     
     });
     
@@ -49,8 +49,10 @@
 
 
 #pragma mark  -对象方法区
-#pragma mark  处理添加空数组有异常
--(void)addNoExceptionObjectsFromArray:(NSArray *)otherArray{
+
+
+#pragma mark  -addObjectsFromArray
+-(void)my_addObjectsFromArray:(NSArray *)otherArray{
     
     //不能添加空
     if(otherArray==nil && self.count!=0){
@@ -58,13 +60,13 @@
         return;
     }
     
-    [self addNoExceptionObjectsFromArray:otherArray];
+    [self my_addObjectsFromArray:otherArray];
 }
 
 
 
 #pragma mark  处理添加空对象的异常
--(void)addNoExceptionObject:(id)anObject{
+-(void)myAddNoExceptionObject:(id)anObject{
     
     if(anObject==nil){
         
@@ -82,7 +84,7 @@
         return;
     }
     
-    [self addNoExceptionObject:anObject];
+    [self myAddNoExceptionObject:anObject];
 }
 
 

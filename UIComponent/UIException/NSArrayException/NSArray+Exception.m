@@ -24,15 +24,14 @@
     
 #pragma mark - 类方法区
     //使用空数组初始化
-    [self swizzleClassMethodInClass:class newMethodSelector:@selector(arrayWithNoExceptionArray:) originalMethodSelector:@selector(arrayWithArray:)];
+    [self swizzleClassMethodInClass:class newMethodSelector:@selector(myArrayWithArray:) originalMethodSelector:@selector(arrayWithArray:)];
     
     
-    //arrayWithObjects:count:(静态方法）
-    [self swizzleClassMethodInClass:class newMethodSelector:@selector(na_arrayWithObjects:count:) originalMethodSelector:@selector(arrayWithObjects:count:)];
+ 
     
  #pragma mark - 对象方法区
     //数组越界 （实例方法）
-    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(objectWithExceptionAtIndex:) originalMethodSelector:@selector(objectAtIndex:)];
+    [self swizzleInstanceMethodInClass:class newMethodSelector:@selector(myObjectAtIndex:) originalMethodSelector:@selector(objectAtIndex:)];
     
    
     });
@@ -44,8 +43,8 @@
 
 
 #pragma mark - 类方法区
-#pragma mark  初始化错误
-+(instancetype)arrayWithNoExceptionArray:(NSArray *)array{
+#pragma mark -  arrayWithArray 初始化错误
++(instancetype)myArrayWithArray:(NSArray *)array{
     
     if(![array isKindOfClass:[NSArray class]]){
         
@@ -65,7 +64,7 @@
         return nil;
     }
 
-    return [self arrayWithNoExceptionArray:array];
+    return [self myArrayWithArray:array];
 }
 
 
@@ -76,7 +75,7 @@
 
 #pragma mark  -对象方法区
 #pragma mark  处理数组越界的错误
--(id)objectWithExceptionAtIndex:(NSUInteger)index{
+-(id)myObjectAtIndex:(NSUInteger)index{
 
     NSUInteger count=self.count;
     
@@ -96,22 +95,10 @@
         return nil;
     }
     
-    return [self objectWithExceptionAtIndex:index];
+    return [self myObjectAtIndex:index];
 }
 
 
-+ (instancetype)na_arrayWithObjects:(const id [])objects count:(NSUInteger)cnt {
-    id nObjects[cnt];
-    int i=0, j=0;
-    for (; i<cnt && j<cnt; i++) {
-        if (objects[i]) {
-            nObjects[j] = objects[i];
-            j++;
-        }
-    }
-    
-    return [self na_arrayWithObjects:nObjects count:j];
-}
 
 
 @end

@@ -13,30 +13,35 @@
 
 + (void)load {
     
+    //使用dispatch_once来执行方法交换，这样可以保证只运行一次
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
         Class selfClass = [self class];
         
-        SEL oriSEL = @selector(sendAction:to:forEvent:);
-        Method oriMethod = class_getInstanceMethod(selfClass, oriSEL);
+        [self swizzleInstanceMethodInClass:selfClass newMethodSelector:@selector(sendAction:to:forEvent:) originalMethodSelector:@selector(mySendAction:to:forEvent:)];
         
-        SEL cusSEL = @selector(mySendAction:to:forEvent:);
-        Method cusMethod = class_getInstanceMethod(selfClass, cusSEL);
-        
-        BOOL addSucc = class_addMethod(selfClass, oriSEL, method_getImplementation(cusMethod), method_getTypeEncoding(cusMethod));
-        if (addSucc) {
-            class_replaceMethod(selfClass, cusSEL, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
-        }else {
-            method_exchangeImplementations(oriMethod, cusMethod);
-        }
+
         
     });
 }
 
+
+#pragma mark -按钮点击事件
+
+
 - (void)mySendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
 
     //统计(按钮）
+    /*
+     
+     1: 按钮对应的控制器
+     
+     2: 当前某个视图+某控件+action名称+target名称
+     
+     */
+    NSLog(@"---aa");
+    
     
     [self mySendAction:action to:target forEvent:event];
 }

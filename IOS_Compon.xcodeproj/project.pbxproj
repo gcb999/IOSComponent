@@ -15,6 +15,15 @@
 		90F441D61DBDFB3A0007C37E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F441D41DBDFB3A0007C37E /* LaunchScreen.storyboard */; };
 		90F441E11DBDFB3A0007C37E /* IOS_ComponTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441E01DBDFB3A0007C37E /* IOS_ComponTests.m */; };
 		90F441EC1DBDFB3A0007C37E /* IOS_ComponUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441EB1DBDFB3A0007C37E /* IOS_ComponUITests.m */; };
+		90F442381DBDFDC80007C37E /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F442211DBDFDC80007C37E /* NSArray+Exception.m */; };
+		90F442391DBDFDC80007C37E /* NSMutableArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F442231DBDFDC80007C37E /* NSMutableArray+Exception.m */; };
+		90F4423A1DBDFDC80007C37E /* NSDictionary+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F442261DBDFDC80007C37E /* NSDictionary+Exception.m */; };
+		90F4423B1DBDFDC80007C37E /* NSMutableDictionary+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F442281DBDFDC80007C37E /* NSMutableDictionary+Exception.m */; };
+		90F4423C1DBDFDC80007C37E /* NSNull+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4422B1DBDFDC80007C37E /* NSNull+Exception.m */; };
+		90F4423D1DBDFDC80007C37E /* NSObject+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F4422E1DBDFDC80007C37E /* NSObject+Exception.m */; };
+		90F4423E1DBDFDC80007C37E /* NSString+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F442311DBDFDC80007C37E /* NSString+Exception.m */; };
+		90F4423F1DBDFDC80007C37E /* UIButton+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F442341DBDFDC80007C37E /* UIButton+Exception.m */; };
+		90F442401DBDFDC80007C37E /* UIView+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F442371DBDFDC80007C37E /* UIView+Exception.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,26 @@
 		90F441E71DBDFB3A0007C37E /* IOS_ComponUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_ComponUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F441EB1DBDFB3A0007C37E /* IOS_ComponUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOS_ComponUITests.m; sourceTree = "<group>"; };
 		90F441ED1DBDFB3A0007C37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F441FB1DBDFBBA0007C37E /* CoreExceptionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreExceptionHeader.h; sourceTree = "<group>"; };
+		90F4421E1DBDFC0A0007C37E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		90F442201DBDFDC80007C37E /* NSArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Exception.h"; sourceTree = "<group>"; };
+		90F442211DBDFDC80007C37E /* NSArray+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Exception.m"; sourceTree = "<group>"; };
+		90F442221DBDFDC80007C37E /* NSMutableArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Exception.h"; sourceTree = "<group>"; };
+		90F442231DBDFDC80007C37E /* NSMutableArray+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Exception.m"; sourceTree = "<group>"; };
+		90F442251DBDFDC80007C37E /* NSDictionary+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Exception.h"; sourceTree = "<group>"; };
+		90F442261DBDFDC80007C37E /* NSDictionary+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Exception.m"; sourceTree = "<group>"; };
+		90F442271DBDFDC80007C37E /* NSMutableDictionary+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Exception.h"; sourceTree = "<group>"; };
+		90F442281DBDFDC80007C37E /* NSMutableDictionary+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Exception.m"; sourceTree = "<group>"; };
+		90F4422A1DBDFDC80007C37E /* NSNull+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Exception.h"; sourceTree = "<group>"; };
+		90F4422B1DBDFDC80007C37E /* NSNull+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Exception.m"; sourceTree = "<group>"; };
+		90F4422D1DBDFDC80007C37E /* NSObject+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Exception.h"; sourceTree = "<group>"; };
+		90F4422E1DBDFDC80007C37E /* NSObject+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Exception.m"; sourceTree = "<group>"; };
+		90F442301DBDFDC80007C37E /* NSString+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Exception.h"; sourceTree = "<group>"; };
+		90F442311DBDFDC80007C37E /* NSString+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exception.m"; sourceTree = "<group>"; };
+		90F442331DBDFDC80007C37E /* UIButton+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Exception.h"; sourceTree = "<group>"; };
+		90F442341DBDFDC80007C37E /* UIButton+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Exception.m"; sourceTree = "<group>"; };
+		90F442361DBDFDC80007C37E /* UIView+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Exception.h"; sourceTree = "<group>"; };
+		90F442371DBDFDC80007C37E /* UIView+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Exception.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +110,8 @@
 		90F441BA1DBDFB3A0007C37E = {
 			isa = PBXGroup;
 			children = (
+				90F4421E1DBDFC0A0007C37E /* PrefixHeader.pch */,
+				90F441F91DBDFBBA0007C37E /* UIComponent */,
 				90F441C51DBDFB3A0007C37E /* IOS_Compon */,
 				90F441DF1DBDFB3A0007C37E /* IOS_ComponTests */,
 				90F441EA1DBDFB3A0007C37E /* IOS_ComponUITests */,
@@ -138,6 +169,96 @@
 				90F441ED1DBDFB3A0007C37E /* Info.plist */,
 			);
 			path = IOS_ComponUITests;
+			sourceTree = "<group>";
+		};
+		90F441F91DBDFBBA0007C37E /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				90F441FA1DBDFBBA0007C37E /* UIException */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		90F441FA1DBDFBBA0007C37E /* UIException */ = {
+			isa = PBXGroup;
+			children = (
+				90F4421F1DBDFDC80007C37E /* NSArrayException */,
+				90F442241DBDFDC80007C37E /* NSDictionary */,
+				90F442291DBDFDC80007C37E /* NSNullableException */,
+				90F4422C1DBDFDC80007C37E /* NSObjectException */,
+				90F4422F1DBDFDC80007C37E /* NSStringException */,
+				90F442321DBDFDC80007C37E /* UIButtonException */,
+				90F442351DBDFDC80007C37E /* UIViewException */,
+				90F441FB1DBDFBBA0007C37E /* CoreExceptionHeader.h */,
+			);
+			path = UIException;
+			sourceTree = "<group>";
+		};
+		90F4421F1DBDFDC80007C37E /* NSArrayException */ = {
+			isa = PBXGroup;
+			children = (
+				90F442201DBDFDC80007C37E /* NSArray+Exception.h */,
+				90F442211DBDFDC80007C37E /* NSArray+Exception.m */,
+				90F442221DBDFDC80007C37E /* NSMutableArray+Exception.h */,
+				90F442231DBDFDC80007C37E /* NSMutableArray+Exception.m */,
+			);
+			path = NSArrayException;
+			sourceTree = "<group>";
+		};
+		90F442241DBDFDC80007C37E /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				90F442251DBDFDC80007C37E /* NSDictionary+Exception.h */,
+				90F442261DBDFDC80007C37E /* NSDictionary+Exception.m */,
+				90F442271DBDFDC80007C37E /* NSMutableDictionary+Exception.h */,
+				90F442281DBDFDC80007C37E /* NSMutableDictionary+Exception.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		90F442291DBDFDC80007C37E /* NSNullableException */ = {
+			isa = PBXGroup;
+			children = (
+				90F4422A1DBDFDC80007C37E /* NSNull+Exception.h */,
+				90F4422B1DBDFDC80007C37E /* NSNull+Exception.m */,
+			);
+			path = NSNullableException;
+			sourceTree = "<group>";
+		};
+		90F4422C1DBDFDC80007C37E /* NSObjectException */ = {
+			isa = PBXGroup;
+			children = (
+				90F4422D1DBDFDC80007C37E /* NSObject+Exception.h */,
+				90F4422E1DBDFDC80007C37E /* NSObject+Exception.m */,
+			);
+			path = NSObjectException;
+			sourceTree = "<group>";
+		};
+		90F4422F1DBDFDC80007C37E /* NSStringException */ = {
+			isa = PBXGroup;
+			children = (
+				90F442301DBDFDC80007C37E /* NSString+Exception.h */,
+				90F442311DBDFDC80007C37E /* NSString+Exception.m */,
+			);
+			path = NSStringException;
+			sourceTree = "<group>";
+		};
+		90F442321DBDFDC80007C37E /* UIButtonException */ = {
+			isa = PBXGroup;
+			children = (
+				90F442331DBDFDC80007C37E /* UIButton+Exception.h */,
+				90F442341DBDFDC80007C37E /* UIButton+Exception.m */,
+			);
+			path = UIButtonException;
+			sourceTree = "<group>";
+		};
+		90F442351DBDFDC80007C37E /* UIViewException */ = {
+			isa = PBXGroup;
+			children = (
+				90F442361DBDFDC80007C37E /* UIView+Exception.h */,
+				90F442371DBDFDC80007C37E /* UIView+Exception.m */,
+			);
+			path = UIViewException;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +391,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F4423A1DBDFDC80007C37E /* NSDictionary+Exception.m in Sources */,
+				90F442391DBDFDC80007C37E /* NSMutableArray+Exception.m in Sources */,
+				90F442381DBDFDC80007C37E /* NSArray+Exception.m in Sources */,
+				90F4423E1DBDFDC80007C37E /* NSString+Exception.m in Sources */,
+				90F442401DBDFDC80007C37E /* UIView+Exception.m in Sources */,
+				90F4423C1DBDFDC80007C37E /* NSNull+Exception.m in Sources */,
 				90F441CE1DBDFB3A0007C37E /* ViewController.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
 				90F441C81DBDFB3A0007C37E /* main.m in Sources */,
+				90F4423D1DBDFDC80007C37E /* NSObject+Exception.m in Sources */,
+				90F4423B1DBDFDC80007C37E /* NSMutableDictionary+Exception.m in Sources */,
+				90F4423F1DBDFDC80007C37E /* UIButton+Exception.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +545,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = IOS_Compon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sailvan.IOS-Compon";
@@ -426,6 +558,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = IOS_Compon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sailvan.IOS-Compon";
