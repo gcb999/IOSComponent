@@ -9,7 +9,7 @@
 #ifndef CoreExceptionHeader_h
 #define CoreExceptionHeader_h
 
- #import <objc/runtime.h>
+
 
 #define CoreExceptionArray  @"__NSArrayI"                                           //NSArray
 

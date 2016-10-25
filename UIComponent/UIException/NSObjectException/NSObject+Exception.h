@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CoreExceptionHeader.h"
+ #import <objc/runtime.h>
 
 @interface NSObject (Exception)
 
