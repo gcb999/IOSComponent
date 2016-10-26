@@ -11,24 +11,24 @@
 
 @implementation UIView (Exception)
 
-+(void)load{
-
-    
-
-    //使用dispatch_once来执行方法交换，这样可以保证只运行一次
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        Class selfClass = [self class];
-        
-        [self swizzleInstanceMethodInClass:selfClass newMethodSelector:@selector(addSubview:) originalMethodSelector:@selector(js_addSubview:)];
-        
-        
-        
-    });
-    
-    
-}
+//+(void)load{
+//
+//    
+//
+//    //使用dispatch_once来执行方法交换，这样可以保证只运行一次
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        
+//        Class selfClass = [self class];
+//        
+//        [self swizzleInstanceMethodInClass:selfClass newMethodSelector:@selector(addSubview:) originalMethodSelector:@selector(js_addSubview:)];
+//        
+//        
+//        
+//    });
+//    
+//    
+//}
 
 
 

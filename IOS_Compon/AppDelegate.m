@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "JSSideSlippingControllerConfig.h"
+#import "LeftViewController.h"
+#import "MainViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    JSSideSlippingControllerConfig* config= [[JSSideSlippingControllerConfig alloc] initWithLeftPanel:[LeftViewController class] centerPanel:[MainViewController class] rightPanel:nil];
+    [self.window setRootViewController:config.sidePanelController];
+
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
