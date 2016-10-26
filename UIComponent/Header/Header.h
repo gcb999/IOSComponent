@@ -66,6 +66,10 @@
 #import "JSNetWorkHeader.h"
 
 
+//列表
+#import "TableViewHeader.h"
+
+
 #define ALLLANGUAGEARRY [[NSMutableArray alloc]initWithObjects:@"en",@"ru",@"fr",@"es",@"de",@"cs",@"pl",@"pt", nil]
 
 //#define CURLANGUAGE [[NSUserDefaults standardUserDefaults] objectForKey:@"localLanguage"]

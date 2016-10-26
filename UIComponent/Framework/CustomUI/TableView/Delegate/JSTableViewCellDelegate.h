@@ -11,6 +11,7 @@
 @class JSTableView;
 
 
+
 @protocol JSTableViewCellDelegate <NSObject>
 
 //单行
@@ -19,6 +20,9 @@
 
 //分组
 -(void)JSTableView:(JSTableView *)tableView   sections:(NSArray *)sections rowsOfSections:(NSDictionary<NSString *,NSArray *> *)rowsOfSections content:(id)content indexPath:(NSIndexPath *)indexpath;
+
+
+
 
 
 @end

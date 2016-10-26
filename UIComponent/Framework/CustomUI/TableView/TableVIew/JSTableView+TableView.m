@@ -7,6 +7,7 @@
 //
 
 #import "JSTableView+TableView.h"
+#import "MGSwipeTableCell.h"
 
 @implementation JSTableView (TableView)
 
@@ -43,14 +44,21 @@
     
     self.tableViewCellDelegate=cell;
     id content=self.dataArray[indexPath.row];
-//    if ([cell isKindOfClass:[MGSwipeTableCell class]]) {//添加左侧按钮
-//        MGSwipeTableCell *mgcell=(MGSwipeTableCell *)cell;
-//        mgcell.delegate=self;
-//        mgcell.allowsMultipleSwipe = NO;
-//    }
-    [self.tableViewCellDelegate JSTableView:self originalData:self.dataArray content:content indexPath:indexPath];
+    
+    if ([cell isKindOfClass:[MGSwipeTableCell class]]) {//添加侧滑左侧按钮
+        MGSwipeTableCell *mgcell=(MGSwipeTableCell *)cell;
+        mgcell.delegate=self;
+        // NO: 只有单个可以滑动 , YES: 多个可以滑动
+        mgcell.allowsMultipleSwipe = NO;
+    }
+    
+    
+    if ([self.tableViewCellDelegate respondsToSelector:@selector(JSTableView:originalData:content:indexPath:)]) {
+           [self.tableViewCellDelegate JSTableView:self originalData:self.dataArray content:content indexPath:indexPath];
+    }
+ 
    
-    return (UITableViewCell *)self.tableViewCellDelegate;
+    return cell;
     
     
     

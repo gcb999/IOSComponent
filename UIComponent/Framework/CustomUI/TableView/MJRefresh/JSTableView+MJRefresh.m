@@ -47,12 +47,10 @@
    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     
     // 设置文字
-    //    [header setTitle:JSLocalizedString(@"Pull down to refresh", nil) forState:MJRefreshStateIdle];
-    //    [header setTitle:JSLocalizedString(@"Release to refresh", nil) forState:MJRefreshStatePulling];
-    //    [header setTitle:JSLocalizedString(@"Loading ...", nil) forState:MJRefreshStateRefreshing];
-    [header setTitle:JSLocalizedString(@"", nil) forState:MJRefreshStateIdle];
-    [header setTitle:JSLocalizedString(@"", nil) forState:MJRefreshStatePulling];
-    [header setTitle:JSLocalizedString(@"", nil) forState:MJRefreshStateRefreshing];
+        [header setTitle:JSLocalizedString(@"Pull down to refresh", nil) forState:MJRefreshStateIdle];
+        [header setTitle:JSLocalizedString(@"Release to refresh", nil) forState:MJRefreshStatePulling];
+        [header setTitle:JSLocalizedString(@"Loading ...", nil) forState:MJRefreshStateRefreshing];
+
     
     
     // 隐藏时间
@@ -133,30 +131,22 @@
 
 #pragma mark ----------------------TableView 刷新方法----------------------------------------
 
--(void)reloadData{
-    
-    //    [self.tableView cyl_reloadData];
-    [self reloadData];
-    
-    
-}
 
 
 -(void)reloadHeader{
     
-    //    [self.tableView cyl_reloadData];
-    [self reloadData];
-    
+
     [self.mj_header endRefreshing];
+    [self reloadData];
     
 }
 
 
 -(void)reloadFooter{
     
-    //    [self.tableView cyl_reloadData];
-    [self reloadData];
+
     [self.mj_footer endRefreshing];
+      [self reloadData];
     
 }
 

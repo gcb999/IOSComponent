@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JSTableViewDelegate.h"
 #import "JSTableViewCellDelegate.h"
+#import "JSSwipeTableCellModel.h"
 
 
 typedef NS_ENUM (NSInteger,JSTableViewState) {
@@ -26,7 +27,7 @@ static NSString *const JSTableViewIdentifier=@"JSTableViewIdentifier";
 
 
 
-@interface JSTableView : UITableView
+@interface JSTableView : UITableView<UITableViewDelegate,UITableViewDataSource>
 
 
 
@@ -42,6 +43,10 @@ static NSString *const JSTableViewIdentifier=@"JSTableViewIdentifier";
 @property (nonatomic , strong) UIColor * cellColor;
 
 
+@property (nonatomic , strong) NSArray<JSSwipeTableCellModel *> * leftSwipeModel;
+
+@property (nonatomic , strong) NSArray<JSSwipeTableCellModel *> * rightSwipeModel;
+
 
 #pragma mark -不能修改的属性（仅供分类使用）
 
@@ -55,8 +60,12 @@ static NSString *const JSTableViewIdentifier=@"JSTableViewIdentifier";
 
 -(void)setUpMJRefresh:(JSTableViewState) state;
 
+-(void)loadNewData;
+
+-(void)loadMoreData;
+
 #pragma mark - 初始化方法
--(instancetype)initWithFrame:(CGRect)rect style:(UITableViewStyle)style state:(JSTableViewState)state cellClass:(Class) cellclass;
+-(instancetype)initWithFrame:(CGRect)rect style:(UITableViewStyle)style state:(JSTableViewState)state cellClass:(Class) cellClass delegate:(id<JSTableViewDelegate>)delegate;
 
 
 

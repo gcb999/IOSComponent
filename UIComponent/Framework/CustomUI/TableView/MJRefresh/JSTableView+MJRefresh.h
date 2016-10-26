@@ -12,11 +12,7 @@
 @interface JSTableView (MJRefresh)
 
 
--(void)setUpMJRefresh:(JSTableViewState) state;
 
--(void)loadNewData;
-
--(void)loadMoreData;
 
 
 #pragma mark ----------------------TableView 刷新方法----------------------------------------

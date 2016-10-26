@@ -33,12 +33,20 @@
 
         self.tableViewDelegate=delegate;
         
+        self.delegate = self;
+        self.dataSource = self;
+        
+        UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
+        self.tableFooterView=v;
+        
         if (cellClass) {
             [self registerClass:cellClass forCellReuseIdentifier:JSTableViewIdentifier];
         }
         
        //MJ
         [self setUpMJRefresh:state];
+        
+        
         
         
 
