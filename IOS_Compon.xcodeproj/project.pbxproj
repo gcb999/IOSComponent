@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90B0B9BB1DC03F1C00B5349E /* JSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9BA1DC03F1C00B5349E /* JSTableView.m */; };
+		90B0B9BE1DC03F3900B5349E /* JSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */; };
+		90B0B9C51DC042EE00B5349E /* JSTableView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9C41DC042EE00B5349E /* JSTableView+MJRefresh.m */; };
+		90B0B9CB1DC04A9500B5349E /* JSTableView+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9CA1DC04A9500B5349E /* JSTableView+TableView.m */; };
 		90EF61401DBEF837001C4C44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF613F1DBEF837001C4C44 /* Podfile */; };
 		90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */; };
 		90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614D1DBEF9D0001C4C44 /* MGSwipeTableCell.m */; };
@@ -95,6 +99,17 @@
 		03C8259A4649263810F983DC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2C8F985240ACEBF197DFFC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		90B0B9B91DC03F1C00B5349E /* JSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableView.h; sourceTree = "<group>"; };
+		90B0B9BA1DC03F1C00B5349E /* JSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableView.m; sourceTree = "<group>"; };
+		90B0B9BC1DC03F3900B5349E /* JSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionView.h; sourceTree = "<group>"; };
+		90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectionView.m; sourceTree = "<group>"; };
+		90B0B9BF1DC042D200B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
+		90B0B9C31DC042EE00B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
+		90B0B9C41DC042EE00B5349E /* JSTableView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+MJRefresh.m"; sourceTree = "<group>"; };
+		90B0B9C71DC0439300B5349E /* JSTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewDelegate.h; sourceTree = "<group>"; };
+		90B0B9C91DC04A9500B5349E /* JSTableView+TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+TableView.h"; sourceTree = "<group>"; };
+		90B0B9CA1DC04A9500B5349E /* JSTableView+TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+TableView.m"; sourceTree = "<group>"; };
+		90B0B9CD1DC04B9400B5349E /* JSTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewCellDelegate.h; sourceTree = "<group>"; };
 		90EF613F1DBEF837001C4C44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90EF614A1DBEF9D0001C4C44 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
@@ -265,6 +280,71 @@
 				1C2C8F985240ACEBF197DFFC /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				90B0B9CC1DC04B7A00B5349E /* TableViewCell */,
+				90B0B9B71DC03EFA00B5349E /* CollectionView */,
+				90B0B9B81DC03EFA00B5349E /* TableView */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		90B0B9B71DC03EFA00B5349E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				90B0B9BC1DC03F3900B5349E /* JSCollectionView.h */,
+				90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		90B0B9B81DC03EFA00B5349E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				90B0B9C81DC04A8600B5349E /* TableVIew */,
+				90B0B9C61DC0438200B5349E /* Delegate */,
+				90B0B9C21DC042E500B5349E /* MJRefresh */,
+				90B0B9B91DC03F1C00B5349E /* JSTableView.h */,
+				90B0B9BA1DC03F1C00B5349E /* JSTableView.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		90B0B9C21DC042E500B5349E /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				90B0B9C31DC042EE00B5349E /* JSTableView+MJRefresh.h */,
+				90B0B9C41DC042EE00B5349E /* JSTableView+MJRefresh.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		90B0B9C61DC0438200B5349E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				90B0B9C71DC0439300B5349E /* JSTableViewDelegate.h */,
+				90B0B9CD1DC04B9400B5349E /* JSTableViewCellDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		90B0B9C81DC04A8600B5349E /* TableVIew */ = {
+			isa = PBXGroup;
+			children = (
+				90B0B9C91DC04A9500B5349E /* JSTableView+TableView.h */,
+				90B0B9CA1DC04A9500B5349E /* JSTableView+TableView.m */,
+			);
+			path = TableVIew;
+			sourceTree = "<group>";
+		};
+		90B0B9CC1DC04B7A00B5349E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		90EF61411DBEF9AD001C4C44 /* Vendor */ = {
@@ -447,6 +527,7 @@
 			children = (
 				90EF61AB1DBF0202001C4C44 /* NSObject+UICateGory.h */,
 				90EF61AC1DBF0202001C4C44 /* NSObject+UICateGory.m */,
+				90B0B9BF1DC042D200B5349E /* JSTableView+MJRefresh.h */,
 			);
 			path = UICateGory;
 			sourceTree = "<group>";
@@ -614,6 +695,7 @@
 		90EF61F01DBF3C77001C4C44 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				90B0B9B61DC03EAE00B5349E /* CustomUI */,
 				90EF62151DBF4096001C4C44 /* SideSlippingController */,
 				90EF620D1DBF3F21001C4C44 /* FMDB */,
 				90EF61F11DBF3CBE001C4C44 /* NetWork */,
@@ -1039,6 +1121,7 @@
 				90EF61A11DBEFF6A001C4C44 /* NSObject+FileStream.m in Sources */,
 				90EF620C1DBF3CBE001C4C44 /* JSNetWork.m in Sources */,
 				90EF62081DBF3CBE001C4C44 /* JSUserSingletonModel.m in Sources */,
+				90B0B9CB1DC04A9500B5349E /* JSTableView+TableView.m in Sources */,
 				90EF61841DBEFA2B001C4C44 /* MJRefreshAutoGifFooter.m in Sources */,
 				90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */,
 				90EF61C01DBF0EE5001C4C44 /* NSString+Regular.m in Sources */,
@@ -1056,6 +1139,7 @@
 				90EF620A1DBF3CBE001C4C44 /* JSNetWork+GET.m in Sources */,
 				90EF618B1DBEFA2B001C4C44 /* MJRefreshNormalHeader.m in Sources */,
 				90F442401DBDFDC80007C37E /* UIView+Exception.m in Sources */,
+				90B0B9BB1DC03F1C00B5349E /* JSTableView.m in Sources */,
 				90EF61911DBEFA2B001C4C44 /* UIScrollView+MJRefresh.m in Sources */,
 				90EF61A51DBF0087001C4C44 /* NSObject+TypeConversion.m in Sources */,
 				90EF61801DBEFA2B001C4C44 /* MJRefreshBackFooter.m in Sources */,
@@ -1068,6 +1152,7 @@
 				90F441CE1DBDFB3A0007C37E /* ViewController.m in Sources */,
 				90EF61851DBEFA2B001C4C44 /* MJRefreshAutoNormalFooter.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
+				90B0B9C51DC042EE00B5349E /* JSTableView+MJRefresh.m in Sources */,
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
 				90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */,
 				90F441C81DBDFB3A0007C37E /* main.m in Sources */,
@@ -1085,6 +1170,7 @@
 				90EF618A1DBEFA2B001C4C44 /* MJRefreshGifHeader.m in Sources */,
 				90EF61DA1DBF2D33001C4C44 /* UIImageView+Gif.m in Sources */,
 				90EF619B1DBEFC34001C4C44 /* NSObject+SDWebImage.m in Sources */,
+				90B0B9BE1DC03F3900B5349E /* JSCollectionView.m in Sources */,
 				90EF61921DBEFA2B001C4C44 /* UIView+MJExtension.m in Sources */,
 				90EF61901DBEFA2B001C4C44 /* UIScrollView+MJExtension.m in Sources */,
 				90EF61EF1DBF3B11001C4C44 /* UIView+Coordinates.m in Sources */,
