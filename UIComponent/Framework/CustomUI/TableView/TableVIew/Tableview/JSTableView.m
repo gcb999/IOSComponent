@@ -27,7 +27,7 @@
     if (self=[super initWithFrame:rect style:style]) {
     
         self.state=state;
-    
+      self.pageIndex=1;
         
         self.dataArray=[NSMutableArray array];
         

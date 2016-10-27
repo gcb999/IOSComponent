@@ -9,10 +9,16 @@
 #import <Foundation/Foundation.h>
 @class JSCollectionView;
 
+@class JSCollectionViewWaterfallLayout;
+
 @protocol JSCollectionViewDelegate <NSObject>
 
 // 网络加载
 -(void)JSCollectionView:(JSCollectionView *)collectionView LoadRequestCurrentPage:(NSInteger)currentPage;
+
+
+//瀑布流
+- (CGSize)JSCollectionViewWaterfallLayout:(JSCollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 
 

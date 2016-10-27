@@ -28,6 +28,7 @@
     if (self=[super initWithFrame:rect style:style]) {
         
         self.state=state;
+        self.pageIndex=1;
         
         self.sections=[NSMutableArray array];
         self.rowsOfSectionDic=[NSMutableDictionary dictionary];

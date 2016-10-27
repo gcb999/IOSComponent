@@ -77,6 +77,19 @@
     
 
 
+#pragma mark -瀑布流布局（CHTCollectionViewWaterfallLayout）
+    
+    if ([self.layout isKindOfClass:[CHTCollectionViewWaterfallLayout class]]) {//流水布局改头部底部注册
+        
+        if(kind==CHTCollectionElementKindSectionHeader){
+            self.headerFooterCollectionViewDelegate=[collectionView dequeueReusableSupplementaryViewOfKind:CHTCollectionElementKindSectionHeader withReuseIdentifier:JSCollectionViewHeaderIdentifier forIndexPath:indexPath];//头部
+        }
+        else if(kind==CHTCollectionElementKindSectionFooter){
+            self.headerFooterCollectionViewDelegate=[collectionView dequeueReusableSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter withReuseIdentifier:JSCollectionViewFooterIdentifier forIndexPath:indexPath];//尾部
+        }
+    }
+#pragma mark -普通流水布局
+    else {
         
         
         if (kind==UICollectionElementKindSectionHeader) {
@@ -87,9 +100,11 @@
             
             self.headerFooterCollectionViewDelegate=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:JSCollectionViewFooterIdentifier forIndexPath:indexPath];//尾部
         }
+
         
-  
+    }
     
+        //回调
         if (self.headerFooterCollectionViewDelegate && [self.headerFooterCollectionViewDelegate respondsToSelector:@selector(JSCollectionViewHeaderFooter:originalData:indexPath:)]) {
             
             [self.headerFooterCollectionViewDelegate JSCollectionViewHeaderFooter:self originalData:self.dataArray indexPath:indexPath];
@@ -97,6 +112,27 @@
     
         return (UICollectionReusableView *) self.headerFooterCollectionViewDelegate;
     
+    
+}
+
+
+
+#pragma mark -瀑布流布局（CHTCollectionViewWaterfallLayout）
+
+#pragma mark - CHTCollectionViewDelegateWaterfallLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+        if (self.collectionViewDelegate && [self.collectionViewDelegate respondsToSelector:@selector(JSCollectionViewWaterfallLayout:layout:sizeForItemAtIndexPath:)]) {
+            
+            return  [self.collectionViewDelegate JSCollectionViewWaterfallLayout:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
+        }
+        else{
+            
+            return CGSizeZero;
+        }
+
     
 }
 

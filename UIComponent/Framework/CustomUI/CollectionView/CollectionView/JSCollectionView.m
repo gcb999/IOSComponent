@@ -11,29 +11,6 @@
 @implementation JSCollectionView
 
 
-//头部和底部
-- (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout collectionViewCellClass:(Class<JSCollectionViewCellDelegate>)cellclass collectionViewDelegate:(id<JSCollectionViewDelegate>)delegate{
-    
-    if (self = [super initWithFrame:frame collectionViewLayout:layout]) {
- 
-        self.flowLayout=layout;
-        self.pagingEnabled = NO;
-        self.showsHorizontalScrollIndicator = NO;
-        self.showsVerticalScrollIndicator = NO;
-        self.bounces = NO;
-        self.delegate = self;
-        self.dataSource = self;
-        self.dataArray=[NSMutableArray array];
-      
-        [self registerClass:cellclass forCellWithReuseIdentifier:JSCollectionViewCellIdentifier];
-      
-        //代理方法
-        self.collectionViewDelegate=delegate;
-        self.backgroundColor = [UIColor whiteColor];
-        
-    }
-    return self;
-}
 
 
 //正常
@@ -70,7 +47,10 @@
         
 
         self.dataArray=[NSMutableArray array];
+        self.layout=layout;
+        self.pageIndex=1;
         
+        self.backgroundColor=[UIColor whiteColor];
         
         //MJ
         [self setUpMJRefresh:state];
@@ -85,28 +65,35 @@
         //cell
         [self registerClass:cellclass forCellWithReuseIdentifier:JSCollectionViewCellIdentifier];
         
-        //头部
-        if (headerClass) {
+        
+#pragma mark -瀑布流布局（CHTCollectionViewWaterfallLayout）
+        
+        if ([layout isKindOfClass:[CHTCollectionViewWaterfallLayout class]]) {//流水布局改头部底部注册
+        
+             //头部
+            headerClass=(headerClass==nil)?[UICollectionReusableView class]:headerClass;
+            [self registerClass:headerClass forSupplementaryViewOfKind:CHTCollectionElementKindSectionHeader withReuseIdentifier:JSCollectionViewHeaderIdentifier];
+       
+            
+            //底部
+            footerClass=(footerClass==nil)?[UICollectionReusableView class]:footerClass;
+            [self registerClass:footerClass forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter withReuseIdentifier:JSCollectionViewFooterIdentifier];
+
+        }
+#pragma mark -普通流水布局
+        else {
+            
+            //头部
+            headerClass=(headerClass==nil)?[UICollectionReusableView class]:headerClass;
             [self registerClass:headerClass forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:JSCollectionViewHeaderIdentifier];
-            
-        }
-        else{
-            [self registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:JSCollectionViewHeaderIdentifier];
-            
-        }
-        
-        //底部
-        if (footerClass) {
+                
+         
+            //底部
+            footerClass=(footerClass==nil)?[UICollectionReusableView class]:footerClass;
             [self registerClass:footerClass forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:JSCollectionViewFooterIdentifier];
-        }
-        else{
-            [self registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:JSCollectionViewFooterIdentifier];
             
         }
-        
-        
-        
-        
+    
         
     }
     return self;

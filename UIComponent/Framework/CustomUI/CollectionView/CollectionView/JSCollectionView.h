@@ -11,6 +11,8 @@
 #import "JSCollectionViewDelegate.h"
 #import "JSCollectionViewCellDelegate.h"
 #import "JSCollectionViewHeaderFooterDelegate.h"
+#import "JSCollectionViewWaterfallLayout.h"
+#import "JSCollectionViewWaterfallLayout.h"
 
 
 typedef NS_ENUM (NSInteger,JSCollectionViewState) {
@@ -35,7 +37,7 @@ static NSString *const JSCollectionViewHeaderIdentifier = @"JSCollectionViewHead
 static NSString *const JSCollectionViewFooterIdentifier = @"JSCollectionViewFooterIdentifier";
 
 
-@interface JSCollectionView : UICollectionView<JSCollectionViewDelegate,JSCollectionViewCellDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface JSCollectionView : UICollectionView<JSCollectionViewDelegate,JSCollectionViewCellDelegate,UICollectionViewDelegate,UICollectionViewDataSource,CHTCollectionViewDelegateWaterfallLayout>
 
 
 @property (nonatomic , strong) NSMutableArray * dataArray;
@@ -63,7 +65,7 @@ static NSString *const JSCollectionViewFooterIdentifier = @"JSCollectionViewFoot
 @property (nonatomic , assign) NSInteger pageIndex;
 
 //流水布局
-@property (nonatomic , strong) UICollectionViewLayout * flowLayout;
+@property (nonatomic , strong) UICollectionViewLayout * layout;
 
 
 //正常

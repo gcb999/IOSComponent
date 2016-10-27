@@ -8,12 +8,12 @@
 
 #import "MainViewController.h"
 #import "JSSwipeTableCell.h"
+#import "JSCollectionViewCell.h"
 
 
 
 
-
-@interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate>
+@interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
 
 @end
 
@@ -22,15 +22,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self groupTableviwe];
+    [self collectioinView];
 
 
 }
 
+#pragma mark -collectionView
+-(void)collectioinView{
+    
+    JSCollectionViewWaterfallLayout *layount=[[JSCollectionViewWaterfallLayout alloc] init];
+    layount.sectionInset=UIEdgeInsetsMake(2, 2, 2, 2);
+    JSCollectionView *collectionView=[[JSCollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layount delegate:self state:JSCollectionViewHeaderFooter cellClass:[JSCollectionViewCell class]];
+       [collectionView.dataArray addObjectsFromArray:@[@"11",@"12"]];
+    [self.view addSubview:collectionView];
+    
+}
+
+-(CGSize)JSCollectionViewWaterfallLayout:(JSCollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(80, 80);
+}
+
+-(void)JSCollectionView:(JSCollectionView *)collectionView LoadRequestCurrentPage:(NSInteger)currentPage{
+    if (currentPage==1) {
+        [collectionView.dataArray removeAllObjects];
+        [collectionView.dataArray addObjectsFromArray:@[@"11",@"12"]];
+    
+        [collectionView reloadHeader];
+    }
+    else{
+        [collectionView.dataArray addObjectsFromArray:@[@"11",@"12"]];
+        [collectionView reloadFooter];
+    }
+}
+
+
+
 #pragma mark -tableview
 
 -(void)groupTableviwe{
-    JSGroupTableView *tableview=[[JSGroupTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain state:JSTableViewHeaderFooter cellClass:[JSSwipeTableCell class] delegate:self];
+    JSGroupTableView *tableview=[[JSGroupTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped state:JSTableViewHeaderFooter cellClass:[JSSwipeTableCell class] delegate:self];
 
     
     NSMutableArray *rights=[NSMutableArray array];
