@@ -53,7 +53,7 @@
     
     
     if ([self.tableViewDelegate respondsToSelector:@selector(JSTableView:swipeTableCell:tappedButtonAtIndex:direction:fromExpansion:)]) {
-        [self.tableViewDelegate JSTableView:self swipeTableCell:cell tappedButtonAtIndex:index direction:direction fromExpansion:fromExpansion];
+        [self.tableViewDelegate JSTableView:self swipeTableCell:cell tappedButtonAtIndex:index direction:direction fromExpansion:fromExpansion] ;
     }
     
 //    switch (direction) {

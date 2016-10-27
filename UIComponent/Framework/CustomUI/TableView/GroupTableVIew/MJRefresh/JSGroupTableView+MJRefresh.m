@@ -1,16 +1,16 @@
 //
-//  JSTableView+MJRefresh.m
+//  JSGroupTableView+MJRefresh.m
 //  IOS_Compon
 //
-//  Created by gcb999 on 16/10/26.
+//  Created by gcb999 on 16/10/27.
 //  Copyright © 2016年 gcb999. All rights reserved.
 //
 
-#import "JSTableView+MJRefresh.h"
+#import "JSGroupTableView+MJRefresh.h"
 #import "JSRefresh+TableView.h"
 
+@implementation JSGroupTableView (MJRefresh)
 
-@implementation JSTableView (MJRefresh)
 
 #pragma mark ----------------------初始化MJ 头部、底部----------------------------------------
 
@@ -89,8 +89,6 @@
     //    [self TableViewFooter];
     self.mj_footer.hidden=NO;
 }
-
-
 
 
 @end

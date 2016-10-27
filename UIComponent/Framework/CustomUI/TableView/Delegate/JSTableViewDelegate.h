@@ -17,8 +17,12 @@
 -(void)JSTableView:(JSTableView *)tableview LoadRequestCurrentPage:(NSInteger)currentPage;
 
 //侧滑按钮点击
-
 -(BOOL)JSTableView:(JSTableView *)tableview  swipeTableCell:(MGSwipeTableCell*) cell tappedButtonAtIndex:(NSInteger) index direction:(MGSwipeDirection)direction fromExpansion:(BOOL) fromExpansion;
 
 
+//重新定义Cell（分组）
+-(UITableViewCell *)JSTableView:(JSTableView *)tableview cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
+
+

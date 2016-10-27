@@ -30,6 +30,7 @@
         self.cellClass=cellClass;
         
         self.dataArray=[NSMutableArray array];
+        
 
         self.tableViewDelegate=delegate;
         

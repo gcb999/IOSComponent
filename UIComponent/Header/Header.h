@@ -68,6 +68,7 @@
 
 //列表
 #import "TableViewHeader.h"
+#import "CollectionViewHeader.h"
 
 
 #define ALLLANGUAGEARRY [[NSMutableArray alloc]initWithObjects:@"en",@"ru",@"fr",@"es",@"de",@"cs",@"pl",@"pt", nil]

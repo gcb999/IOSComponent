@@ -18,8 +18,6 @@
 -(void)JSTableView:(JSTableView *)tableView   originalData:(NSArray *)originalData content:(id)content indexPath:(NSIndexPath *)indexpath;
 
 
-//分组
--(void)JSTableView:(JSTableView *)tableView   sections:(NSArray *)sections rowsOfSections:(NSDictionary<NSString *,NSArray *> *)rowsOfSections content:(id)content indexPath:(NSIndexPath *)indexpath;
 
 
 

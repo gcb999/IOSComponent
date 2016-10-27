@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "JSSwipeTableCell.h"
+#import "JSGroupTableView.h"
 
 
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    JSTableView *tableview=[[JSTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain state:JSTableViewHeaderFooter cellClass:[JSSwipeTableCell class] delegate:self];
+    JSGroupTableView *tableview=[[JSGroupTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain state:JSTableViewHeaderFooter cellClass:[JSSwipeTableCell class] delegate:self];
      [tableview.dataArray addObjectsFromArray:@[@"11",@"12"]];
     
     NSMutableArray *rights=[NSMutableArray array];
@@ -39,9 +40,10 @@
 
 -(void)JSTableView:(JSTableView *)tableview LoadRequestCurrentPage:(NSInteger)currentPage{
  
-    [tableview.dataArray addObjectsFromArray:@[@"11",@"12"]];
-    NSLog(@"---%@",tableview.dataArray);
-    [tableview reloadHeader];
+//    JSGroupTableView *table
+//    [tableview.dataArray addObjectsFromArray:@[@"11",@"12"]];
+//    NSLog(@"---%@",tableview.dataArray);
+//    [tableview reloadHeader];
 
     
 }

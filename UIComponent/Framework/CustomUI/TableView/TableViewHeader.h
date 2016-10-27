@@ -11,5 +11,7 @@
 
 #import "JSTableView.h"
 #import "JSTableView+MJRefresh.h"
+#import "JSGroupTableView.h"
+#import "JSGroupTableView+GroupTableView.h"
 
 #endif /* TableViewHeader_h */
