@@ -64,7 +64,13 @@
     
 }
 
+#pragma mark -点击按钮
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.tableViewDelegate && [self.tableViewDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+        [self.tableViewDelegate JSTableView:self didSelectRowAtIndexPath:indexPath];
+    }
+}
 
 
 

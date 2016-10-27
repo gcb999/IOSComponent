@@ -38,7 +38,7 @@
     
 }
 
--(CGSize)JSCollectionViewWaterfallLayout:(JSCollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+-(CGSize)JSCollectionView:(JSCollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     return CGSizeMake(80, 80);
 }
 
@@ -55,7 +55,14 @@
     }
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSLog(@"---%@",scrollView);
+}
 
+
+-(void)JSCollectionView:(JSCollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"--%d",indexPath.row);
+}
 
 #pragma mark -tableview
 

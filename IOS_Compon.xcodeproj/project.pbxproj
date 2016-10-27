@@ -24,6 +24,9 @@
 		9001244F1DC1CD6400192175 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001244C1DC1CD6400192175 /* CHTCollectionViewWaterfallLayout.m */; };
 		900124501DC1CD6400192175 /* JSCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001244E1DC1CD6400192175 /* JSCollectionViewWaterfallLayout.m */; };
 		900124541DC1DA9200192175 /* JSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124531DC1DA9200192175 /* JSCollectionViewCell.m */; };
+		900124581DC1E56E00192175 /* JSCollectionView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124571DC1E56E00192175 /* JSCollectionView+UIScrollView.m */; };
+		9001245D1DC1E80000192175 /* JSTableView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001245C1DC1E80000192175 /* JSTableView+UIScrollView.m */; };
+		900124601DC1E80A00192175 /* JSGroupTableView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001245F1DC1E80A00192175 /* JSGroupTableView+UIScrollView.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
 		90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */; };
@@ -155,6 +158,12 @@
 		9001244E1DC1CD6400192175 /* JSCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		900124521DC1DA9200192175 /* JSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionViewCell.h; sourceTree = "<group>"; };
 		900124531DC1DA9200192175 /* JSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectionViewCell.m; sourceTree = "<group>"; };
+		900124561DC1E56E00192175 /* JSCollectionView+UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSCollectionView+UIScrollView.h"; sourceTree = "<group>"; };
+		900124571DC1E56E00192175 /* JSCollectionView+UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSCollectionView+UIScrollView.m"; sourceTree = "<group>"; };
+		9001245B1DC1E80000192175 /* JSTableView+UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+UIScrollView.h"; sourceTree = "<group>"; };
+		9001245C1DC1E80000192175 /* JSTableView+UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+UIScrollView.m"; sourceTree = "<group>"; };
+		9001245E1DC1E80A00192175 /* JSGroupTableView+UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSGroupTableView+UIScrollView.h"; sourceTree = "<group>"; };
+		9001245F1DC1E80A00192175 /* JSGroupTableView+UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSGroupTableView+UIScrollView.m"; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		90B0B9BF1DC042D200B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
 		90B0B9D11DC051F500B5349E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
@@ -337,6 +346,7 @@
 		900124031DC18DB600192175 /* GroupTableVIew */ = {
 			isa = PBXGroup;
 			children = (
+				900124591DC1E7E600192175 /* UIScrollView */,
 				900124321DC1A89500192175 /* CellEditingStyle */,
 				900124121DC1937500192175 /* MJRefresh */,
 				900124111DC1936E00192175 /* Delegate */,
@@ -493,6 +503,33 @@
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+		900124551DC1E55E00192175 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				900124561DC1E56E00192175 /* JSCollectionView+UIScrollView.h */,
+				900124571DC1E56E00192175 /* JSCollectionView+UIScrollView.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		900124591DC1E7E600192175 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9001245E1DC1E80A00192175 /* JSGroupTableView+UIScrollView.h */,
+				9001245F1DC1E80A00192175 /* JSGroupTableView+UIScrollView.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		9001245A1DC1E7F100192175 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9001245B1DC1E80000192175 /* JSTableView+UIScrollView.h */,
+				9001245C1DC1E80000192175 /* JSTableView+UIScrollView.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +544,7 @@
 		90B0B9B71DC03EFA00B5349E /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				900124551DC1E55E00192175 /* UIScrollView */,
 				900124491DC1CD6400192175 /* FlowLayout */,
 				900124421DC1AB1800192175 /* Delegate */,
 				9001243E1DC1AA7C00192175 /* MJRefresh */,
@@ -530,6 +568,7 @@
 		90B0B9C81DC04A8600B5349E /* TableVIew */ = {
 			isa = PBXGroup;
 			children = (
+				9001245A1DC1E7F100192175 /* UIScrollView */,
 				900124361DC1A91900192175 /* CellEditingStyle */,
 				900124231DC1A39B00192175 /* Delegate */,
 				900124261DC1A39B00192175 /* MJRefresh */,
@@ -1358,6 +1397,7 @@
 				90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */,
 				90B0B9F61DC07D4700B5349E /* NSMutableArray+Exception.m in Sources */,
 				90EF62181DBF4096001C4C44 /* JSSideSlippingControllerConfig.m in Sources */,
+				900124601DC1E80A00192175 /* JSGroupTableView+UIScrollView.m in Sources */,
 				90EF61811DBEFA2B001C4C44 /* MJRefreshComponent.m in Sources */,
 				90EF62131DBF403C001C4C44 /* JASidePanelController.m in Sources */,
 				900124541DC1DA9200192175 /* JSCollectionViewCell.m in Sources */,
@@ -1374,6 +1414,7 @@
 				900124151DC1938A00192175 /* JSGroupTableView+MJRefresh.m in Sources */,
 				90EF61831DBEFA2B001C4C44 /* MJRefreshHeader.m in Sources */,
 				90EF61E11DBF3702001C4C44 /* MBProgressHUD+Add.m in Sources */,
+				9001245D1DC1E80000192175 /* JSTableView+UIScrollView.m in Sources */,
 				9001244F1DC1CD6400192175 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				90EF61851DBEFA2B001C4C44 /* MJRefreshAutoNormalFooter.m in Sources */,
 				90B0B9FB1DC07D4700B5349E /* NSString+Exception.m in Sources */,
@@ -1395,6 +1436,7 @@
 				90EF61E81DBF3A7D001C4C44 /* UIFont+Extend.m in Sources */,
 				900124411DC1AA8600192175 /* JSCollectionView+MJRefresh.m in Sources */,
 				90EF618F1DBEFA2B001C4C44 /* NSBundle+MJRefresh.m in Sources */,
+				900124581DC1E56E00192175 /* JSCollectionView+UIScrollView.m in Sources */,
 				900124101DC192ED00192175 /* JSGroupTableView.m in Sources */,
 				90B0B9F81DC07D4700B5349E /* NSMutableDictionary+Exception.m in Sources */,
 				90B0B9FA1DC07D4700B5349E /* NSObject+Exception.m in Sources */,

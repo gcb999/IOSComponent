@@ -72,5 +72,14 @@
 }
 
 
+#pragma mark -点击按钮
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.groupTableViewDelegate && [self.groupTableViewDelegate respondsToSelector:@selector(JSTableView:didSelectRowAtIndexPath:)]) {
+        [self.groupTableViewDelegate JSGroupTableView:self didSelectRowAtIndexPath:indexPath];
+    }
+}
+
+
 
 @end

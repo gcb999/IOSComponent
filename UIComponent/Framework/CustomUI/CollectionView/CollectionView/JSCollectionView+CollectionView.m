@@ -124,9 +124,9 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-        if (self.collectionViewDelegate && [self.collectionViewDelegate respondsToSelector:@selector(JSCollectionViewWaterfallLayout:layout:sizeForItemAtIndexPath:)]) {
+        if (self.collectionViewDelegate && [self.collectionViewDelegate respondsToSelector:@selector(JSCollectionView:layout:sizeForItemAtIndexPath:)]) {
             
-            return  [self.collectionViewDelegate JSCollectionViewWaterfallLayout:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
+            return  [self.collectionViewDelegate JSCollectionView:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
         }
         else{
             
@@ -136,6 +136,11 @@
     
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.collectionViewDelegate && [self.collectionViewDelegate respondsToSelector:@selector(JSCollectionView:didSelectItemAtIndexPath:)]) {
+        [self.collectionViewDelegate JSCollectionView:self didSelectItemAtIndexPath:indexPath];
+    }
+}
 
 
 //#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_7_0
