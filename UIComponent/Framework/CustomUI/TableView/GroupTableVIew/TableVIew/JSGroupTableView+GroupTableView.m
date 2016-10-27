@@ -36,9 +36,9 @@
     
     
     //cell重新定义
-    if ([self.tableViewDelegate respondsToSelector:@selector(JSTableView:cellForRowAtIndexPath:)]) {
+    if ([self.groupTableViewDelegate respondsToSelector:@selector(JSGroupTableView:cellForRowAtIndexPath:)]) {
         
-       return  [self.tableViewDelegate JSTableView:self cellForRowAtIndexPath:indexPath];
+       return  [self.groupTableViewDelegate JSGroupTableView:self cellForRowAtIndexPath:indexPath];
         
     }
     else{
@@ -46,7 +46,7 @@
         
         
         UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:JSTableViewIdentifier forIndexPath:indexPath];
-        self.tableViewCellDelegate=cell;
+        self.groupTableViewCellDelegate=cell;
         NSString *str= self.sections[indexPath.section];
         
         NSArray *array= self.rowsOfSectionDic[str];
@@ -61,9 +61,9 @@
             mgcell.allowsMultipleSwipe = NO;
         }
         
-        [self.tableViewCellDelegate JSTableView:self sections:self.sections rowsOfSections:self.rowsOfSectionDic content:content indexPath:indexPath];
+        [self.groupTableViewCellDelegate JSGroupTableView:self sections:self.sections rowsOfSections:self.rowsOfSectionDic content:content indexPath:indexPath];
         
-        return (UITableViewCell *)self.tableViewCellDelegate;
+        return cell;
         
         
     }

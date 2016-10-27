@@ -8,6 +8,6 @@
 
 #import "MGSwipeTableCell.h"
 
-@interface JSSwipeTableCell : MGSwipeTableCell<JSTableViewCellDelegate>
+@interface JSSwipeTableCell : MGSwipeTableCell<JSTableViewCellDelegate,JSGroupTableViewCellDelegate>
 
 @end

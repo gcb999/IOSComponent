@@ -10,7 +10,7 @@
 #import "JSGroupTableViewDelegate.h"
 #import "JSGroupTableViewCellDelegate.h"
 
-@interface JSGroupTableView : JSTableView
+@interface JSGroupTableView : UITableView<UITableViewDelegate,UITableViewDataSource,JSGroupTableViewDelegate,JSGroupTableViewCellDelegate>
 
 
 #pragma mark -分组
@@ -40,8 +40,6 @@
 
 @property (nonatomic , weak) id<JSGroupTableViewCellDelegate> groupTableViewCellDelegate;
 
-@property(nonatomic,weak)Class cellClass;
-
 -(void)setUpMJRefresh:(JSTableViewState) state;
 
 -(void)loadNewData;
@@ -54,12 +52,10 @@
 
 #pragma mark - 初始化方法
 
--(instancetype)initWithFrame:(CGRect)rect style:(UITableViewStyle)style state:(JSTableViewState)state cellClass:(Class) cellClass delegate:(id<JSTableViewDelegate>)delegate;
+-(instancetype)initWithFrame:(CGRect)rect style:(UITableViewStyle)style state:(JSTableViewState)state cellClass:(Class) cellClass delegate:(id<JSGroupTableViewDelegate>)delegate;
 
 
 
-#pragma mark - 初始化方法
 
--(instancetype)initWithFrame:(CGRect)rect style:(UITableViewStyle)style state:(JSTableViewState)state cellClass:(Class) cellClass delegate:(id<JSTableViewDelegate>)delegate;
 
 @end

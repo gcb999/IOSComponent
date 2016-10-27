@@ -33,8 +33,8 @@
     
     self.pageIndex=1;
     //请求网络
-    if(self.tableViewDelegate && [self.tableViewDelegate respondsToSelector:@selector(JSTableView:LoadRequestCurrentPage:)]){
-        [self.tableViewDelegate JSTableView:self LoadRequestCurrentPage:self.pageIndex];
+    if(self.groupTableViewDelegate && [self.groupTableViewDelegate respondsToSelector:@selector(JSGroupTableView:LoadRequestCurrentPage:)]){
+        [self.groupTableViewDelegate JSGroupTableView:self LoadRequestCurrentPage:self.pageIndex];
     }
     
     
@@ -47,8 +47,8 @@
     
     self.pageIndex=self.pageIndex+1;
     //请求网络
-    if(self.tableViewDelegate && [self.tableViewDelegate respondsToSelector:@selector(JSTableView:LoadRequestCurrentPage:)]){
-        [self.tableViewDelegate JSTableView:self LoadRequestCurrentPage:self.pageIndex];
+    if(self.groupTableViewDelegate && [self.groupTableViewDelegate respondsToSelector:@selector(JSGroupTableView:LoadRequestCurrentPage:)]){
+        [self.groupTableViewDelegate JSGroupTableView:self LoadRequestCurrentPage:self.pageIndex];
     }
 }
 

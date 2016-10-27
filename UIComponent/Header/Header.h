@@ -68,6 +68,7 @@
 
 //列表
 #import "TableViewHeader.h"
+#import "GroupTableVIewHeader.h"
 #import "CollectionViewHeader.h"
 
 

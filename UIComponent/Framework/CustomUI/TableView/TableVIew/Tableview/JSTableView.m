@@ -27,7 +27,7 @@
     if (self=[super initWithFrame:rect style:style]) {
     
         self.state=state;
-        self.cellClass=cellClass;
+    
         
         self.dataArray=[NSMutableArray array];
         

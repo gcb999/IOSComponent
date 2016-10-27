@@ -58,7 +58,6 @@ static NSString *const JSTableViewIdentifier=@"JSTableViewIdentifier";
 
 @property (nonatomic , weak) id<JSTableViewCellDelegate> tableViewCellDelegate;
 
-@property(nonatomic,weak)Class cellClass;
 
 -(void)setUpMJRefresh:(JSTableViewState) state;
 

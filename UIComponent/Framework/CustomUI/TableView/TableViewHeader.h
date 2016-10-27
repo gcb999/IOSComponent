@@ -10,8 +10,17 @@
 #define TableViewHeader_h
 
 #import "JSTableView.h"
+
+
+//MJ
 #import "JSTableView+MJRefresh.h"
-#import "JSGroupTableView.h"
-#import "JSGroupTableView+GroupTableView.h"
+
+
+//Cell侧滑
+#import "JSGroupTableView+CellEditingStyle.h"
+
+//代理
+#import "JSTableViewCellDelegate.h"
+#import "JSTableViewDelegate.h"
 
 #endif /* TableViewHeader_h */

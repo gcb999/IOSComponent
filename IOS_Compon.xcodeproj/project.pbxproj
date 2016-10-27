@@ -13,12 +13,14 @@
 		9001241B1DC194A200192175 /* JSRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001241A1DC194A200192175 /* JSRefresh.m */; };
 		9001241E1DC1968B00192175 /* JSRefresh+CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001241D1DC1968B00192175 /* JSRefresh+CollectionView.m */; };
 		900124221DC1996000192175 /* JSRefresh+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124211DC1996000192175 /* JSRefresh+TableView.m */; };
+		9001242E1DC1A39B00192175 /* JSTableView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124281DC1A39B00192175 /* JSTableView+MJRefresh.m */; };
+		9001242F1DC1A39B00192175 /* JSTableView+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001242B1DC1A39B00192175 /* JSTableView+TableView.m */; };
+		900124301DC1A39B00192175 /* JSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001242D1DC1A39B00192175 /* JSTableView.m */; };
+		900124351DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124341DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m */; };
+		900124391DC1A91900192175 /* JSTableView+CellEditingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124381DC1A91900192175 /* JSTableView+CellEditingStyle.m */; };
 		90B0B9BE1DC03F3900B5349E /* JSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */; };
-		90B0B9C51DC042EE00B5349E /* JSTableView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9C41DC042EE00B5349E /* JSTableView+MJRefresh.m */; };
-		90B0B9CB1DC04A9500B5349E /* JSTableView+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9CA1DC04A9500B5349E /* JSTableView+TableView.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
-		90B0B9D91DC061F700B5349E /* JSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D81DC061F700B5349E /* JSTableView.m */; };
 		90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */; };
 		90B0B9F61DC07D4700B5349E /* NSMutableArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9E01DC07D4700B5349E /* NSMutableArray+Exception.m */; };
 		90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9E31DC07D4700B5349E /* NSDictionary+Exception.m */; };
@@ -30,7 +32,6 @@
 		90B0B9FD1DC07D4700B5349E /* UIView+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9F41DC07D4700B5349E /* UIView+Exception.m */; };
 		90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */; };
 		90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */; };
-		90B0BA211DC0A90D00B5349E /* JSTableView+CellEditingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA201DC0A90D00B5349E /* JSTableView+CellEditingStyle.m */; };
 		90EF61401DBEF837001C4C44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF613F1DBEF837001C4C44 /* Podfile */; };
 		90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */; };
 		90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614D1DBEF9D0001C4C44 /* MGSwipeTableCell.m */; };
@@ -121,22 +122,27 @@
 		9001241F1DC196E000192175 /* CollectionViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeader.h; sourceTree = "<group>"; };
 		900124201DC1996000192175 /* JSRefresh+TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSRefresh+TableView.h"; sourceTree = "<group>"; };
 		900124211DC1996000192175 /* JSRefresh+TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSRefresh+TableView.m"; sourceTree = "<group>"; };
+		900124241DC1A39B00192175 /* JSTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewCellDelegate.h; sourceTree = "<group>"; };
+		900124251DC1A39B00192175 /* JSTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewDelegate.h; sourceTree = "<group>"; };
+		900124271DC1A39B00192175 /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
+		900124281DC1A39B00192175 /* JSTableView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+MJRefresh.m"; sourceTree = "<group>"; };
+		9001242A1DC1A39B00192175 /* JSTableView+TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+TableView.h"; sourceTree = "<group>"; };
+		9001242B1DC1A39B00192175 /* JSTableView+TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+TableView.m"; sourceTree = "<group>"; };
+		9001242C1DC1A39B00192175 /* JSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableView.h; sourceTree = "<group>"; };
+		9001242D1DC1A39B00192175 /* JSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableView.m; sourceTree = "<group>"; };
+		900124311DC1A5A800192175 /* GroupTableVIewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupTableVIewHeader.h; sourceTree = "<group>"; };
+		900124331DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSGroupTableView+CellEditingStyle.h"; sourceTree = "<group>"; };
+		900124341DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSGroupTableView+CellEditingStyle.m"; sourceTree = "<group>"; };
+		900124371DC1A91900192175 /* JSTableView+CellEditingStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+CellEditingStyle.h"; sourceTree = "<group>"; };
+		900124381DC1A91900192175 /* JSTableView+CellEditingStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+CellEditingStyle.m"; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		90B0B9BC1DC03F3900B5349E /* JSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionView.h; sourceTree = "<group>"; };
 		90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectionView.m; sourceTree = "<group>"; };
 		90B0B9BF1DC042D200B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
-		90B0B9C31DC042EE00B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
-		90B0B9C41DC042EE00B5349E /* JSTableView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+MJRefresh.m"; sourceTree = "<group>"; };
-		90B0B9C71DC0439300B5349E /* JSTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewDelegate.h; sourceTree = "<group>"; };
-		90B0B9C91DC04A9500B5349E /* JSTableView+TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+TableView.h"; sourceTree = "<group>"; };
-		90B0B9CA1DC04A9500B5349E /* JSTableView+TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+TableView.m"; sourceTree = "<group>"; };
-		90B0B9CD1DC04B9400B5349E /* JSTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewCellDelegate.h; sourceTree = "<group>"; };
 		90B0B9D11DC051F500B5349E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		90B0B9D21DC051F600B5349E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		90B0B9D41DC0520C00B5349E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		90B0B9D51DC0520C00B5349E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		90B0B9D71DC061F700B5349E /* JSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableView.h; sourceTree = "<group>"; };
-		90B0B9D81DC061F700B5349E /* JSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableView.m; sourceTree = "<group>"; };
 		90B0B9DA1DC07CA800B5349E /* TableViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewHeader.h; sourceTree = "<group>"; };
 		90B0B9DB1DC07D4700B5349E /* CoreExceptionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreExceptionHeader.h; sourceTree = "<group>"; };
 		90B0B9DD1DC07D4700B5349E /* NSArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Exception.h"; sourceTree = "<group>"; };
@@ -161,8 +167,6 @@
 		90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwipeTableCellModel.m; sourceTree = "<group>"; };
 		90B0BA1C1DC0A5B400B5349E /* JSSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwipeTableCell.h; sourceTree = "<group>"; };
 		90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwipeTableCell.m; sourceTree = "<group>"; };
-		90B0BA1F1DC0A90D00B5349E /* JSTableView+CellEditingStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+CellEditingStyle.h"; sourceTree = "<group>"; };
-		90B0BA201DC0A90D00B5349E /* JSTableView+CellEditingStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+CellEditingStyle.m"; sourceTree = "<group>"; };
 		90EF613F1DBEF837001C4C44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90EF614A1DBEF9D0001C4C44 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
@@ -315,9 +319,11 @@
 		900124031DC18DB600192175 /* GroupTableVIew */ = {
 			isa = PBXGroup;
 			children = (
+				900124321DC1A89500192175 /* CellEditingStyle */,
 				900124121DC1937500192175 /* MJRefresh */,
 				900124111DC1936E00192175 /* Delegate */,
 				9001240A1DC192ED00192175 /* TableVIew */,
+				900124311DC1A5A800192175 /* GroupTableVIewHeader.h */,
 			);
 			path = GroupTableVIew;
 			sourceTree = "<group>";
@@ -364,6 +370,53 @@
 			path = JSRefresh;
 			sourceTree = "<group>";
 		};
+		900124231DC1A39B00192175 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				900124241DC1A39B00192175 /* JSTableViewCellDelegate.h */,
+				900124251DC1A39B00192175 /* JSTableViewDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		900124261DC1A39B00192175 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				900124271DC1A39B00192175 /* JSTableView+MJRefresh.h */,
+				900124281DC1A39B00192175 /* JSTableView+MJRefresh.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		900124291DC1A39B00192175 /* Tableview */ = {
+			isa = PBXGroup;
+			children = (
+				9001242A1DC1A39B00192175 /* JSTableView+TableView.h */,
+				9001242B1DC1A39B00192175 /* JSTableView+TableView.m */,
+				9001242C1DC1A39B00192175 /* JSTableView.h */,
+				9001242D1DC1A39B00192175 /* JSTableView.m */,
+			);
+			path = Tableview;
+			sourceTree = "<group>";
+		};
+		900124321DC1A89500192175 /* CellEditingStyle */ = {
+			isa = PBXGroup;
+			children = (
+				900124331DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.h */,
+				900124341DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m */,
+			);
+			path = CellEditingStyle;
+			sourceTree = "<group>";
+		};
+		900124361DC1A91900192175 /* CellEditingStyle */ = {
+			isa = PBXGroup;
+			children = (
+				900124371DC1A91900192175 /* JSTableView+CellEditingStyle.h */,
+				900124381DC1A91900192175 /* JSTableView+CellEditingStyle.m */,
+			);
+			path = CellEditingStyle;
+			sourceTree = "<group>";
+		};
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,38 +443,18 @@
 				900124031DC18DB600192175 /* GroupTableVIew */,
 				90B0BA141DC0A38B00B5349E /* TableViewCellEditingStyle */,
 				90B0B9C81DC04A8600B5349E /* TableVIew */,
-				90B0B9C61DC0438200B5349E /* Delegate */,
-				90B0B9C21DC042E500B5349E /* MJRefresh */,
 				90B0B9DA1DC07CA800B5349E /* TableViewHeader.h */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
 		};
-		90B0B9C21DC042E500B5349E /* MJRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9C31DC042EE00B5349E /* JSTableView+MJRefresh.h */,
-				90B0B9C41DC042EE00B5349E /* JSTableView+MJRefresh.m */,
-			);
-			path = MJRefresh;
-			sourceTree = "<group>";
-		};
-		90B0B9C61DC0438200B5349E /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9C71DC0439300B5349E /* JSTableViewDelegate.h */,
-				90B0B9CD1DC04B9400B5349E /* JSTableViewCellDelegate.h */,
-			);
-			path = Delegate;
-			sourceTree = "<group>";
-		};
 		90B0B9C81DC04A8600B5349E /* TableVIew */ = {
 			isa = PBXGroup;
 			children = (
-				90B0B9D71DC061F700B5349E /* JSTableView.h */,
-				90B0B9D81DC061F700B5349E /* JSTableView.m */,
-				90B0B9C91DC04A9500B5349E /* JSTableView+TableView.h */,
-				90B0B9CA1DC04A9500B5349E /* JSTableView+TableView.m */,
+				900124361DC1A91900192175 /* CellEditingStyle */,
+				900124231DC1A39B00192175 /* Delegate */,
+				900124261DC1A39B00192175 /* MJRefresh */,
+				900124291DC1A39B00192175 /* Tableview */,
 			);
 			path = TableVIew;
 			sourceTree = "<group>";
@@ -506,8 +539,6 @@
 			children = (
 				90B0BA181DC0A3EB00B5349E /* JSSwipeTableCellModel.h */,
 				90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */,
-				90B0BA1F1DC0A90D00B5349E /* JSTableView+CellEditingStyle.h */,
-				90B0BA201DC0A90D00B5349E /* JSTableView+CellEditingStyle.m */,
 			);
 			path = TableViewCellEditingStyle;
 			sourceTree = "<group>";
@@ -1229,17 +1260,18 @@
 				90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */,
 				90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */,
 				90EF62081DBF3CBE001C4C44 /* JSUserSingletonModel.m in Sources */,
-				90B0B9CB1DC04A9500B5349E /* JSTableView+TableView.m in Sources */,
 				90EF61841DBEFA2B001C4C44 /* MJRefreshAutoGifFooter.m in Sources */,
+				900124301DC1A39B00192175 /* JSTableView.m in Sources */,
 				90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */,
 				90EF61C01DBF0EE5001C4C44 /* NSString+Regular.m in Sources */,
 				90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */,
-				90B0BA211DC0A90D00B5349E /* JSTableView+CellEditingStyle.m in Sources */,
 				90B0B9F91DC07D4700B5349E /* NSNull+Exception.m in Sources */,
 				90EF61871DBEFA2B001C4C44 /* MJRefreshBackGifFooter.m in Sources */,
 				90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */,
 				90EF61AD1DBF0202001C4C44 /* NSObject+UICateGory.m in Sources */,
 				90EF620B1DBF3CBE001C4C44 /* JSNetWork+POST.m in Sources */,
+				9001242E1DC1A39B00192175 /* JSTableView+MJRefresh.m in Sources */,
+				9001242F1DC1A39B00192175 /* JSTableView+TableView.m in Sources */,
 				90EF61CF1DBF2C67001C4C44 /* UIView+AnimationProperty.m in Sources */,
 				90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */,
 				90B0B9F61DC07D4700B5349E /* NSMutableArray+Exception.m in Sources */,
@@ -1262,14 +1294,13 @@
 				90EF61851DBEFA2B001C4C44 /* MJRefreshAutoNormalFooter.m in Sources */,
 				90B0B9FB1DC07D4700B5349E /* NSString+Exception.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
-				90B0B9C51DC042EE00B5349E /* JSTableView+MJRefresh.m in Sources */,
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
 				90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */,
-				90B0B9D91DC061F700B5349E /* JSTableView.m in Sources */,
 				90F441C81DBDFB3A0007C37E /* main.m in Sources */,
 				900124221DC1996000192175 /* JSRefresh+TableView.m in Sources */,
 				90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */,
 				90EF62091DBF3CBE001C4C44 /* JSError.m in Sources */,
+				900124391DC1A91900192175 /* JSTableView+CellEditingStyle.m in Sources */,
 				90EF61861DBEFA2B001C4C44 /* MJRefreshAutoStateFooter.m in Sources */,
 				90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */,
 				90EF618C1DBEFA2B001C4C44 /* MJRefreshStateHeader.m in Sources */,
@@ -1289,6 +1320,7 @@
 				90EF61921DBEFA2B001C4C44 /* UIView+MJExtension.m in Sources */,
 				90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */,
 				90EF61901DBEFA2B001C4C44 /* UIScrollView+MJExtension.m in Sources */,
+				900124351DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m in Sources */,
 				90EF61EF1DBF3B11001C4C44 /* UIView+Coordinates.m in Sources */,
 				90EF617F1DBEFA2B001C4C44 /* MJRefreshAutoFooter.m in Sources */,
 				90EF61BC1DBF0DF9001C4C44 /* NSString+String.m in Sources */,
