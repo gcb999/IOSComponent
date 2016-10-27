@@ -44,8 +44,8 @@
 -(void)setUpMJTableviewHeder:(JSTableView *)tableview
 {
     
-    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:tableview refreshingAction:@selector(loadNewData)];
-    
+//    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:tableview refreshingAction:@selector(loadNewData)];
+    JSRefreshAutoGifHeader *header=[JSRefreshAutoGifHeader headerWithRefreshingTarget:tableview refreshingAction:@selector(loadNewData)];
     // 设置文字
     [header setTitle:JSLocalizedString(@"Pull down to refresh", nil) forState:MJRefreshStateIdle];
     [header setTitle:JSLocalizedString(@"Release to refresh", nil) forState:MJRefreshStatePulling];
@@ -82,8 +82,8 @@
     //        [self.tableView addFooterWithTarget:self action:@selector(loadMoreData)];
     // 添加默认的上拉刷新
     // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadMoreData方法）
-    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:tableview refreshingAction:@selector(loadMoreData)];
-    
+//    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:tableview refreshingAction:@selector(loadMoreData)];
+     JSRefreshAutoGifFooter *footer=[JSRefreshAutoGifFooter footerWithRefreshingTarget:tableview refreshingAction:@selector(loadMoreData)];
     // 设置文字
     [footer setTitle:@"" forState:MJRefreshStateIdle];
     [footer setTitle:JSLocalizedString(@"Loading more ...", nil) forState:MJRefreshStateRefreshing];

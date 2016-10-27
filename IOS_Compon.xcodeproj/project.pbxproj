@@ -27,6 +27,9 @@
 		900124581DC1E56E00192175 /* JSCollectionView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124571DC1E56E00192175 /* JSCollectionView+UIScrollView.m */; };
 		9001245D1DC1E80000192175 /* JSTableView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001245C1DC1E80000192175 /* JSTableView+UIScrollView.m */; };
 		900124601DC1E80A00192175 /* JSGroupTableView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001245F1DC1E80A00192175 /* JSGroupTableView+UIScrollView.m */; };
+		900124691DC1EDDD00192175 /* JSRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124671DC1EDDD00192175 /* JSRefreshAutoGifFooter.m */; };
+		9001246F1DC1EE5700192175 /* JSRefreshAutoGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001246E1DC1EE5700192175 /* JSRefreshAutoGifHeader.m */; };
+		900124711DC1EF4A00192175 /* iOS_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 900124701DC1EF4A00192175 /* iOS_loading.gif */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
 		90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */; };
@@ -164,6 +167,11 @@
 		9001245C1DC1E80000192175 /* JSTableView+UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+UIScrollView.m"; sourceTree = "<group>"; };
 		9001245E1DC1E80A00192175 /* JSGroupTableView+UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSGroupTableView+UIScrollView.h"; sourceTree = "<group>"; };
 		9001245F1DC1E80A00192175 /* JSGroupTableView+UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSGroupTableView+UIScrollView.m"; sourceTree = "<group>"; };
+		900124661DC1EDDD00192175 /* JSRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		900124671DC1EDDD00192175 /* JSRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		9001246D1DC1EE5700192175 /* JSRefreshAutoGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRefreshAutoGifHeader.h; sourceTree = "<group>"; };
+		9001246E1DC1EE5700192175 /* JSRefreshAutoGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRefreshAutoGifHeader.m; sourceTree = "<group>"; };
+		900124701DC1EF4A00192175 /* iOS_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iOS_loading.gif; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		90B0B9BF1DC042D200B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
 		90B0B9D11DC051F500B5349E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
@@ -388,6 +396,7 @@
 		900124181DC1943500192175 /* JSRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				900124611DC1ED9500192175 /* DIY */,
 				900124191DC194A200192175 /* JSRefresh.h */,
 				900124201DC1996000192175 /* JSRefresh+TableView.h */,
 				900124211DC1996000192175 /* JSRefresh+TableView.m */,
@@ -528,6 +537,33 @@
 				9001245C1DC1E80000192175 /* JSTableView+UIScrollView.m */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		900124611DC1ED9500192175 /* DIY */ = {
+			isa = PBXGroup;
+			children = (
+				900124651DC1EDDD00192175 /* Footer */,
+				900124681DC1EDDD00192175 /* Header */,
+			);
+			path = DIY;
+			sourceTree = "<group>";
+		};
+		900124651DC1EDDD00192175 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				900124661DC1EDDD00192175 /* JSRefreshAutoGifFooter.h */,
+				900124671DC1EDDD00192175 /* JSRefreshAutoGifFooter.m */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		900124681DC1EDDD00192175 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				9001246D1DC1EE5700192175 /* JSRefreshAutoGifHeader.h */,
+				9001246E1DC1EE5700192175 /* JSRefreshAutoGifHeader.m */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
@@ -1116,6 +1152,7 @@
 		90F441C51DBDFB3A0007C37E /* IOS_Compon */ = {
 			isa = PBXGroup;
 			children = (
+				900124701DC1EF4A00192175 /* iOS_loading.gif */,
 				90F441C91DBDFB3A0007C37E /* AppDelegate.h */,
 				90F441CA1DBDFB3A0007C37E /* AppDelegate.m */,
 				90F441D21DBDFB3A0007C37E /* Assets.xcassets */,
@@ -1299,6 +1336,7 @@
 				90F441D31DBDFB3A0007C37E /* Assets.xcassets in Resources */,
 				90EF61401DBEF837001C4C44 /* Podfile in Resources */,
 				90EF618D1DBEFA2B001C4C44 /* MJRefresh.bundle in Resources */,
+				900124711DC1EF4A00192175 /* iOS_loading.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1378,6 +1416,7 @@
 				900124501DC1CD6400192175 /* JSCollectionViewWaterfallLayout.m in Sources */,
 				900124471DC1AD0C00192175 /* JSCollectionView+CollectionView.m in Sources */,
 				90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */,
+				900124691DC1EDDD00192175 /* JSRefreshAutoGifFooter.m in Sources */,
 				90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */,
 				90EF62081DBF3CBE001C4C44 /* JSUserSingletonModel.m in Sources */,
 				90EF61841DBEFA2B001C4C44 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -1426,6 +1465,7 @@
 				90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */,
 				90EF62091DBF3CBE001C4C44 /* JSError.m in Sources */,
 				900124391DC1A91900192175 /* JSTableView+CellEditingStyle.m in Sources */,
+				9001246F1DC1EE5700192175 /* JSRefreshAutoGifHeader.m in Sources */,
 				90EF61861DBEFA2B001C4C44 /* MJRefreshAutoStateFooter.m in Sources */,
 				90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */,
 				90EF618C1DBEFA2B001C4C44 /* MJRefreshStateHeader.m in Sources */,

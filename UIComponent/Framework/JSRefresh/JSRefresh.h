@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSRefreshAutoGifFooter.h"
+#import "JSRefreshAutoGifHeader.h"
 
 @interface JSRefresh : NSObject
 
