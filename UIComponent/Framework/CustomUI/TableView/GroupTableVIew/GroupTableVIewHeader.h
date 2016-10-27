@@ -18,9 +18,7 @@
 #import "JSGroupTableView+CellEditingStyle.h"
 
 
-//代理
-#import "JSGroupTableViewDelegate.h"
-#import "JSGroupTableViewCellDelegate.h"
+
 
 
 #endif /* GroupTableVIewHeader_h */

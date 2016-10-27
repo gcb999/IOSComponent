@@ -18,7 +18,9 @@
 		900124301DC1A39B00192175 /* JSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001242D1DC1A39B00192175 /* JSTableView.m */; };
 		900124351DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124341DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m */; };
 		900124391DC1A91900192175 /* JSTableView+CellEditingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124381DC1A91900192175 /* JSTableView+CellEditingStyle.m */; };
-		90B0B9BE1DC03F3900B5349E /* JSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */; };
+		9001243D1DC1AA6500192175 /* JSCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001243C1DC1AA6500192175 /* JSCollectionView.m */; };
+		900124411DC1AA8600192175 /* JSCollectionView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124401DC1AA8600192175 /* JSCollectionView+MJRefresh.m */; };
+		900124471DC1AD0C00192175 /* JSCollectionView+CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124461DC1AD0C00192175 /* JSCollectionView+CollectionView.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
 		90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */; };
@@ -135,9 +137,16 @@
 		900124341DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSGroupTableView+CellEditingStyle.m"; sourceTree = "<group>"; };
 		900124371DC1A91900192175 /* JSTableView+CellEditingStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+CellEditingStyle.h"; sourceTree = "<group>"; };
 		900124381DC1A91900192175 /* JSTableView+CellEditingStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+CellEditingStyle.m"; sourceTree = "<group>"; };
+		9001243B1DC1AA6500192175 /* JSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionView.h; sourceTree = "<group>"; };
+		9001243C1DC1AA6500192175 /* JSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectionView.m; sourceTree = "<group>"; };
+		9001243F1DC1AA8600192175 /* JSCollectionView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSCollectionView+MJRefresh.h"; sourceTree = "<group>"; };
+		900124401DC1AA8600192175 /* JSCollectionView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSCollectionView+MJRefresh.m"; sourceTree = "<group>"; };
+		900124431DC1AB4400192175 /* JSCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionViewDelegate.h; sourceTree = "<group>"; };
+		900124441DC1AB4F00192175 /* JSCollectionViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionViewCellDelegate.h; sourceTree = "<group>"; };
+		900124451DC1AD0C00192175 /* JSCollectionView+CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSCollectionView+CollectionView.h"; sourceTree = "<group>"; };
+		900124461DC1AD0C00192175 /* JSCollectionView+CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSCollectionView+CollectionView.m"; sourceTree = "<group>"; };
+		900124481DC1AE6100192175 /* JSCollectionViewHeaderFooterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionViewHeaderFooterDelegate.h; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		90B0B9BC1DC03F3900B5349E /* JSCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCollectionView.h; sourceTree = "<group>"; };
-		90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCollectionView.m; sourceTree = "<group>"; };
 		90B0B9BF1DC042D200B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
 		90B0B9D11DC051F500B5349E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		90B0B9D21DC051F600B5349E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
@@ -417,6 +426,36 @@
 			path = CellEditingStyle;
 			sourceTree = "<group>";
 		};
+		9001243A1DC1AA6500192175 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9001243B1DC1AA6500192175 /* JSCollectionView.h */,
+				9001243C1DC1AA6500192175 /* JSCollectionView.m */,
+				900124451DC1AD0C00192175 /* JSCollectionView+CollectionView.h */,
+				900124461DC1AD0C00192175 /* JSCollectionView+CollectionView.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9001243E1DC1AA7C00192175 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				9001243F1DC1AA8600192175 /* JSCollectionView+MJRefresh.h */,
+				900124401DC1AA8600192175 /* JSCollectionView+MJRefresh.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		900124421DC1AB1800192175 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				900124431DC1AB4400192175 /* JSCollectionViewDelegate.h */,
+				900124441DC1AB4F00192175 /* JSCollectionViewCellDelegate.h */,
+				900124481DC1AE6100192175 /* JSCollectionViewHeaderFooterDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,8 +469,9 @@
 		90B0B9B71DC03EFA00B5349E /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				90B0B9BC1DC03F3900B5349E /* JSCollectionView.h */,
-				90B0B9BD1DC03F3900B5349E /* JSCollectionView.m */,
+				900124421DC1AB1800192175 /* Delegate */,
+				9001243E1DC1AA7C00192175 /* MJRefresh */,
+				9001243A1DC1AA6500192175 /* CollectionView */,
 				9001241F1DC196E000192175 /* CollectionViewHeader.h */,
 			);
 			path = CollectionView;
@@ -1257,6 +1297,7 @@
 				90B0B9FC1DC07D4700B5349E /* UIButton+Exception.m in Sources */,
 				90EF61A11DBEFF6A001C4C44 /* NSObject+FileStream.m in Sources */,
 				90EF620C1DBF3CBE001C4C44 /* JSNetWork.m in Sources */,
+				900124471DC1AD0C00192175 /* JSCollectionView+CollectionView.m in Sources */,
 				90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */,
 				90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */,
 				90EF62081DBF3CBE001C4C44 /* JSUserSingletonModel.m in Sources */,
@@ -1269,6 +1310,7 @@
 				90EF61871DBEFA2B001C4C44 /* MJRefreshBackGifFooter.m in Sources */,
 				90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */,
 				90EF61AD1DBF0202001C4C44 /* NSObject+UICateGory.m in Sources */,
+				9001243D1DC1AA6500192175 /* JSCollectionView.m in Sources */,
 				90EF620B1DBF3CBE001C4C44 /* JSNetWork+POST.m in Sources */,
 				9001242E1DC1A39B00192175 /* JSTableView+MJRefresh.m in Sources */,
 				9001242F1DC1A39B00192175 /* JSTableView+TableView.m in Sources */,
@@ -1309,6 +1351,7 @@
 				9001241B1DC194A200192175 /* JSRefresh.m in Sources */,
 				9001240F1DC192ED00192175 /* JSGroupTableView+GroupTableView.m in Sources */,
 				90EF61E81DBF3A7D001C4C44 /* UIFont+Extend.m in Sources */,
+				900124411DC1AA8600192175 /* JSCollectionView+MJRefresh.m in Sources */,
 				90EF618F1DBEFA2B001C4C44 /* NSBundle+MJRefresh.m in Sources */,
 				900124101DC192ED00192175 /* JSGroupTableView.m in Sources */,
 				90B0B9F81DC07D4700B5349E /* NSMutableDictionary+Exception.m in Sources */,
@@ -1316,7 +1359,6 @@
 				90EF618A1DBEFA2B001C4C44 /* MJRefreshGifHeader.m in Sources */,
 				90EF61DA1DBF2D33001C4C44 /* UIImageView+Gif.m in Sources */,
 				90EF619B1DBEFC34001C4C44 /* NSObject+SDWebImage.m in Sources */,
-				90B0B9BE1DC03F3900B5349E /* JSCollectionView.m in Sources */,
 				90EF61921DBEFA2B001C4C44 /* UIView+MJExtension.m in Sources */,
 				90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */,
 				90EF61901DBEFA2B001C4C44 /* UIScrollView+MJExtension.m in Sources */,

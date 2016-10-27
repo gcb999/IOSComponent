@@ -8,8 +8,7 @@
 
 #import "MainViewController.h"
 #import "JSSwipeTableCell.h"
-#import "JSGroupTableView.h"
-#import "JSTableView.h"
+
 
 
 

@@ -12,4 +12,12 @@
 
 
 #import "JSCollectionView.h"
+
+//MJ
+#import "JSCollectionView+MJRefresh.h"
+
+
+
+
+
 #endif /* CollectionViewHeader_h */
