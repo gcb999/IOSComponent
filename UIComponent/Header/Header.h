@@ -71,6 +71,10 @@
 #import "GroupTableVIewHeader.h"
 #import "CollectionViewHeader.h"
 
+//横栏
+#import "JSTabBarControllerConfig.h"
+#import "JSTabBarControllerConfig+Badge.h"
+
 
 #define ALLLANGUAGEARRY [[NSMutableArray alloc]initWithObjects:@"en",@"ru",@"fr",@"es",@"de",@"cs",@"pl",@"pt", nil]
 

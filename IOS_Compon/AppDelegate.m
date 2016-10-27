@@ -23,8 +23,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    JSSideSlippingControllerConfig* config= [[JSSideSlippingControllerConfig alloc] initWithLeftPanel:[LeftViewController class] centerPanel:[MainViewController class] rightPanel:nil];
-    [self.window setRootViewController:config.sidePanelController];
+//    JSSideSlippingControllerConfig* config= [[JSSideSlippingControllerConfig alloc] initWithLeftPanel:[LeftViewController class] centerPanel:[MainViewController class] rightPanel:nil];
+//    [self.window setRootViewController:config.sidePanelController];
+    [self.window setRootViewController:[JSTabBarControllerConfig shareInstance].tabBarController];
 
     [self.window makeKeyAndVisible];
 

@@ -13,5 +13,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=KCOLOR_RED;
+    [[JSTabBarControllerConfig shareInstance] showBadgeOnItemIndex:1 badge:@"2" animation:YES];
 }
 @end

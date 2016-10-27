@@ -30,6 +30,15 @@
 		900124691DC1EDDD00192175 /* JSRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124671DC1EDDD00192175 /* JSRefreshAutoGifFooter.m */; };
 		9001246F1DC1EE5700192175 /* JSRefreshAutoGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001246E1DC1EE5700192175 /* JSRefreshAutoGifHeader.m */; };
 		900124711DC1EF4A00192175 /* iOS_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 900124701DC1EF4A00192175 /* iOS_loading.gif */; };
+		9001247B1DC1F45800192175 /* JSTabBarControllerConfig+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124741DC1F45800192175 /* JSTabBarControllerConfig+Badge.m */; };
+		9001247D1DC1F45800192175 /* JSTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124781DC1F45800192175 /* JSTabBarControllerConfig.m */; };
+		9001247E1DC1F45800192175 /* UITabBar+littleRedDotBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001247A1DC1F45800192175 /* UITabBar+littleRedDotBadge.m */; };
+		900124841DC1F47000192175 /* JSTabbarItemHelpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124811DC1F47000192175 /* JSTabbarItemHelpModel.m */; };
+		900124851DC1F47000192175 /* JSTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124831DC1F47000192175 /* JSTabbarItemModel.m */; };
+		9001248F1DC1F50800192175 /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 900124881DC1F50800192175 /* CYLPlusButton.m */; };
+		900124901DC1F50800192175 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001248A1DC1F50800192175 /* CYLTabBar.m */; };
+		900124911DC1F50800192175 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001248C1DC1F50800192175 /* CYLTabBarController.m */; };
+		900124921DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001248E1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
 		90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */; };
@@ -39,7 +48,6 @@
 		90B0B9F91DC07D4700B5349E /* NSNull+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9E81DC07D4700B5349E /* NSNull+Exception.m */; };
 		90B0B9FA1DC07D4700B5349E /* NSObject+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9EB1DC07D4700B5349E /* NSObject+Exception.m */; };
 		90B0B9FB1DC07D4700B5349E /* NSString+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9EE1DC07D4700B5349E /* NSString+Exception.m */; };
-		90B0B9FC1DC07D4700B5349E /* UIButton+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9F11DC07D4700B5349E /* UIButton+Exception.m */; };
 		90B0B9FD1DC07D4700B5349E /* UIView+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9F41DC07D4700B5349E /* UIView+Exception.m */; };
 		90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */; };
 		90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */; };
@@ -172,6 +180,24 @@
 		9001246D1DC1EE5700192175 /* JSRefreshAutoGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRefreshAutoGifHeader.h; sourceTree = "<group>"; };
 		9001246E1DC1EE5700192175 /* JSRefreshAutoGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRefreshAutoGifHeader.m; sourceTree = "<group>"; };
 		900124701DC1EF4A00192175 /* iOS_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iOS_loading.gif; sourceTree = "<group>"; };
+		900124731DC1F45800192175 /* JSTabBarControllerConfig+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabBarControllerConfig+Badge.h"; sourceTree = "<group>"; };
+		900124741DC1F45800192175 /* JSTabBarControllerConfig+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabBarControllerConfig+Badge.m"; sourceTree = "<group>"; };
+		900124771DC1F45800192175 /* JSTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBarControllerConfig.h; sourceTree = "<group>"; };
+		900124781DC1F45800192175 /* JSTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBarControllerConfig.m; sourceTree = "<group>"; };
+		900124791DC1F45800192175 /* UITabBar+littleRedDotBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+littleRedDotBadge.h"; sourceTree = "<group>"; };
+		9001247A1DC1F45800192175 /* UITabBar+littleRedDotBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+littleRedDotBadge.m"; sourceTree = "<group>"; };
+		900124801DC1F47000192175 /* JSTabbarItemHelpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemHelpModel.h; sourceTree = "<group>"; };
+		900124811DC1F47000192175 /* JSTabbarItemHelpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemHelpModel.m; sourceTree = "<group>"; };
+		900124821DC1F47000192175 /* JSTabbarItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabbarItemModel.h; sourceTree = "<group>"; };
+		900124831DC1F47000192175 /* JSTabbarItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabbarItemModel.m; sourceTree = "<group>"; };
+		900124871DC1F50800192175 /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
+		900124881DC1F50800192175 /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
+		900124891DC1F50800192175 /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
+		9001248A1DC1F50800192175 /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
+		9001248B1DC1F50800192175 /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
+		9001248C1DC1F50800192175 /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
+		9001248D1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		9001248E1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		90B0B9BF1DC042D200B5349E /* JSTableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+MJRefresh.h"; sourceTree = "<group>"; };
 		90B0B9D11DC051F500B5349E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
@@ -194,8 +220,6 @@
 		90B0B9EB1DC07D4700B5349E /* NSObject+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Exception.m"; sourceTree = "<group>"; };
 		90B0B9ED1DC07D4700B5349E /* NSString+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Exception.h"; sourceTree = "<group>"; };
 		90B0B9EE1DC07D4700B5349E /* NSString+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exception.m"; sourceTree = "<group>"; };
-		90B0B9F01DC07D4700B5349E /* UIButton+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Exception.h"; sourceTree = "<group>"; };
-		90B0B9F11DC07D4700B5349E /* UIButton+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Exception.m"; sourceTree = "<group>"; };
 		90B0B9F31DC07D4700B5349E /* UIView+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Exception.h"; sourceTree = "<group>"; };
 		90B0B9F41DC07D4700B5349E /* UIView+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Exception.m"; sourceTree = "<group>"; };
 		90B0BA181DC0A3EB00B5349E /* JSSwipeTableCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwipeTableCellModel.h; sourceTree = "<group>"; };
@@ -566,6 +590,46 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		900124721DC1F45800192175 /* TabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9001247F1DC1F47000192175 /* Model */,
+				900124731DC1F45800192175 /* JSTabBarControllerConfig+Badge.h */,
+				900124741DC1F45800192175 /* JSTabBarControllerConfig+Badge.m */,
+				900124771DC1F45800192175 /* JSTabBarControllerConfig.h */,
+				900124781DC1F45800192175 /* JSTabBarControllerConfig.m */,
+				900124791DC1F45800192175 /* UITabBar+littleRedDotBadge.h */,
+				9001247A1DC1F45800192175 /* UITabBar+littleRedDotBadge.m */,
+			);
+			path = TabbarViewController;
+			sourceTree = "<group>";
+		};
+		9001247F1DC1F47000192175 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				900124801DC1F47000192175 /* JSTabbarItemHelpModel.h */,
+				900124811DC1F47000192175 /* JSTabbarItemHelpModel.m */,
+				900124821DC1F47000192175 /* JSTabbarItemModel.h */,
+				900124831DC1F47000192175 /* JSTabbarItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		900124861DC1F50800192175 /* CYLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				900124871DC1F50800192175 /* CYLPlusButton.h */,
+				900124881DC1F50800192175 /* CYLPlusButton.m */,
+				900124891DC1F50800192175 /* CYLTabBar.h */,
+				9001248A1DC1F50800192175 /* CYLTabBar.m */,
+				9001248B1DC1F50800192175 /* CYLTabBarController.h */,
+				9001248C1DC1F50800192175 /* CYLTabBarController.m */,
+				9001248D1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.h */,
+				9001248E1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m */,
+			);
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,15 +734,6 @@
 			path = NSStringException;
 			sourceTree = "<group>";
 		};
-		90B0B9EF1DC07D4700B5349E /* UIButtonException */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9F01DC07D4700B5349E /* UIButton+Exception.h */,
-				90B0B9F11DC07D4700B5349E /* UIButton+Exception.m */,
-			);
-			path = UIButtonException;
-			sourceTree = "<group>";
-		};
 		90B0B9F21DC07D4700B5349E /* UIViewException */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,6 +764,7 @@
 		90EF61411DBEF9AD001C4C44 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				900124861DC1F50800192175 /* CYLTabBarController */,
 				90EF620E1DBF403C001C4C44 /* JASidePanels */,
 				90EF61501DBEFA2B001C4C44 /* MJRefresh */,
 				90EF61491DBEF9D0001C4C44 /* MGSwipeTableCell */,
@@ -1054,6 +1110,7 @@
 		90EF61F01DBF3C77001C4C44 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				900124721DC1F45800192175 /* TabbarViewController */,
 				900124181DC1943500192175 /* JSRefresh */,
 				90B0B9B61DC03EAE00B5349E /* CustomUI */,
 				90EF62151DBF4096001C4C44 /* SideSlippingController */,
@@ -1213,7 +1270,6 @@
 				90B0B9E61DC07D4700B5349E /* NSNullableException */,
 				90B0B9E91DC07D4700B5349E /* NSObjectException */,
 				90B0B9EC1DC07D4700B5349E /* NSStringException */,
-				90B0B9EF1DC07D4700B5349E /* UIButtonException */,
 				90B0B9F21DC07D4700B5349E /* UIViewException */,
 			);
 			path = UIException;
@@ -1410,7 +1466,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90EF61E51DBF3A06001C4C44 /* UIWindow+window.m in Sources */,
-				90B0B9FC1DC07D4700B5349E /* UIButton+Exception.m in Sources */,
 				90EF61A11DBEFF6A001C4C44 /* NSObject+FileStream.m in Sources */,
 				90EF620C1DBF3CBE001C4C44 /* JSNetWork.m in Sources */,
 				900124501DC1CD6400192175 /* JSCollectionViewWaterfallLayout.m in Sources */,
@@ -1418,8 +1473,10 @@
 				90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */,
 				900124691DC1EDDD00192175 /* JSRefreshAutoGifFooter.m in Sources */,
 				90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */,
+				9001247D1DC1F45800192175 /* JSTabBarControllerConfig.m in Sources */,
 				90EF62081DBF3CBE001C4C44 /* JSUserSingletonModel.m in Sources */,
 				90EF61841DBEFA2B001C4C44 /* MJRefreshAutoGifFooter.m in Sources */,
+				900124921DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				900124301DC1A39B00192175 /* JSTableView.m in Sources */,
 				90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */,
 				90EF61C01DBF0EE5001C4C44 /* NSString+Regular.m in Sources */,
@@ -1427,17 +1484,20 @@
 				90B0B9F91DC07D4700B5349E /* NSNull+Exception.m in Sources */,
 				90EF61871DBEFA2B001C4C44 /* MJRefreshBackGifFooter.m in Sources */,
 				90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */,
+				9001247B1DC1F45800192175 /* JSTabBarControllerConfig+Badge.m in Sources */,
 				90EF61AD1DBF0202001C4C44 /* NSObject+UICateGory.m in Sources */,
 				9001243D1DC1AA6500192175 /* JSCollectionView.m in Sources */,
 				90EF620B1DBF3CBE001C4C44 /* JSNetWork+POST.m in Sources */,
 				9001242E1DC1A39B00192175 /* JSTableView+MJRefresh.m in Sources */,
 				9001242F1DC1A39B00192175 /* JSTableView+TableView.m in Sources */,
 				90EF61CF1DBF2C67001C4C44 /* UIView+AnimationProperty.m in Sources */,
+				900124911DC1F50800192175 /* CYLTabBarController.m in Sources */,
 				90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */,
 				90B0B9F61DC07D4700B5349E /* NSMutableArray+Exception.m in Sources */,
 				90EF62181DBF4096001C4C44 /* JSSideSlippingControllerConfig.m in Sources */,
 				900124601DC1E80A00192175 /* JSGroupTableView+UIScrollView.m in Sources */,
 				90EF61811DBEFA2B001C4C44 /* MJRefreshComponent.m in Sources */,
+				900124841DC1F47000192175 /* JSTabbarItemHelpModel.m in Sources */,
 				90EF62131DBF403C001C4C44 /* JASidePanelController.m in Sources */,
 				900124541DC1DA9200192175 /* JSCollectionViewCell.m in Sources */,
 				90EF61EB1DBF3A95001C4C44 /* UIDevice+Extend.m in Sources */,
@@ -1448,7 +1508,9 @@
 				90EF61A51DBF0087001C4C44 /* NSObject+TypeConversion.m in Sources */,
 				90EF61801DBEFA2B001C4C44 /* MJRefreshBackFooter.m in Sources */,
 				90EF61881DBEFA2B001C4C44 /* MJRefreshBackNormalFooter.m in Sources */,
+				9001248F1DC1F50800192175 /* CYLPlusButton.m in Sources */,
 				90EF61DE1DBF33F2001C4C44 /* UIImageView+ImageView.m in Sources */,
+				900124901DC1F50800192175 /* CYLTabBar.m in Sources */,
 				90EF61821DBEFA2B001C4C44 /* MJRefreshFooter.m in Sources */,
 				900124151DC1938A00192175 /* JSGroupTableView+MJRefresh.m in Sources */,
 				90EF61831DBEFA2B001C4C44 /* MJRefreshHeader.m in Sources */,
@@ -1457,6 +1519,7 @@
 				9001244F1DC1CD6400192175 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				90EF61851DBEFA2B001C4C44 /* MJRefreshAutoNormalFooter.m in Sources */,
 				90B0B9FB1DC07D4700B5349E /* NSString+Exception.m in Sources */,
+				9001247E1DC1F45800192175 /* UITabBar+littleRedDotBadge.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
 				90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */,
@@ -1491,6 +1554,7 @@
 				90EF617F1DBEFA2B001C4C44 /* MJRefreshAutoFooter.m in Sources */,
 				90EF61BC1DBF0DF9001C4C44 /* NSString+String.m in Sources */,
 				90EF61891DBEFA2B001C4C44 /* MJRefreshBackStateFooter.m in Sources */,
+				900124851DC1F47000192175 /* JSTabbarItemModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

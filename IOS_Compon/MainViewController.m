@@ -26,6 +26,10 @@
 
 
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+     [[JSTabBarControllerConfig shareInstance] showBadgeOnItemIndex:0 badge:@"3" animation:YES];
+}
 
 #pragma mark -collectionView
 -(void)collectioinView{
