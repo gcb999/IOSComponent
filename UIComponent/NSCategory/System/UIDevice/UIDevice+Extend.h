@@ -24,12 +24,8 @@
 
 #define IS_IPHONE6_PLUS ([UIScreen mainScreen].bounds.size.height == 736.f)
 
-#define IPHONE6Height  667.f
-#define IPHONE6Width  375.f
 
-//判断iphone6+
 
-#define iPhone6X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 
 //IPHONE 高度 和宽度
 

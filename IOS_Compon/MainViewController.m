@@ -9,7 +9,8 @@
 #import "MainViewController.h"
 #import "JSSwipeTableCell.h"
 #import "JSCollectionViewCell.h"
-#import "JSRatingView.h"
+#import "JSDatePicker.h"
+
 
 
 
@@ -26,11 +27,16 @@
 
 
 
+
 }
 
-- (void)JSRatingView:(JSRatingView *)ratingBar ratingChanged:(float)newRating{
-    
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    JSDatePicker *data=[[JSDatePicker alloc] initWithHeight:200 complete:^(JSDatePicker *datePicker, NSString *text) {
+        
+    }];
+    [self.view addSubview:data];
 }
+
 
 
 -(void)viewWillAppear:(BOOL)animated{
