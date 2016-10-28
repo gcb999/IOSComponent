@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 #import "JSSwipeTableCell.h"
 #import "JSCollectionViewCell.h"
-
+#import "JSRatingView.h"
 
 
 
@@ -22,10 +22,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self collectioinView];
+//    [self collectioinView];
+
 
 
 }
+
+- (void)JSRatingView:(JSRatingView *)ratingBar ratingChanged:(float)newRating{
+    
+}
+
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
      [[JSTabBarControllerConfig shareInstance] showBadgeOnItemIndex:0 badge:@"3" animation:YES];
