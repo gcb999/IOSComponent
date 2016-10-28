@@ -14,6 +14,7 @@
 
 
 //参考文章http://www.jianshu.com/p/cb2edb21055f
+//https://github.com/tianzhuo112/VTMagic
 
 static NSString *const JSTabPageViewControllerIdentifier = @"JSTabPageViewControllerIdentifier";
 
@@ -28,7 +29,17 @@ static NSString *const JSTabPageViewControllerIdentifier = @"JSTabPageViewContro
 @property (nonatomic , strong) NSMutableArray<NSString*> * vcs;
 
 
+#pragma mark -默认样式
+-(void)setupNomal;
 
+#pragma mark -气泡样式
+-(void)setupBubble;
+
+#pragma mark -居中样式（一般2个）
+-(void)setupMiddle;
+
+#pragma mark -带图片箭头
+-(void)setupDivide;
 
 @end
 

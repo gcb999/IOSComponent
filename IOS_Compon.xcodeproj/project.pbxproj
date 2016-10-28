@@ -46,6 +46,7 @@
 		906E000F1DC303F8007D3DB7 /* MenuInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E000D1DC303F8007D3DB7 /* MenuInfo.m */; };
 		906E00151DC324C0007D3DB7 /* FirstCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00141DC324C0007D3DB7 /* FirstCtrl.m */; };
 		906E00181DC324CF007D3DB7 /* secondCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00171DC324CF007D3DB7 /* secondCtrl.m */; };
+		906E001C1DC33796007D3DB7 /* JSTabPageViewController+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E001B1DC33796007D3DB7 /* JSTabPageViewController+Style.m */; };
 		906EFFF01DC2DE77007D3DB7 /* JSRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 906EFFEF1DC2DE77007D3DB7 /* JSRatingView.m */; };
 		906EFFFB1DC2E591007D3DB7 /* HCSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 906EFFF91DC2E591007D3DB7 /* HCSStarRatingView.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
@@ -221,6 +222,8 @@
 		906E00141DC324C0007D3DB7 /* FirstCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCtrl.m; sourceTree = "<group>"; };
 		906E00161DC324CF007D3DB7 /* secondCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondCtrl.h; sourceTree = "<group>"; };
 		906E00171DC324CF007D3DB7 /* secondCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondCtrl.m; sourceTree = "<group>"; };
+		906E001A1DC33796007D3DB7 /* JSTabPageViewController+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTabPageViewController+Style.h"; sourceTree = "<group>"; };
+		906E001B1DC33796007D3DB7 /* JSTabPageViewController+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTabPageViewController+Style.m"; sourceTree = "<group>"; };
 		906EFFEE1DC2DE77007D3DB7 /* JSRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRatingView.h; sourceTree = "<group>"; };
 		906EFFEF1DC2DE77007D3DB7 /* JSRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRatingView.m; sourceTree = "<group>"; };
 		906EFFF81DC2E591007D3DB7 /* HCSStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSStarRatingView.h; sourceTree = "<group>"; };
@@ -670,6 +673,7 @@
 		906E00051DC300D0007D3DB7 /* UITabPage */ = {
 			isa = PBXGroup;
 			children = (
+				906E00191DC33784007D3DB7 /* Style */,
 				906E00111DC31E07007D3DB7 /* Delegate */,
 				906E00091DC303F8007D3DB7 /* Models */,
 				906E00061DC300EA007D3DB7 /* JSTabPageViewController.h */,
@@ -695,6 +699,15 @@
 				906E00121DC31E1A007D3DB7 /* JSTabPageViewControllerDelegate.h */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		906E00191DC33784007D3DB7 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				906E001A1DC33796007D3DB7 /* JSTabPageViewController+Style.h */,
+				906E001B1DC33796007D3DB7 /* JSTabPageViewController+Style.m */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 		906EFFED1DC2DE77007D3DB7 /* UIRatingView */ = {
@@ -1634,6 +1647,7 @@
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
 				906E000E1DC303F8007D3DB7 /* DataManager.m in Sources */,
 				90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */,
+				906E001C1DC33796007D3DB7 /* JSTabPageViewController+Style.m in Sources */,
 				90F441C81DBDFB3A0007C37E /* main.m in Sources */,
 				900124221DC1996000192175 /* JSRefresh+TableView.m in Sources */,
 				90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */,

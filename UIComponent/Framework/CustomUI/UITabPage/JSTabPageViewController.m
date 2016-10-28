@@ -62,22 +62,16 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.magicView.itemScale = 1.1;
+   
     
     /*
      字体下面slider的颜色  //这是我们公司的主题色
      */
 //    self.magicView.sliderColor = KCOLOR_RED;
+
     
-    self.magicView.itemSpacing =(IPHONScreenWidth - 120)/self.vcs.count;
-    self.magicView.headerHidden = YES;
-    self.magicView.navigationHeight = 40;
-    self.magicView.againstStatusBar = NO;
-    self.magicView.navigationColor = [UIColor whiteColor];
-    self.magicView.layoutStyle = VTLayoutStyleDefault;
-    
-    
-    [self.magicView reloadData];
+    [self setupDivide];
+
 }
 
 #pragma mark - VTMagicViewDelegate
