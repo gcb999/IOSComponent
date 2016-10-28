@@ -69,8 +69,8 @@
      */
 //    self.magicView.sliderColor = KCOLOR_RED;
 
-    
-    [self setupDivide];
+    [self integrateComponents];
+    [self setupBubble];
 
 }
 

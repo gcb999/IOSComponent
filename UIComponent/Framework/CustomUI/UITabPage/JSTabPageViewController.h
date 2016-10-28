@@ -41,6 +41,10 @@ static NSString *const JSTabPageViewControllerIdentifier = @"JSTabPageViewContro
 #pragma mark -带图片箭头
 -(void)setupDivide;
 
+#pragma mark -添加小部件
+
+- (void)integrateComponents;
+
 @end
 
 
