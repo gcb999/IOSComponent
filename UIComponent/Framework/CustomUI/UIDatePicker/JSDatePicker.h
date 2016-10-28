@@ -24,3 +24,12 @@ typedef void(^datePickerCompleteBlock)(JSDatePicker *datePicker ,NSString *text)
 - (instancetype)initWithFrame:(CGRect)frame complete:(datePickerCompleteBlock)complete;
 
 @end
+
+/*------------------------------用法---------------------
+
+ JSDatePicker *data=[[JSDatePicker alloc] initWithHeight:200 complete:^(JSDatePicker *datePicker, NSString *text) {
+    
+}];
+[[UIWindow window] addSubview:data];
+
+ ------------------------------*/
