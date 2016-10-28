@@ -10,11 +10,17 @@
 #import "JSSwipeTableCell.h"
 #import "JSCollectionViewCell.h"
 #import "JSPickerView.h"
+#import "JSTabPageViewController.h"
 
 
 
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
+{
+    NSInteger page;
+    JSTabPageViewController *ctl;
+}
+
 
 @end
 
@@ -22,9 +28,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    [self collectioinView];
-
+   
+//    NSMutableArray *menuList = [NSMutableArray array];
+//    for (int index = 0; index < 3; index++) {
+//        NSString *  title = [NSString stringWithFormat:@"省份%d", index];
+//        MenuInfo *menu = [MenuInfo menuInfoWithTitle:title];
+//        [menuList addObject:menu];
+//    }
+//    NSArray *vcs=@[@"FirstCtrl",@"secondCtrl",@"LeftViewController"];
+//    
+//    ctl=[[JSTabPageViewController alloc] init];
+// 
+//    ctl.view.frame=CGRectMake(0, 64, IPHONScreenWidth, IPHONScreenHeight-204);
+//    [self.view addSubview:ctl.view];
+//    [self addChildViewController:ctl];
 
 
 
@@ -32,6 +49,45 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
+    NSMutableArray *menuList = [NSMutableArray array];
+    for (int index = 0; index < 3; index++) {
+        NSString *  title = [NSString stringWithFormat:@"省份%d", index];
+        MenuInfo *menu = [MenuInfo menuInfoWithTitle:title];
+        [menuList addObject:menu];
+    }
+    NSArray *vcs=@[@"FirstCtrl",@"secondCtrl",@"LeftViewController"];
+ 
+    
+    if (page ==0) {//第一种用法
+
+         ctl=[[JSTabPageViewController alloc] init];
+         ctl.menuList=menuList;
+         ctl.vcs=vcs;
+         [self.navigationController pushViewController:ctl animated:YES];
+    }
+    else if (page ==1)//第二种用法
+    {
+
+    
+ 
+        ctl=[[JSTabPageViewController alloc] initWithMenu:menuList vcs:vcs];
+
+        [self.navigationController pushViewController:ctl animated:YES];
+        
+    
+    }
+    else if (page==2){//第3种用法
+        ctl=[[JSTabPageViewController alloc] init];
+        ctl.menuList=menuList;
+        ctl.vcs=vcs;
+        ctl.view.frame=CGRectMake(0, 64, IPHONScreenWidth, IPHONScreenHeight-64);
+        [self.view addSubview:ctl.view];
+        [self addChildViewController:ctl];
+        
+    }
+ 
+
+    page++;
 
 }
 

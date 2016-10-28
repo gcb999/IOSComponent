@@ -10,6 +10,7 @@ pod 'FDFullscreenPopGesture', '1.1'
 pod 'MBProgressHUD', '~> 0.9.2'
 pod 'FLAnimatedImage', '~> 1.0.12'
 pod 'FMDB', '~> 2.6.2'
+pod 'VTMagic' , '~> 1.2.4'
 
 
 

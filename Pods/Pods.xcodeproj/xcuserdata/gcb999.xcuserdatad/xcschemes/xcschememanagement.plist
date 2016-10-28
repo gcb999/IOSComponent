@@ -44,14 +44,14 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>VTMagic.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02053A4D4B4BFA27E7ABEB144B779CB2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1A79BA86DB198181905CBBFC1F1E6701</key>
 		<dict>
 			<key>primary</key>
@@ -62,12 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EB3B09C9CEC3295FDA241E011A3096D</key>
+		<key>6926CE7C0BABF6D8076DA1D610B30572</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9951D404D6F4D9865DA36298E93ED918</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C4F95F67940A0CBF158319530B49F2A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
