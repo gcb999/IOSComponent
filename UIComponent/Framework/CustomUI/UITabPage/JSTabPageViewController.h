@@ -18,11 +18,24 @@
 
 static NSString *const JSTabPageViewControllerIdentifier = @"JSTabPageViewControllerIdentifier";
 
+typedef NS_ENUM (NSInteger,JSTabPageViewStyle) {
+    /** 默认样式 */
+    pageViewNormal = 1,
+    /** 气泡样式 */
+    pageviewBubble=2,
+    /** 居中样式（一般2个 */
+    pageviewMiddle=3,
+    /** 带图片箭头 */
+    pageviewDivide=4
+};
+
+
 @interface JSTabPageViewController : VTMagicController
 
 - (instancetype)initWithMenu:(NSMutableArray<MenuInfo *> *)menuInfo vcs:(NSMutableArray<NSString*> *)vcs;
 
 
+@property (nonatomic, assign) JSTabPageViewStyle pageViewStyle;
 
 @property (nonatomic, strong)  NSMutableArray<MenuInfo *> *menuList;
 

@@ -63,14 +63,22 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
    
-    
-    /*
-     字体下面slider的颜色  //这是我们公司的主题色
-     */
-//    self.magicView.sliderColor = KCOLOR_RED;
-
-    [self integrateComponents];
-    [self setupBubble];
+    if (self.pageViewStyle==pageviewBubble) {
+        
+        [self setupBubble];
+    }
+    else if (self.pageViewStyle==pageviewMiddle)
+    {
+        [self setupMiddle];
+    }
+    else if (self.pageViewStyle==pageviewDivide)
+    {
+        [self setupDivide];
+    }
+    else
+    {
+        [self setupNomal];
+    }
 
 }
 
