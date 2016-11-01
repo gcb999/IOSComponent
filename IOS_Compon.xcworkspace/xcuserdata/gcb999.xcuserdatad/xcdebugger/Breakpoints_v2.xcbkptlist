@@ -67,22 +67,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOS_Compon/MainViewController.m"
-            timestampString = "499660736.407036"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "-JSCollectionView:LoadRequestCurrentPage:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Pods/VTMagic/VTMagic/VTMagicView.m"
             timestampString = "499332522.132849"
             startingColumnNumber = "9223372036854775807"
@@ -141,13 +125,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "IOS_Compon/MainViewController.m"
-            timestampString = "499658568.040084"
+            filePath = "UIComponent/NSCategory/UI/MWPhotoBrowser/MWPhotoBrowser+JSPhotoBrowser.m"
+            timestampString = "499675770.887021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "-photoBrowser:photoAtIndex:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -157,13 +141,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UIComponent/Framework/FMDB/JSFmdb+fmdb.m"
-            timestampString = "499658579.254868"
+            filePath = "UIComponent/NSCategory/UI/MWPhotoBrowser/MWPhotoBrowser+JSPhotoBrowser.m"
+            timestampString = "499675770.887021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "+truncateTable:"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "-numberOfPhotosInPhotoBrowser:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOS_Compon/MainViewController.m"
+            timestampString = "499678011.471949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "-photoBrowser:photoAtIndex:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

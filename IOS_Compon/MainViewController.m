@@ -11,9 +11,8 @@
 #import "JSCollectionViewCell.h"
 #import "JSPickerView.h"
 #import "JSTabPageViewController.h"
-#import "MWPhotoBrowser+JSPhotoBrowser.h"
 #import "SearchDAO.h"
-
+#import "JSMWPhotoBrowser.h"
 
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
@@ -63,23 +62,22 @@
     
 //     Add photos
     NSArray *urls=@[
-                    @"big_empty_star_icon",
-                    @"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"
+                    @"http://images.cnitblog.com/blog/215975/201405/311744526507841.png",
+                    @"http://farm4.static.flickr.com/3567/3523321514_371d9ac42f_b.jpg",
+                    @"header.JPG"
                     ];
+    
+    
     NSArray *titles=@[@"test1",@"test2"];
     
-    MWPhotoBrowser *brower=[[MWPhotoBrowser alloc] initWithDelegate:self  photos:urls titles:titles];
+    JSMWPhotoBrowser *brower=[[JSMWPhotoBrowser alloc] initWithDelegate:self photos:urls  titles:titles];
 
 
+//    brower.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     
+   //  [self presentViewController:brower animated:YES completion:nil];
 
-    brower.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    
-//    [self presentViewController:brower animated:YES completion:nil];
-    
-    
-//     Present
-    [self.navigationController pushViewController:brower animated:YES];
+   [self.navigationController pushViewController:brower animated:YES];
     
     // Manipulate
 //    [browser showNextPhotoAnimated:YES];
@@ -131,31 +129,18 @@
     page++;
 
 }
-
-//有多少个图片要显示
+#pragma mark - MWPhotoBrowserDelegate
 
 - (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
-    
-    return self.photos.count;
-    
+    return _photos.count;
 }
 
-
-//在具体的index中，显示网络加载或者本地的某一个图片
-
-- (id<MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser
-
-               photoAtIndex:(NSUInteger)index {
-    
-    if (index <self.photos.count) {
-        
-        return [self.photos objectAtIndex:index];
-        
-    }
-    
+- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index {
+    if (index < _photos.count)
+        return [_photos objectAtIndex:index];
     return nil;
-    
 }
+
 
 
 

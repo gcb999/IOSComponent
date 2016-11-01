@@ -43,6 +43,14 @@
 		900586071DC82AA500C27B61 /* JSFmdb+fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586061DC82AA500C27B61 /* JSFmdb+fmdb.m */; };
 		9005860B1DC82BA400C27B61 /* NSString+SandboxFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005860A1DC82BA400C27B61 /* NSString+SandboxFolder.m */; };
 		900586111DC82D2300C27B61 /* SearchDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586101DC82D2300C27B61 /* SearchDAO.m */; };
+		900586221DC83C3900C27B61 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586151DC83C3900C27B61 /* TAAbstractDotView.m */; };
+		900586231DC83C3900C27B61 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586171DC83C3900C27B61 /* TAAnimatedDotView.m */; };
+		900586241DC83C3900C27B61 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586191DC83C3900C27B61 /* TADotView.m */; };
+		900586251DC83C3900C27B61 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005861B1DC83C3900C27B61 /* TAPageControl.m */; };
+		900586261DC83C3900C27B61 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005861D1DC83C3900C27B61 /* SDCollectionViewCell.m */; };
+		900586271DC83C3900C27B61 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005861F1DC83C3900C27B61 /* SDCycleScrollView.m */; };
+		900586281DC83C3900C27B61 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586211DC83C3900C27B61 /* UIView+SDExtension.m */; };
+		9005862B1DC873CB00C27B61 /* JSMWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005862A1DC873CB00C27B61 /* JSMWPhotoBrowser.m */; };
 		906E00001DC2F04F007D3DB7 /* JSDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 906EFFFF1DC2F04F007D3DB7 /* JSDatePicker.m */; };
 		906E00041DC2F62D007D3DB7 /* JSPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00031DC2F62D007D3DB7 /* JSPickerView.m */; };
 		906E00081DC300EA007D3DB7 /* JSTabPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00071DC300EA007D3DB7 /* JSTabPageViewController.m */; };
@@ -113,7 +121,6 @@
 		90EF62131DBF403C001C4C44 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62101DBF403C001C4C44 /* JASidePanelController.m */; };
 		90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62121DBF403C001C4C44 /* UIViewController+JASidePanel.m */; };
 		90EF62181DBF4096001C4C44 /* JSSideSlippingControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */; };
-		90F3BDAC1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BDAB1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m */; };
 		90F3BDB11DC738A500170A16 /* UIScrollView+HeaderScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BDB01DC738A500170A16 /* UIScrollView+HeaderScaleImage.m */; };
 		90F3BDB41DC738F700170A16 /* JSTableView+HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BDB31DC738F700170A16 /* JSTableView+HeaderView.m */; };
 		90F441C81DBDFB3A0007C37E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441C71DBDFB3A0007C37E /* main.m */; };
@@ -224,6 +231,22 @@
 		9005860A1DC82BA400C27B61 /* NSString+SandboxFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SandboxFolder.m"; sourceTree = "<group>"; };
 		9005860F1DC82D2300C27B61 /* SearchDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDAO.h; sourceTree = "<group>"; };
 		900586101DC82D2300C27B61 /* SearchDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDAO.m; sourceTree = "<group>"; };
+		900586141DC83C3900C27B61 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		900586151DC83C3900C27B61 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		900586161DC83C3900C27B61 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		900586171DC83C3900C27B61 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		900586181DC83C3900C27B61 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		900586191DC83C3900C27B61 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		9005861A1DC83C3900C27B61 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		9005861B1DC83C3900C27B61 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		9005861C1DC83C3900C27B61 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		9005861D1DC83C3900C27B61 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		9005861E1DC83C3900C27B61 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		9005861F1DC83C3900C27B61 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		900586201DC83C3900C27B61 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		900586211DC83C3900C27B61 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		900586291DC873CB00C27B61 /* JSMWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMWPhotoBrowser.h; sourceTree = "<group>"; };
+		9005862A1DC873CB00C27B61 /* JSMWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMWPhotoBrowser.m; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		906E00021DC2F62D007D3DB7 /* JSPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerView.h; sourceTree = "<group>"; };
 		906E00031DC2F62D007D3DB7 /* JSPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerView.m; sourceTree = "<group>"; };
@@ -374,8 +397,6 @@
 		90EF62121DBF403C001C4C44 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
 		90EF62161DBF4096001C4C44 /* JSSideSlippingControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSideSlippingControllerConfig.h; sourceTree = "<group>"; };
 		90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSideSlippingControllerConfig.m; sourceTree = "<group>"; };
-		90F3BDAA1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWPhotoBrowser+JSPhotoBrowser.h"; sourceTree = "<group>"; };
-		90F3BDAB1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWPhotoBrowser+JSPhotoBrowser.m"; sourceTree = "<group>"; };
 		90F3BDAF1DC738A500170A16 /* UIScrollView+HeaderScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HeaderScaleImage.h"; sourceTree = "<group>"; };
 		90F3BDB01DC738A500170A16 /* UIScrollView+HeaderScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HeaderScaleImage.m"; sourceTree = "<group>"; };
 		90F3BDB21DC738F700170A16 /* JSTableView+HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+HeaderView.h"; sourceTree = "<group>"; };
@@ -711,6 +732,35 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		900586121DC83C3900C27B61 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				900586131DC83C3900C27B61 /* PageControl */,
+				9005861C1DC83C3900C27B61 /* SDCollectionViewCell.h */,
+				9005861D1DC83C3900C27B61 /* SDCollectionViewCell.m */,
+				9005861E1DC83C3900C27B61 /* SDCycleScrollView.h */,
+				9005861F1DC83C3900C27B61 /* SDCycleScrollView.m */,
+				900586201DC83C3900C27B61 /* UIView+SDExtension.h */,
+				900586211DC83C3900C27B61 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		900586131DC83C3900C27B61 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				900586141DC83C3900C27B61 /* TAAbstractDotView.h */,
+				900586151DC83C3900C27B61 /* TAAbstractDotView.m */,
+				900586161DC83C3900C27B61 /* TAAnimatedDotView.h */,
+				900586171DC83C3900C27B61 /* TAAnimatedDotView.m */,
+				900586181DC83C3900C27B61 /* TADotView.h */,
+				900586191DC83C3900C27B61 /* TADotView.m */,
+				9005861A1DC83C3900C27B61 /* TAPageControl.h */,
+				9005861B1DC83C3900C27B61 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		906E00011DC2F621007D3DB7 /* UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -936,6 +986,7 @@
 		90EF61411DBEF9AD001C4C44 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				900586121DC83C3900C27B61 /* SDCycleScrollView */,
 				906EFFF71DC2E591007D3DB7 /* HCSStarRatingView */,
 				900124861DC1F50800192175 /* CYLTabBarController */,
 				90EF620E1DBF403C001C4C44 /* JASidePanels */,
@@ -1363,8 +1414,8 @@
 		90F3BDA91DC71B9500170A16 /* MWPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				90F3BDAA1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.h */,
-				90F3BDAB1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m */,
+				900586291DC873CB00C27B61 /* JSMWPhotoBrowser.h */,
+				9005862A1DC873CB00C27B61 /* JSMWPhotoBrowser.m */,
 			);
 			path = MWPhotoBrowser;
 			sourceTree = "<group>";
@@ -1684,6 +1735,7 @@
 				900124501DC1CD6400192175 /* JSCollectionViewWaterfallLayout.m in Sources */,
 				900124471DC1AD0C00192175 /* JSCollectionView+CollectionView.m in Sources */,
 				90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */,
+				900586271DC83C3900C27B61 /* SDCycleScrollView.m in Sources */,
 				900124691DC1EDDD00192175 /* JSRefreshAutoGifFooter.m in Sources */,
 				90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */,
 				9001247D1DC1F45800192175 /* JSTabBarControllerConfig.m in Sources */,
@@ -1691,6 +1743,7 @@
 				90EF61841DBEFA2B001C4C44 /* MJRefreshAutoGifFooter.m in Sources */,
 				906E00001DC2F04F007D3DB7 /* JSDatePicker.m in Sources */,
 				900124921DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
+				900586221DC83C3900C27B61 /* TAAbstractDotView.m in Sources */,
 				900124301DC1A39B00192175 /* JSTableView.m in Sources */,
 				90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */,
 				906E000F1DC303F8007D3DB7 /* MenuInfo.m in Sources */,
@@ -1699,6 +1752,7 @@
 				90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */,
 				900586071DC82AA500C27B61 /* JSFmdb+fmdb.m in Sources */,
 				90B0B9F91DC07D4700B5349E /* NSNull+Exception.m in Sources */,
+				9005862B1DC873CB00C27B61 /* JSMWPhotoBrowser.m in Sources */,
 				90EF61871DBEFA2B001C4C44 /* MJRefreshBackGifFooter.m in Sources */,
 				90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */,
 				9001247B1DC1F45800192175 /* JSTabBarControllerConfig+Badge.m in Sources */,
@@ -1729,7 +1783,6 @@
 				90EF61881DBEFA2B001C4C44 /* MJRefreshBackNormalFooter.m in Sources */,
 				9001248F1DC1F50800192175 /* CYLPlusButton.m in Sources */,
 				906E00201DC340B3007D3DB7 /* JSTabPageViewController+Parts.m in Sources */,
-				90F3BDAC1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m in Sources */,
 				90EF61DE1DBF33F2001C4C44 /* UIImageView+ImageView.m in Sources */,
 				900124901DC1F50800192175 /* CYLTabBar.m in Sources */,
 				90EF61821DBEFA2B001C4C44 /* MJRefreshFooter.m in Sources */,
@@ -1753,6 +1806,7 @@
 				906E001C1DC33796007D3DB7 /* JSTabPageViewController+Style.m in Sources */,
 				90F441C81DBDFB3A0007C37E /* main.m in Sources */,
 				900124221DC1996000192175 /* JSRefresh+TableView.m in Sources */,
+				900586251DC83C3900C27B61 /* TAPageControl.m in Sources */,
 				90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */,
 				90EF62091DBF3CBE001C4C44 /* JSError.m in Sources */,
 				900124391DC1A91900192175 /* JSTableView+CellEditingStyle.m in Sources */,
@@ -1774,13 +1828,17 @@
 				90B0B9F81DC07D4700B5349E /* NSMutableDictionary+Exception.m in Sources */,
 				90B0B9FA1DC07D4700B5349E /* NSObject+Exception.m in Sources */,
 				90EF618A1DBEFA2B001C4C44 /* MJRefreshGifHeader.m in Sources */,
+				900586231DC83C3900C27B61 /* TAAnimatedDotView.m in Sources */,
 				90EF61DA1DBF2D33001C4C44 /* UIImageView+Gif.m in Sources */,
 				90EF619B1DBEFC34001C4C44 /* NSObject+SDWebImage.m in Sources */,
 				90EF61921DBEFA2B001C4C44 /* UIView+MJExtension.m in Sources */,
 				90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */,
 				90EF61901DBEFA2B001C4C44 /* UIScrollView+MJExtension.m in Sources */,
 				900124351DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m in Sources */,
+				900586261DC83C3900C27B61 /* SDCollectionViewCell.m in Sources */,
+				900586281DC83C3900C27B61 /* UIView+SDExtension.m in Sources */,
 				90EF61EF1DBF3B11001C4C44 /* UIView+Coordinates.m in Sources */,
+				900586241DC83C3900C27B61 /* TADotView.m in Sources */,
 				90EF617F1DBEFA2B001C4C44 /* MJRefreshAutoFooter.m in Sources */,
 				90EF61BC1DBF0DF9001C4C44 /* NSString+String.m in Sources */,
 				90EF61891DBEFA2B001C4C44 /* MJRefreshBackStateFooter.m in Sources */,
