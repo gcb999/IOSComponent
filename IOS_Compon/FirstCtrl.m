@@ -24,6 +24,10 @@
     JSTableView *tableview=[[JSTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain state:JSTableViewHeaderFooter cellClass:[JSSwipeTableCell class] delegate:self];
     [tableview.dataArray addObjectsFromArray:@[@"11",@"12"]];
     
+    
+    
+
+    
     NSMutableArray *rights=[NSMutableArray array];
     for (int i=0; i<3; i++) {
         NSString *title=[NSString stringWithFormat:@"test%d",i];
@@ -32,8 +36,17 @@
     }
     tableview.rightSwipeModel=rights;
     
-    
     [self.view addSubview:tableview];
+    
+    
+//    tableview.yz_headerScaleImage = [UIImage imageNamed:@"header"];
+//    
+//    // 设置tableView头部视图，必须设置头部视图背景颜色为clearColor,否则会被挡住
+//    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200)];
+//    // 清空头部视图背景颜色
+//    headerView.backgroundColor = [UIColor clearColor];
+//    tableview.tableHeaderView = headerView;
+//  
     
 }
 

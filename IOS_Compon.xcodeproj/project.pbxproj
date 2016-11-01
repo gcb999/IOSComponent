@@ -39,6 +39,10 @@
 		900124901DC1F50800192175 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001248A1DC1F50800192175 /* CYLTabBar.m */; };
 		900124911DC1F50800192175 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001248C1DC1F50800192175 /* CYLTabBarController.m */; };
 		900124921DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 9001248E1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m */; };
+		900586041DC82A4700C27B61 /* JSFmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586031DC82A4700C27B61 /* JSFmdb.m */; };
+		900586071DC82AA500C27B61 /* JSFmdb+fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586061DC82AA500C27B61 /* JSFmdb+fmdb.m */; };
+		9005860B1DC82BA400C27B61 /* NSString+SandboxFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005860A1DC82BA400C27B61 /* NSString+SandboxFolder.m */; };
+		900586111DC82D2300C27B61 /* SearchDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586101DC82D2300C27B61 /* SearchDAO.m */; };
 		906E00001DC2F04F007D3DB7 /* JSDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 906EFFFF1DC2F04F007D3DB7 /* JSDatePicker.m */; };
 		906E00041DC2F62D007D3DB7 /* JSPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00031DC2F62D007D3DB7 /* JSPickerView.m */; };
 		906E00081DC300EA007D3DB7 /* JSTabPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00071DC300EA007D3DB7 /* JSTabPageViewController.m */; };
@@ -109,6 +113,9 @@
 		90EF62131DBF403C001C4C44 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62101DBF403C001C4C44 /* JASidePanelController.m */; };
 		90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62121DBF403C001C4C44 /* UIViewController+JASidePanel.m */; };
 		90EF62181DBF4096001C4C44 /* JSSideSlippingControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */; };
+		90F3BDAC1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BDAB1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m */; };
+		90F3BDB11DC738A500170A16 /* UIScrollView+HeaderScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BDB01DC738A500170A16 /* UIScrollView+HeaderScaleImage.m */; };
+		90F3BDB41DC738F700170A16 /* JSTableView+HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F3BDB31DC738F700170A16 /* JSTableView+HeaderView.m */; };
 		90F441C81DBDFB3A0007C37E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441C71DBDFB3A0007C37E /* main.m */; };
 		90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441CA1DBDFB3A0007C37E /* AppDelegate.m */; };
 		90F441D31DBDFB3A0007C37E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90F441D21DBDFB3A0007C37E /* Assets.xcassets */; };
@@ -209,6 +216,14 @@
 		9001248C1DC1F50800192175 /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
 		9001248D1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
 		9001248E1DC1F50800192175 /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		900586021DC82A4700C27B61 /* JSFmdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFmdb.h; sourceTree = "<group>"; };
+		900586031DC82A4700C27B61 /* JSFmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFmdb.m; sourceTree = "<group>"; };
+		900586051DC82AA500C27B61 /* JSFmdb+fmdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSFmdb+fmdb.h"; sourceTree = "<group>"; };
+		900586061DC82AA500C27B61 /* JSFmdb+fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSFmdb+fmdb.m"; sourceTree = "<group>"; };
+		900586091DC82BA400C27B61 /* NSString+SandboxFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SandboxFolder.h"; sourceTree = "<group>"; };
+		9005860A1DC82BA400C27B61 /* NSString+SandboxFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SandboxFolder.m"; sourceTree = "<group>"; };
+		9005860F1DC82D2300C27B61 /* SearchDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDAO.h; sourceTree = "<group>"; };
+		900586101DC82D2300C27B61 /* SearchDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDAO.m; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		906E00021DC2F62D007D3DB7 /* JSPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerView.h; sourceTree = "<group>"; };
 		906E00031DC2F62D007D3DB7 /* JSPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerView.m; sourceTree = "<group>"; };
@@ -359,6 +374,12 @@
 		90EF62121DBF403C001C4C44 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
 		90EF62161DBF4096001C4C44 /* JSSideSlippingControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSideSlippingControllerConfig.h; sourceTree = "<group>"; };
 		90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSideSlippingControllerConfig.m; sourceTree = "<group>"; };
+		90F3BDAA1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MWPhotoBrowser+JSPhotoBrowser.h"; sourceTree = "<group>"; };
+		90F3BDAB1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MWPhotoBrowser+JSPhotoBrowser.m"; sourceTree = "<group>"; };
+		90F3BDAF1DC738A500170A16 /* UIScrollView+HeaderScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HeaderScaleImage.h"; sourceTree = "<group>"; };
+		90F3BDB01DC738A500170A16 /* UIScrollView+HeaderScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HeaderScaleImage.m"; sourceTree = "<group>"; };
+		90F3BDB21DC738F700170A16 /* JSTableView+HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSTableView+HeaderView.h"; sourceTree = "<group>"; };
+		90F3BDB31DC738F700170A16 /* JSTableView+HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSTableView+HeaderView.m"; sourceTree = "<group>"; };
 		90F441C31DBDFB3A0007C37E /* IOS_Compon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Compon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F441C71DBDFB3A0007C37E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90F441C91DBDFB3A0007C37E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -664,6 +685,32 @@
 			path = CYLTabBarController;
 			sourceTree = "<group>";
 		};
+		900586081DC82B9200C27B61 /* sandboxFolder */ = {
+			isa = PBXGroup;
+			children = (
+				900586091DC82BA400C27B61 /* NSString+SandboxFolder.h */,
+				9005860A1DC82BA400C27B61 /* NSString+SandboxFolder.m */,
+			);
+			path = sandboxFolder;
+			sourceTree = "<group>";
+		};
+		9005860D1DC82CF700C27B61 /* Actual */ = {
+			isa = PBXGroup;
+			children = (
+				9005860E1DC82D0800C27B61 /* Search */,
+			);
+			path = Actual;
+			sourceTree = "<group>";
+		};
+		9005860E1DC82D0800C27B61 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9005860F1DC82D2300C27B61 /* SearchDAO.h */,
+				900586101DC82D2300C27B61 /* SearchDAO.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		906E00011DC2F621007D3DB7 /* UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -781,6 +828,7 @@
 		90B0B9B81DC03EFA00B5349E /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				90F3BDAD1DC7389E00170A16 /* HeaderTableView */,
 				900124031DC18DB600192175 /* GroupTableVIew */,
 				90B0BA141DC0A38B00B5349E /* TableViewCellEditingStyle */,
 				90B0B9C81DC04A8600B5349E /* TableVIew */,
@@ -1075,6 +1123,7 @@
 		90EF61B41DBF0CFD001C4C44 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				900586081DC82B9200C27B61 /* sandboxFolder */,
 				90EF61BD1DBF0EDC001C4C44 /* Regular */,
 				90EF61B91DBF0DE7001C4C44 /* String */,
 				90EF61B51DBF0D4F001C4C44 /* Password */,
@@ -1113,6 +1162,7 @@
 		90EF61C61DBF2C67001C4C44 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				90F3BDA91DC71B9500170A16 /* MWPhotoBrowser */,
 				90EF61C71DBF2C67001C4C44 /* MBProgressHUD */,
 				90EF61C91DBF2C67001C4C44 /* UImageView */,
 				90EF61CA1DBF2C67001C4C44 /* UIView */,
@@ -1282,6 +1332,10 @@
 		90EF620D1DBF3F21001C4C44 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
+				900586021DC82A4700C27B61 /* JSFmdb.h */,
+				900586031DC82A4700C27B61 /* JSFmdb.m */,
+				900586051DC82AA500C27B61 /* JSFmdb+fmdb.h */,
+				900586061DC82AA500C27B61 /* JSFmdb+fmdb.m */,
 			);
 			path = FMDB;
 			sourceTree = "<group>";
@@ -1304,6 +1358,34 @@
 				90EF62171DBF4096001C4C44 /* JSSideSlippingControllerConfig.m */,
 			);
 			path = SideSlippingController;
+			sourceTree = "<group>";
+		};
+		90F3BDA91DC71B9500170A16 /* MWPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BDAA1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.h */,
+				90F3BDAB1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m */,
+			);
+			path = MWPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		90F3BDAD1DC7389E00170A16 /* HeaderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BDAE1DC738A500170A16 /* YZHeaderScaleImage */,
+				90F3BDB21DC738F700170A16 /* JSTableView+HeaderView.h */,
+				90F3BDB31DC738F700170A16 /* JSTableView+HeaderView.m */,
+			);
+			path = HeaderTableView;
+			sourceTree = "<group>";
+		};
+		90F3BDAE1DC738A500170A16 /* YZHeaderScaleImage */ = {
+			isa = PBXGroup;
+			children = (
+				90F3BDAF1DC738A500170A16 /* UIScrollView+HeaderScaleImage.h */,
+				90F3BDB01DC738A500170A16 /* UIScrollView+HeaderScaleImage.m */,
+			);
+			path = YZHeaderScaleImage;
 			sourceTree = "<group>";
 		};
 		90F441BA1DBDFB3A0007C37E = {
@@ -1381,6 +1463,7 @@
 		90F441F91DBDFBBA0007C37E /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				9005860D1DC82CF700C27B61 /* Actual */,
 				90EF61F01DBF3C77001C4C44 /* Framework */,
 				90EF61A61DBF0109001C4C44 /* Header */,
 				90EF61931DBEFB34001C4C44 /* NSCategory */,
@@ -1614,6 +1697,7 @@
 				90EF61C01DBF0EE5001C4C44 /* NSString+Regular.m in Sources */,
 				906E00081DC300EA007D3DB7 /* JSTabPageViewController.m in Sources */,
 				90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */,
+				900586071DC82AA500C27B61 /* JSFmdb+fmdb.m in Sources */,
 				90B0B9F91DC07D4700B5349E /* NSNull+Exception.m in Sources */,
 				90EF61871DBEFA2B001C4C44 /* MJRefreshBackGifFooter.m in Sources */,
 				90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */,
@@ -1623,6 +1707,7 @@
 				90EF620B1DBF3CBE001C4C44 /* JSNetWork+POST.m in Sources */,
 				9001242E1DC1A39B00192175 /* JSTableView+MJRefresh.m in Sources */,
 				9001242F1DC1A39B00192175 /* JSTableView+TableView.m in Sources */,
+				90F3BDB11DC738A500170A16 /* UIScrollView+HeaderScaleImage.m in Sources */,
 				90EF61CF1DBF2C67001C4C44 /* UIView+AnimationProperty.m in Sources */,
 				900124911DC1F50800192175 /* CYLTabBarController.m in Sources */,
 				90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */,
@@ -1644,9 +1729,11 @@
 				90EF61881DBEFA2B001C4C44 /* MJRefreshBackNormalFooter.m in Sources */,
 				9001248F1DC1F50800192175 /* CYLPlusButton.m in Sources */,
 				906E00201DC340B3007D3DB7 /* JSTabPageViewController+Parts.m in Sources */,
+				90F3BDAC1DC71BA700170A16 /* MWPhotoBrowser+JSPhotoBrowser.m in Sources */,
 				90EF61DE1DBF33F2001C4C44 /* UIImageView+ImageView.m in Sources */,
 				900124901DC1F50800192175 /* CYLTabBar.m in Sources */,
 				90EF61821DBEFA2B001C4C44 /* MJRefreshFooter.m in Sources */,
+				900586111DC82D2300C27B61 /* SearchDAO.m in Sources */,
 				900124151DC1938A00192175 /* JSGroupTableView+MJRefresh.m in Sources */,
 				90EF61831DBEFA2B001C4C44 /* MJRefreshHeader.m in Sources */,
 				90EF61E11DBF3702001C4C44 /* MBProgressHUD+Add.m in Sources */,
@@ -1658,9 +1745,11 @@
 				90B0B9FB1DC07D4700B5349E /* NSString+Exception.m in Sources */,
 				9001247E1DC1F45800192175 /* UITabBar+littleRedDotBadge.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
+				90F3BDB41DC738F700170A16 /* JSTableView+HeaderView.m in Sources */,
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
 				906E000E1DC303F8007D3DB7 /* DataManager.m in Sources */,
 				90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */,
+				900586041DC82A4700C27B61 /* JSFmdb.m in Sources */,
 				906E001C1DC33796007D3DB7 /* JSTabPageViewController+Style.m in Sources */,
 				90F441C81DBDFB3A0007C37E /* main.m in Sources */,
 				900124221DC1996000192175 /* JSRefresh+TableView.m in Sources */,
@@ -1675,6 +1764,7 @@
 				906EFFF01DC2DE77007D3DB7 /* JSRatingView.m in Sources */,
 				90EF61B81DBF0D4F001C4C44 /* NSString+Password.m in Sources */,
 				9001241B1DC194A200192175 /* JSRefresh.m in Sources */,
+				9005860B1DC82BA400C27B61 /* NSString+SandboxFolder.m in Sources */,
 				9001240F1DC192ED00192175 /* JSGroupTableView+GroupTableView.m in Sources */,
 				90EF61E81DBF3A7D001C4C44 /* UIFont+Extend.m in Sources */,
 				900124411DC1AA8600192175 /* JSCollectionView+MJRefresh.m in Sources */,

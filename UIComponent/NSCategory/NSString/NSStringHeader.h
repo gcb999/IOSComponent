@@ -14,5 +14,7 @@
 
 #import "NSString+Password.h"
 
+#import "NSString+SandboxFolder.h"
+
 
 #endif /* NSStringHeader_h */

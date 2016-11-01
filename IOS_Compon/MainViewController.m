@@ -11,7 +11,8 @@
 #import "JSCollectionViewCell.h"
 #import "JSPickerView.h"
 #import "JSTabPageViewController.h"
-
+#import "MWPhotoBrowser+JSPhotoBrowser.h"
+#import "SearchDAO.h"
 
 
 
@@ -19,8 +20,12 @@
 {
     NSInteger page;
     JSTabPageViewController *ctl;
+    
 }
 
+@property(nonatomic,strong) NSMutableArray *photos;
+
+@property(nonatomic,strong) NSMutableArray *details;
 
 @end
 
@@ -29,25 +34,59 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-//    NSMutableArray *menuList = [NSMutableArray array];
-//    for (int index = 0; index < 3; index++) {
-//        NSString *  title = [NSString stringWithFormat:@"省份%d", index];
-//        MenuInfo *menu = [MenuInfo menuInfoWithTitle:title];
-//        [menuList addObject:menu];
-//    }
-//    NSArray *vcs=@[@"FirstCtrl",@"secondCtrl",@"LeftViewController"];
-//    
-//    ctl=[[JSTabPageViewController alloc] init];
-// 
-//    ctl.view.frame=CGRectMake(0, 64, IPHONScreenWidth, IPHONScreenHeight-204);
-//    [self.view addSubview:ctl.view];
-//    [self addChildViewController:ctl];
+    SearchDAO *dao=[[SearchDAO alloc] init];
+    if ([dao createTable]) {//创建表
+        
+        [dao insert];//插入数据
+        
+        [dao queryResBlock:^(FMResultSet *set) {
+              NSLog(@"%@-%@",[set stringForColumn:@"name"],[set stringForColumn:@"age"]);
+        }];//查询数据
+    }
 
 
 
 }
 
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+  
+    
+   
+    // Browser
+    self.photos = [NSMutableArray array];
+    
+    self.details=[NSMutableArray array];
+    
+    
+    
+    
+//     Add photos
+    NSArray *urls=@[
+                    @"big_empty_star_icon",
+                    @"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"
+                    ];
+    NSArray *titles=@[@"test1",@"test2"];
+    
+    MWPhotoBrowser *brower=[[MWPhotoBrowser alloc] initWithDelegate:self  photos:urls titles:titles];
+
+
+    
+
+    brower.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+//    [self presentViewController:brower animated:YES completion:nil];
+    
+    
+//     Present
+    [self.navigationController pushViewController:brower animated:YES];
+    
+    // Manipulate
+//    [browser showNextPhotoAnimated:YES];
+//    [browser showPreviousPhotoAnimated:YES];
+//    [browser setCurrentPhotoIndex:10];
+    
+    return;
     
     NSMutableArray *menuList = [NSMutableArray array];
     for (int index = 0; index < 3; index++) {
@@ -63,6 +102,7 @@
          ctl=[[JSTabPageViewController alloc] init];
          ctl.menuList=menuList;
          ctl.vcs=vcs;
+        ctl.pageViewStyle=pageviewDivide;
          [self.navigationController pushViewController:ctl animated:YES];
     }
     else if (page ==1)//第二种用法
@@ -71,7 +111,7 @@
     
  
         ctl=[[JSTabPageViewController alloc] initWithMenu:menuList vcs:vcs];
-
+        ctl.pageViewStyle=pageviewBubble;
         [self.navigationController pushViewController:ctl animated:YES];
         
     
@@ -80,6 +120,7 @@
         ctl=[[JSTabPageViewController alloc] init];
         ctl.menuList=menuList;
         ctl.vcs=vcs;
+        ctl.pageViewStyle=pageviewMiddle;
         ctl.view.frame=CGRectMake(0, 64, IPHONScreenWidth, IPHONScreenHeight-64);
         [self.view addSubview:ctl.view];
         [self addChildViewController:ctl];
@@ -89,6 +130,31 @@
 
     page++;
 
+}
+
+//有多少个图片要显示
+
+- (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
+    
+    return self.photos.count;
+    
+}
+
+
+//在具体的index中，显示网络加载或者本地的某一个图片
+
+- (id<MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser
+
+               photoAtIndex:(NSUInteger)index {
+    
+    if (index <self.photos.count) {
+        
+        return [self.photos objectAtIndex:index];
+        
+    }
+    
+    return nil;
+    
 }
 
 

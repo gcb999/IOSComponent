@@ -14,6 +14,7 @@
 
 //MJ
 #import "JSTableView+MJRefresh.h"
+#import "JSTableView+HeaderView.h"
 
 
 //Cell侧滑

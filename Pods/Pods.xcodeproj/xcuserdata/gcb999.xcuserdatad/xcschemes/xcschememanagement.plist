@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FDFullscreenPopGesture.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -30,6 +35,16 @@
 			<false/>
 		</dict>
 		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWPhotoBrowser-MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,7 +77,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6926CE7C0BABF6D8076DA1D610B30572</key>
+		<key>5813251FEA21E4AEE97385709F1912DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5836E5B22709BDBF870E46F862D729C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>923646781A907B1B2F2D3974D1CEB709</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +97,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9951D404D6F4D9865DA36298E93ED918</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9C4F95F67940A0CBF158319530B49F2A</key>
+		<key>9775596B3CA16905FC8F66DA8E2A3C67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -88,6 +108,16 @@
 			<true/>
 		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE3B07ED7FF04F506B0C5E00F4973589</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2FE87384A67337831E53490EEA8BF11</key>
 		<dict>
 			<key>primary</key>
 			<true/>

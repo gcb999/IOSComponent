@@ -8,9 +8,10 @@ pod 'SDWebImage', '~> 3.8.1'
 pod 'MJExtension', '~> 3.0.10'
 pod 'FDFullscreenPopGesture', '1.1'
 pod 'MBProgressHUD', '~> 0.9.2'
-pod 'FLAnimatedImage', '~> 1.0.12'
+pod 'FLAnimatedImage', '~> 1.0.12' #-GIF
 pod 'FMDB', '~> 2.6.2'
-pod 'VTMagic' , '~> 1.2.4'
+pod 'VTMagic' , '~> 1.2.4' #-网易横栏样式
+pod 'MWPhotoBrowser'
 
 
 
