@@ -41,9 +41,9 @@
     NSString *toke= [JSUserSingletonModel share].token;
     if (!IS_NSString(toke)) toke=@"";
     
-http://m-tmpbranch.app.cndirect.com/app.php?s=/product-homePage.html&app_identify_key=0357256d-d065-44b5-9ecb-d3186cca9399/lng/en/currency/USD/country_code/US
+//http://m-tmpbranch.app.cndirect.com/app.php?s=/product-homePage.html&app_identify_key=0357256d-d065-44b5-9ecb-d3186cca9399/lng/en/currency/USD/country_code/US
 
-    
+
     url= [NSString stringWithFormat:@"%@?%@&app_identify_key=%@&lang=%@&currency=%@&country_code=%@",DLURL,url,toke,lng,currency,country_code];
     
     
@@ -111,18 +111,25 @@ http://m-tmpbranch.app.cndirect.com/app.php?s=/product-homePage.html&app_identif
         return;
     }
     
+     NSString *absoluteUrl=@"";
+    if ([url hasSuffix:@"http"]) {
+        absoluteUrl=url;
+    }
+    else{
+       absoluteUrl=url;
+    }
     
-    
-    
-        NSString *absoluteUrl=[self AbsoluteUrl:url];
 
-   NSLog(@"---get-%@",absoluteUrl);
 
     
         AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
         //    manager.securityPolicy.validatesDomainName = NO; https
-    session.requestSerializer.timeoutInterval=60;
-        session.responseSerializer.acceptableContentTypes=[NSSet setWithObjects:contentType, nil];
+   
+//        session.responseSerializer.acceptableContentTypes=[NSSet setWithObjects:contentType, nil];
+//    session.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    [session.requestSerializer setHTTPShouldHandleCookies:NO];
+    session.requestSerializer.timeoutInterval = 30;
+    absoluteUrl = [absoluteUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
         [session GET:absoluteUrl parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
             
 //                   NSLog(@"------%f",1.0*downloadProgress.completedUnitCount/downloadProgress.totalUnitCount);

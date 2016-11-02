@@ -28,6 +28,12 @@
 //重新定义Cell（分组）
 -(UITableViewCell *)JSTableView:(JSTableView *)tableview cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section;
+
 @end
 
 

@@ -79,6 +79,10 @@
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    if (self.tableViewDelegate && [self.tableViewDelegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)]) {
+        [self.tableViewDelegate tableView:self willDisplayCell:cell forRowAtIndexPath:indexPath];
+    }
+    
     return;
   
     
@@ -122,8 +126,13 @@
     
 }
 
-
-
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    if (self.tableViewDelegate && [self.tableViewDelegate respondsToSelector:@selector(tableView:heightForHeaderInSection:)]) {
+        [self.tableViewDelegate tableView:self heightForHeaderInSection:section];
+    }
+    return 0;
+}
 
 
 

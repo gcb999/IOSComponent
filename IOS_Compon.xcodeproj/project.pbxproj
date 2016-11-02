@@ -74,6 +74,9 @@
 		90B0B9FD1DC07D4700B5349E /* UIView+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9F41DC07D4700B5349E /* UIView+Exception.m */; };
 		90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */; };
 		90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */; };
+		90E340891DC97A270074B563 /* JSParallaxEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */; };
+		90E3408C1DC97A590074B563 /* ParallaxEffectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408B1DC97A590074B563 /* ParallaxEffectTableViewCell.m */; };
+		90E3408F1DC97CF10074B563 /* ParallaxEffectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408E1DC97CF10074B563 /* ParallaxEffectModel.m */; };
 		90EF61401DBEF837001C4C44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF613F1DBEF837001C4C44 /* Podfile */; };
 		90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */; };
 		90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614D1DBEF9D0001C4C44 /* MGSwipeTableCell.m */; };
@@ -298,6 +301,12 @@
 		90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwipeTableCellModel.m; sourceTree = "<group>"; };
 		90B0BA1C1DC0A5B400B5349E /* JSSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwipeTableCell.h; sourceTree = "<group>"; };
 		90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwipeTableCell.m; sourceTree = "<group>"; };
+		90E340871DC97A270074B563 /* JSParallaxEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSParallaxEffectViewController.h; sourceTree = "<group>"; };
+		90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSParallaxEffectViewController.m; sourceTree = "<group>"; };
+		90E3408A1DC97A590074B563 /* ParallaxEffectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxEffectTableViewCell.h; sourceTree = "<group>"; };
+		90E3408B1DC97A590074B563 /* ParallaxEffectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxEffectTableViewCell.m; sourceTree = "<group>"; };
+		90E3408D1DC97CF10074B563 /* ParallaxEffectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxEffectModel.h; sourceTree = "<group>"; };
+		90E3408E1DC97CF10074B563 /* ParallaxEffectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxEffectModel.m; sourceTree = "<group>"; };
 		90EF613F1DBEF837001C4C44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90EF614A1DBEF9D0001C4C44 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
@@ -850,6 +859,7 @@
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				90E340831DC979CE0074B563 /* UIParallaxEffect */,
 				906E00051DC300D0007D3DB7 /* UITabPage */,
 				906E00011DC2F621007D3DB7 /* UIPickerView */,
 				906EFFFD1DC2EFF1007D3DB7 /* UIDatePicker */,
@@ -981,6 +991,43 @@
 				90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */,
 			);
 			path = JSSwipeTableCell;
+			sourceTree = "<group>";
+		};
+		90E340831DC979CE0074B563 /* UIParallaxEffect */ = {
+			isa = PBXGroup;
+			children = (
+				90E340841DC97A070074B563 /* Model */,
+				90E340851DC97A070074B563 /* View */,
+				90E340861DC97A070074B563 /* ViewController */,
+			);
+			path = UIParallaxEffect;
+			sourceTree = "<group>";
+		};
+		90E340841DC97A070074B563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90E3408D1DC97CF10074B563 /* ParallaxEffectModel.h */,
+				90E3408E1DC97CF10074B563 /* ParallaxEffectModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90E340851DC97A070074B563 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90E3408A1DC97A590074B563 /* ParallaxEffectTableViewCell.h */,
+				90E3408B1DC97A590074B563 /* ParallaxEffectTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90E340861DC97A070074B563 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				90E340871DC97A270074B563 /* JSParallaxEffectViewController.h */,
+				90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		90EF61411DBEF9AD001C4C44 /* Vendor */ = {
@@ -1774,7 +1821,9 @@
 				906EFFFB1DC2E591007D3DB7 /* HCSStarRatingView.m in Sources */,
 				900124541DC1DA9200192175 /* JSCollectionViewCell.m in Sources */,
 				90EF61EB1DBF3A95001C4C44 /* UIDevice+Extend.m in Sources */,
+				90E340891DC97A270074B563 /* JSParallaxEffectViewController.m in Sources */,
 				90EF620A1DBF3CBE001C4C44 /* JSNetWork+GET.m in Sources */,
+				90E3408C1DC97A590074B563 /* ParallaxEffectTableViewCell.m in Sources */,
 				90EF618B1DBEFA2B001C4C44 /* MJRefreshNormalHeader.m in Sources */,
 				9001241E1DC1968B00192175 /* JSRefresh+CollectionView.m in Sources */,
 				90EF61911DBEFA2B001C4C44 /* UIScrollView+MJRefresh.m in Sources */,
@@ -1823,6 +1872,7 @@
 				90EF61E81DBF3A7D001C4C44 /* UIFont+Extend.m in Sources */,
 				900124411DC1AA8600192175 /* JSCollectionView+MJRefresh.m in Sources */,
 				90EF618F1DBEFA2B001C4C44 /* NSBundle+MJRefresh.m in Sources */,
+				90E3408F1DC97CF10074B563 /* ParallaxEffectModel.m in Sources */,
 				900124581DC1E56E00192175 /* JSCollectionView+UIScrollView.m in Sources */,
 				900124101DC192ED00192175 /* JSGroupTableView.m in Sources */,
 				90B0B9F81DC07D4700B5349E /* NSMutableDictionary+Exception.m in Sources */,

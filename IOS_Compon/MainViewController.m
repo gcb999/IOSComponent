@@ -13,6 +13,7 @@
 #import "JSTabPageViewController.h"
 #import "SearchDAO.h"
 #import "JSMWPhotoBrowser.h"
+#import "JSParallaxEffectViewController.h"
 
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
@@ -50,6 +51,11 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
   
+    
+    JSParallaxEffectViewController *ctlr=[[JSParallaxEffectViewController alloc] init];
+    [self.navigationController pushViewController:ctlr animated:YES];
+    
+    return;
     
    
     // Browser
@@ -128,17 +134,6 @@
 
     page++;
 
-}
-#pragma mark - MWPhotoBrowserDelegate
-
-- (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
-    return _photos.count;
-}
-
-- (id <MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index {
-    if (index < _photos.count)
-        return [_photos objectAtIndex:index];
-    return nil;
 }
 
 
