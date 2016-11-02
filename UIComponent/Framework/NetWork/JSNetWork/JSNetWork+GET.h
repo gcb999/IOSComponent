@@ -8,6 +8,16 @@
 
 #import "JSNetWork.h"
 
+/*-------------支持HTTPS----------
+ 
+ http://www.cnblogs.com/Jepson1218/p/5215667.html
+ 
+ 
+ http://www.jianshu.com/p/4102b817ff2f
+ 
+ 
+ */
+
 @interface JSNetWork (GET)
 
 #pragma mark -GET 请求

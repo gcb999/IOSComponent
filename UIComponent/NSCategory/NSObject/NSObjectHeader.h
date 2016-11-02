@@ -17,6 +17,7 @@
 
 #import "NSObject+FileStream.h"
 
+#import "NSObject+SandboxFolder.h"
 
 
 #endif /* NSObjectHeader_h */

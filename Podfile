@@ -12,6 +12,7 @@ pod 'FLAnimatedImage', '~> 1.0.12' #-GIF
 pod 'FMDB', '~> 2.6.2'
 pod 'VTMagic' , '~> 1.2.4' #-网易横栏样式
 pod 'MWPhotoBrowser'
+pod 'SSZipArchive' # 压缩与解压zip.
 
 
 

@@ -77,6 +77,11 @@
 		90E340891DC97A270074B563 /* JSParallaxEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */; };
 		90E3408C1DC97A590074B563 /* ParallaxEffectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408B1DC97A590074B563 /* ParallaxEffectTableViewCell.m */; };
 		90E3408F1DC97CF10074B563 /* ParallaxEffectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408E1DC97CF10074B563 /* ParallaxEffectModel.m */; };
+		90E340D91DC9DF590074B563 /* JSHotUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340D81DC9DF590074B563 /* JSHotUpdate.m */; };
+		90E340DE1DC9DFDC0074B563 /* UIImage+imageNamed_bundle_.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340DD1DC9DFDC0074B563 /* UIImage+imageNamed_bundle_.m */; };
+		90E340E11DC9EAE60074B563 /* JSNetWork+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340E01DC9EAE60074B563 /* JSNetWork+Download.m */; };
+		90E340E51DC9EEBC0074B563 /* NSObject+SandboxFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340E41DC9EEBC0074B563 /* NSObject+SandboxFolder.m */; };
+		90E340E71DC9F68D0074B563 /* main.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90E340E61DC9F68D0074B563 /* main.bundle */; };
 		90EF61401DBEF837001C4C44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF613F1DBEF837001C4C44 /* Podfile */; };
 		90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */; };
 		90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614D1DBEF9D0001C4C44 /* MGSwipeTableCell.m */; };
@@ -307,6 +312,15 @@
 		90E3408B1DC97A590074B563 /* ParallaxEffectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxEffectTableViewCell.m; sourceTree = "<group>"; };
 		90E3408D1DC97CF10074B563 /* ParallaxEffectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxEffectModel.h; sourceTree = "<group>"; };
 		90E3408E1DC97CF10074B563 /* ParallaxEffectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxEffectModel.m; sourceTree = "<group>"; };
+		90E340D71DC9DF590074B563 /* JSHotUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHotUpdate.h; sourceTree = "<group>"; };
+		90E340D81DC9DF590074B563 /* JSHotUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHotUpdate.m; sourceTree = "<group>"; };
+		90E340DC1DC9DFDC0074B563 /* UIImage+imageNamed_bundle_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+imageNamed_bundle_.h"; sourceTree = "<group>"; };
+		90E340DD1DC9DFDC0074B563 /* UIImage+imageNamed_bundle_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+imageNamed_bundle_.m"; sourceTree = "<group>"; };
+		90E340DF1DC9EAE60074B563 /* JSNetWork+Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSNetWork+Download.h"; sourceTree = "<group>"; };
+		90E340E01DC9EAE60074B563 /* JSNetWork+Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSNetWork+Download.m"; sourceTree = "<group>"; };
+		90E340E31DC9EEBC0074B563 /* NSObject+SandboxFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SandboxFolder.h"; sourceTree = "<group>"; };
+		90E340E41DC9EEBC0074B563 /* NSObject+SandboxFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SandboxFolder.m"; sourceTree = "<group>"; };
+		90E340E61DC9F68D0074B563 /* main.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = main.bundle; sourceTree = "<group>"; };
 		90EF613F1DBEF837001C4C44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90EF614A1DBEF9D0001C4C44 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
@@ -1030,6 +1044,42 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		90E340D61DC9DF330074B563 /* HotUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				90E340E61DC9F68D0074B563 /* main.bundle */,
+				90E340D71DC9DF590074B563 /* JSHotUpdate.h */,
+				90E340D81DC9DF590074B563 /* JSHotUpdate.m */,
+			);
+			path = HotUpdate;
+			sourceTree = "<group>";
+		};
+		90E340DA1DC9DFD10074B563 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				90E340DB1DC9DFD10074B563 /* HotUpdate */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		90E340DB1DC9DFD10074B563 /* HotUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				90E340DC1DC9DFDC0074B563 /* UIImage+imageNamed_bundle_.h */,
+				90E340DD1DC9DFDC0074B563 /* UIImage+imageNamed_bundle_.m */,
+			);
+			path = HotUpdate;
+			sourceTree = "<group>";
+		};
+		90E340E21DC9EEAE0074B563 /* sandboxFolder */ = {
+			isa = PBXGroup;
+			children = (
+				90E340E31DC9EEBC0074B563 /* NSObject+SandboxFolder.h */,
+				90E340E41DC9EEBC0074B563 /* NSObject+SandboxFolder.m */,
+			);
+			path = sandboxFolder;
+			sourceTree = "<group>";
+		};
 		90EF61411DBEF9AD001C4C44 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1163,6 +1213,7 @@
 		90EF61941DBEFC17001C4C44 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				90E340E21DC9EEAE0074B563 /* sandboxFolder */,
 				90EF61AA1DBF0202001C4C44 /* UICateGory */,
 				90EF61A21DBF007D001C4C44 /* TypeConversion */,
 				90EF61961DBEFC17001C4C44 /* FileStream */,
@@ -1260,6 +1311,7 @@
 		90EF61C61DBF2C67001C4C44 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				90E340DA1DC9DFD10074B563 /* UIImage */,
 				90F3BDA91DC71B9500170A16 /* MWPhotoBrowser */,
 				90EF61C71DBF2C67001C4C44 /* MBProgressHUD */,
 				90EF61C91DBF2C67001C4C44 /* UImageView */,
@@ -1423,6 +1475,8 @@
 				90EF62031DBF3CBE001C4C44 /* JSNetWork+POST.m */,
 				90EF62041DBF3CBE001C4C44 /* JSNetWork.h */,
 				90EF62051DBF3CBE001C4C44 /* JSNetWork.m */,
+				90E340DF1DC9EAE60074B563 /* JSNetWork+Download.h */,
+				90E340E01DC9EAE60074B563 /* JSNetWork+Download.m */,
 			);
 			path = JSNetWork;
 			sourceTree = "<group>";
@@ -1561,6 +1615,7 @@
 		90F441F91DBDFBBA0007C37E /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				90E340D61DC9DF330074B563 /* HotUpdate */,
 				9005860D1DC82CF700C27B61 /* Actual */,
 				90EF61F01DBF3C77001C4C44 /* Framework */,
 				90EF61A61DBF0109001C4C44 /* Header */,
@@ -1703,6 +1758,7 @@
 				90EF61401DBEF837001C4C44 /* Podfile in Resources */,
 				90EF618D1DBEFA2B001C4C44 /* MJRefresh.bundle in Resources */,
 				900124711DC1EF4A00192175 /* iOS_loading.gif in Resources */,
+				90E340E71DC9F68D0074B563 /* main.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1776,6 +1832,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90EF61E51DBF3A06001C4C44 /* UIWindow+window.m in Sources */,
+				90E340E51DC9EEBC0074B563 /* NSObject+SandboxFolder.m in Sources */,
 				90EF61A11DBEFF6A001C4C44 /* NSObject+FileStream.m in Sources */,
 				906E00181DC324CF007D3DB7 /* secondCtrl.m in Sources */,
 				90EF620C1DBF3CBE001C4C44 /* JSNetWork.m in Sources */,
@@ -1810,6 +1867,7 @@
 				9001242F1DC1A39B00192175 /* JSTableView+TableView.m in Sources */,
 				90F3BDB11DC738A500170A16 /* UIScrollView+HeaderScaleImage.m in Sources */,
 				90EF61CF1DBF2C67001C4C44 /* UIView+AnimationProperty.m in Sources */,
+				90E340DE1DC9DFDC0074B563 /* UIImage+imageNamed_bundle_.m in Sources */,
 				900124911DC1F50800192175 /* CYLTabBarController.m in Sources */,
 				90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */,
 				90B0B9F61DC07D4700B5349E /* NSMutableArray+Exception.m in Sources */,
@@ -1832,6 +1890,7 @@
 				90EF61881DBEFA2B001C4C44 /* MJRefreshBackNormalFooter.m in Sources */,
 				9001248F1DC1F50800192175 /* CYLPlusButton.m in Sources */,
 				906E00201DC340B3007D3DB7 /* JSTabPageViewController+Parts.m in Sources */,
+				90E340E11DC9EAE60074B563 /* JSNetWork+Download.m in Sources */,
 				90EF61DE1DBF33F2001C4C44 /* UIImageView+ImageView.m in Sources */,
 				900124901DC1F50800192175 /* CYLTabBar.m in Sources */,
 				90EF61821DBEFA2B001C4C44 /* MJRefreshFooter.m in Sources */,
@@ -1848,6 +1907,7 @@
 				9001247E1DC1F45800192175 /* UITabBar+littleRedDotBadge.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
 				90F3BDB41DC738F700170A16 /* JSTableView+HeaderView.m in Sources */,
+				90E340D91DC9DF590074B563 /* JSHotUpdate.m in Sources */,
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
 				906E000E1DC303F8007D3DB7 /* DataManager.m in Sources */,
 				90EF61D61DBF2CE1001C4C44 /* UIColor+Hex.m in Sources */,

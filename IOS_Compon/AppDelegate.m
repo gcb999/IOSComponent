@@ -10,6 +10,7 @@
 #import "JSSideSlippingControllerConfig.h"
 #import "LeftViewController.h"
 #import "MainViewController.h"
+#import "JSHotUpdate.h"
 @interface AppDelegate ()
 
 @end
@@ -28,6 +29,9 @@
     [self.window setRootViewController:[JSTabBarControllerConfig shareInstance].tabBarController];
 
     [self.window makeKeyAndVisible];
+    
+  
+    
 
     return YES;
 }

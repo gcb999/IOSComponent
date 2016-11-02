@@ -15,4 +15,10 @@
  */
 @property (nonatomic,copy,readonly) NSString *documentsSubFolder;
 
+/**
+ *  沙盒Cache
+ */
+
++ (NSString *)cachesPathFor:(NSString * )path;
+
 @end

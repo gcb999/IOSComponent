@@ -45,6 +45,18 @@
     return folder;
 }
 
+/**
+ *  沙盒Cache
+ */
+
++ (NSString *)cachesPathFor:(NSString * )path
+{
+    NSArray * LibraryPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString * cachePath = [[[LibraryPaths objectAtIndex:0] stringByAppendingFormat:@"/Caches"] stringByAppendingPathComponent:path];
+    
+    return cachePath;
+}
+
 
 
 @end

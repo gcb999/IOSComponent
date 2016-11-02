@@ -14,12 +14,16 @@
 #import "SearchDAO.h"
 #import "JSMWPhotoBrowser.h"
 #import "JSParallaxEffectViewController.h"
+#import "UIImage+imageNamed_bundle_.h"
+#import "JSHotUpdate.h"
 
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
 {
     NSInteger page;
     JSTabPageViewController *ctl;
+    
+    UIImageView *imageView;
     
 }
 
@@ -34,16 +38,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    SearchDAO *dao=[[SearchDAO alloc] init];
-    if ([dao createTable]) {//创建表
-        
-        [dao insert];//插入数据
-        
-        [dao queryResBlock:^(FMResultSet *set) {
-              NSLog(@"%@-%@",[set stringForColumn:@"name"],[set stringForColumn:@"age"]);
-        }];//查询数据
-    }
-
+    
+    imageView=[[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 200, 200)];
+    UIImage * image = [UIImage yf_imageNamed:@"sub/sample"];
+    imageView.image = image;
+    [self.view addSubview:imageView];
+    
+    NSLog(@"加载后的图片尺寸:%@",[NSValue valueWithCGSize:imageView.image.size]);
 
 
 }
@@ -51,6 +52,19 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
   
+    
+    
+    
+    JSHotUpdate *update=[[JSHotUpdate alloc] init];
+    [update updateCompletion:^(BOOL isSuccess, NSDictionary *backDic, NSError *error) {
+        UIImage * image = [UIImage yf_imageNamed:@"sub/sample"];
+        imageView.image = image;
+    }];;
+    
+    
+    
+    return;
+    
     
     JSParallaxEffectViewController *ctlr=[[JSParallaxEffectViewController alloc] init];
     [self.navigationController pushViewController:ctlr animated:YES];

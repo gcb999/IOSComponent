@@ -59,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SSZipArchive.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>VTMagic.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,17 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>565B0BFA48887F010DD0170F8964D6D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5813251FEA21E4AEE97385709F1912DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5836E5B22709BDBF870E46F862D729C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>923646781A907B1B2F2D3974D1CEB709</key>
+		<key>91EEFDCC3B24DFCBF2402160B85447B5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -108,6 +113,11 @@
 			<true/>
 		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCF3EFFCEEE091143EE36CD223DA2FDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
