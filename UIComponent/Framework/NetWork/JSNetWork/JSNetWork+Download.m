@@ -18,6 +18,8 @@
     //默认配置
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     
+    
+#pragma mark --------------支持Https--------------
     //AFN3.0+基于封住URLSession的句柄
     AFURLSessionManager *session = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
@@ -25,9 +27,9 @@
     
     //AFN 默认情况下就是支持 HTTPS 访问的，但是如果用 HTTPS 的方式访问未受信任的网站便会报错
     securityPolicy.validatesDomainName = NO;
+    session.securityPolicy=securityPolicy;
+#pragma mark --------------支持Https--------------
     
-    
-        session.securityPolicy=securityPolicy;
     
     //请求
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];

@@ -17,6 +17,16 @@
     //AFN3.0+基于封住HTPPSession的句柄
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
     
+#pragma mark --------------支持Https--------------
+    //AFN3.0+基于封住URLSession的句柄
+    
+    AFSecurityPolicy *securityPolicy=[[AFSecurityPolicy alloc] init];
+    
+    //AFN 默认情况下就是支持 HTTPS 访问的，但是如果用 HTTPS 的方式访问未受信任的网站便会报错
+    securityPolicy.validatesDomainName = NO;
+    session.securityPolicy=securityPolicy;
+#pragma mark --------------支持Https--------------
+    
     
     [session POST:url parameters:postBody constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
        
