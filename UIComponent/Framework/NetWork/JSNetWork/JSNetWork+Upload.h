@@ -10,4 +10,6 @@
 
 @interface JSNetWork (Upload)
 
+-(void)upload:(NSString *)url postBody:(NSDictionary *)postBody  progress:(void (^)(NSProgress *downloadProgress,CGFloat currentProgress))currentProgress  completionHandler:(void(^)(BOOL isSuccess , id responseObject,NSError *error))completionHandler;
+
 @end

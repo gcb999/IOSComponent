@@ -13,6 +13,7 @@
 #import "JSNetWork+GET.h"
 #import "JSNetWork+POST.h"
 #import "JSNetWork+Download.h"
+#import "JSNetWork+Upload.h"
 #import "JSError.h"
 #import "JSUserSingletonModel.h"
 
