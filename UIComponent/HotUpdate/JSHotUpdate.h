@@ -10,7 +10,7 @@
 
 /*
  参考文章 ：https://github.com/ios122/ios_assets_hot_update
- 
+ http://www.ios122.com/
  1： 先更新
  
  2： 优先图片网络下载(缓存Bundle)，后面读取本地Bundle

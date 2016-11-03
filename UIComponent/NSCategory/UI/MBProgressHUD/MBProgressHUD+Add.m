@@ -15,6 +15,11 @@
 
 
 + (void)showError:(NSString *)error toView:(UIView *)view{
+    
+    if (!view) {
+        view=[UIWindow window];
+    }
+    
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     
@@ -39,6 +44,10 @@
 }
 
 + (void)showSuccess:(NSString *)success toView:(UIView *)view{
+    
+    if (!view) {
+        view=[UIWindow window];
+    }
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     
@@ -63,6 +72,9 @@
 //http://www.voidcn.com/blog/walden00/article/p-4568425.html
 + (MBProgressHUD *)showMessag:(NSString *)message toView:(UIView *)view {
     // 快速显示一个提示信息
+    if (!view) {
+        view=[UIWindow window];
+    }
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
 //    hud.labelText = message;
        // 隐藏时候从父控件中移除
@@ -101,6 +113,10 @@
 
 
 + (void)showText:(NSString *)error toView:(UIView *)view{
+    
+    if (!view) {
+        view=[UIWindow window];
+    }
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     

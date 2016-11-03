@@ -54,6 +54,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>QBImagePickerController-QBImagePicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>QBImagePickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,12 +87,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>29C017666432EBAF700F74F834D86588</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2C71DE0FB8A6E5BB6EAF9FB037D799CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>565B0BFA48887F010DD0170F8964D6D9</key>
+		<key>2F74E5DAE17F2D81681465DC9A68F479</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +107,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>91EEFDCC3B24DFCBF2402160B85447B5</key>
+		<key>79239338075C9DC8AE65256729AB4D93</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,7 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCF3EFFCEEE091143EE36CD223DA2FDF</key>
+		<key>CDBDCB0658925F92BA427AAFB9540512</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -128,6 +143,11 @@
 			<true/>
 		</dict>
 		<key>E2FE87384A67337831E53490EEA8BF11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBB4AD6213721AEF264CFD83686D334A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

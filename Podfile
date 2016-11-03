@@ -14,6 +14,10 @@ pod 'VTMagic' , '~> 1.2.4' #-网易横栏样式
 pod 'MWPhotoBrowser'
 pod 'SSZipArchive' # 压缩与解压zip.
 
+pod 'QBImagePickerController' # 相册
+
+#pod install --verbose --no-repo-update
+#pod update --verbose --no-repo-update
 
 
 

@@ -187,3 +187,15 @@
 
 
 
+#define ALLLANGUAGEARRY [[NSMutableArray alloc]initWithObjects:@"en",@"ru",@"fr",@"es",@"de",@"cs",@"pl",@"pt", nil]
+
+//#define CURLANGUAGE [[NSUserDefaults standardUserDefaults] objectForKey:@"localLanguage"]
+
+#define CURLANGUAGE   [[[NSUserDefaults standardUserDefaults] objectForKey:@"localLanguage"] isEqualToString:@"cz"]?@"cs":[[NSUserDefaults standardUserDefaults] objectForKey:@"localLanguage"]
+
+#define JSLocalizedString(key, comment)     [[NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:CURLANGUAGE ofType:@"lproj"]]localizedStringForKey:key value:nil table:@"language"]==nil?key:[[NSBundle bundleWithPath:[[NSBundle mainBundle]pathForResource:CURLANGUAGE ofType:@"lproj"]]localizedStringForKey:key value:nil table:@"language"]
+
+
+
+
+

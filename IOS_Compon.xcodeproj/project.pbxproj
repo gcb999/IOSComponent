@@ -81,6 +81,9 @@
 		90BC978D1DCAE80400E6645D /* DHGuidePageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC978A1DCAE80400E6645D /* DHGuidePageHUD.m */; };
 		90BC978E1DCAE80400E6645D /* GuideImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90BC978B1DCAE80400E6645D /* GuideImage.bundle */; };
 		90BC97991DCAEB4300E6645D /* DHGuidePageHUD+GuidePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97981DCAEB4300E6645D /* DHGuidePageHUD+GuidePage.m */; };
+		90BC97A51DCB205900E6645D /* cameraHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97A41DCB205900E6645D /* cameraHelper.m */; };
+		90BC97A81DCB228000E6645D /* JSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97A71DCB228000E6645D /* JSPhoto.m */; };
+		90BC97AB1DCB23AA00E6645D /* JSPhoto+PhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97AA1DCB23AA00E6645D /* JSPhoto+PhotoAlbum.m */; };
 		90E340891DC97A270074B563 /* JSParallaxEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */; };
 		90E3408C1DC97A590074B563 /* ParallaxEffectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408B1DC97A590074B563 /* ParallaxEffectTableViewCell.m */; };
 		90E3408F1DC97CF10074B563 /* ParallaxEffectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408E1DC97CF10074B563 /* ParallaxEffectModel.m */; };
@@ -327,6 +330,16 @@
 		90BC978B1DCAE80400E6645D /* GuideImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GuideImage.bundle; sourceTree = "<group>"; };
 		90BC97971DCAEB4300E6645D /* DHGuidePageHUD+GuidePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHGuidePageHUD+GuidePage.h"; sourceTree = "<group>"; };
 		90BC97981DCAEB4300E6645D /* DHGuidePageHUD+GuidePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DHGuidePageHUD+GuidePage.m"; sourceTree = "<group>"; };
+		90BC979A1DCB1B2900E6645D /* NetWorkHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkHeader.h; sourceTree = "<group>"; };
+		90BC979B1DCB1B4600E6645D /* NotificationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationHeader.h; sourceTree = "<group>"; };
+		90BC979C1DCB1BA500E6645D /* UIComponentHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentHeader.h; sourceTree = "<group>"; };
+		90BC979D1DCB1BE000E6645D /* PaymentHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentHeader.h; sourceTree = "<group>"; };
+		90BC97A31DCB205900E6645D /* cameraHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameraHelper.h; sourceTree = "<group>"; };
+		90BC97A41DCB205900E6645D /* cameraHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cameraHelper.m; sourceTree = "<group>"; };
+		90BC97A61DCB228000E6645D /* JSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPhoto.h; sourceTree = "<group>"; };
+		90BC97A71DCB228000E6645D /* JSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPhoto.m; sourceTree = "<group>"; };
+		90BC97A91DCB23AA00E6645D /* JSPhoto+PhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSPhoto+PhotoAlbum.h"; sourceTree = "<group>"; };
+		90BC97AA1DCB23AA00E6645D /* JSPhoto+PhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSPhoto+PhotoAlbum.m"; sourceTree = "<group>"; };
 		90E340871DC97A270074B563 /* JSParallaxEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSParallaxEffectViewController.h; sourceTree = "<group>"; };
 		90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSParallaxEffectViewController.m; sourceTree = "<group>"; };
 		90E3408A1DC97A590074B563 /* ParallaxEffectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxEffectTableViewCell.h; sourceTree = "<group>"; };
@@ -896,6 +909,7 @@
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				90BC979E1DCB1FA900E6645D /* UIPhoto */,
 				90BC97931DCAEAE100E6645D /* UIGuidPage */,
 				90BC97821DCAE44D00E6645D /* UILaunchPage */,
 				90E340831DC979CE0074B563 /* UIParallaxEffect */,
@@ -1071,6 +1085,27 @@
 				90BC97981DCAEB4300E6645D /* DHGuidePageHUD+GuidePage.m */,
 			);
 			path = UIGuidPage;
+			sourceTree = "<group>";
+		};
+		90BC979E1DCB1FA900E6645D /* UIPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				90BC97A21DCB204F00E6645D /* Helper */,
+			);
+			path = UIPhoto;
+			sourceTree = "<group>";
+		};
+		90BC97A21DCB204F00E6645D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				90BC97A31DCB205900E6645D /* cameraHelper.h */,
+				90BC97A41DCB205900E6645D /* cameraHelper.m */,
+				90BC97A61DCB228000E6645D /* JSPhoto.h */,
+				90BC97A71DCB228000E6645D /* JSPhoto.m */,
+				90BC97A91DCB23AA00E6645D /* JSPhoto+PhotoAlbum.h */,
+				90BC97AA1DCB23AA00E6645D /* JSPhoto+PhotoAlbum.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		90E340831DC979CE0074B563 /* UIParallaxEffect */ = {
@@ -1323,6 +1358,10 @@
 			children = (
 				90EF61A71DBF0112001C4C44 /* Header.h */,
 				90EF61A91DBF0112001C4C44 /* MacroHeader.h */,
+				90BC979A1DCB1B2900E6645D /* NetWorkHeader.h */,
+				90BC979B1DCB1B4600E6645D /* NotificationHeader.h */,
+				90BC979C1DCB1BA500E6645D /* UIComponentHeader.h */,
+				90BC979D1DCB1BE000E6645D /* PaymentHeader.h */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -1948,7 +1987,9 @@
 				900124601DC1E80A00192175 /* JSGroupTableView+UIScrollView.m in Sources */,
 				90EF61811DBEFA2B001C4C44 /* MJRefreshComponent.m in Sources */,
 				900124841DC1F47000192175 /* JSTabbarItemHelpModel.m in Sources */,
+				90BC97A51DCB205900E6645D /* cameraHelper.m in Sources */,
 				90EF62131DBF403C001C4C44 /* JASidePanelController.m in Sources */,
+				90BC97AB1DCB23AA00E6645D /* JSPhoto+PhotoAlbum.m in Sources */,
 				906EFFFB1DC2E591007D3DB7 /* HCSStarRatingView.m in Sources */,
 				900124541DC1DA9200192175 /* JSCollectionViewCell.m in Sources */,
 				90EF61EB1DBF3A95001C4C44 /* UIDevice+Extend.m in Sources */,
@@ -1961,6 +2002,7 @@
 				90EF61A51DBF0087001C4C44 /* NSObject+TypeConversion.m in Sources */,
 				90EF61801DBEFA2B001C4C44 /* MJRefreshBackFooter.m in Sources */,
 				90EF61881DBEFA2B001C4C44 /* MJRefreshBackNormalFooter.m in Sources */,
+				90BC97A81DCB228000E6645D /* JSPhoto.m in Sources */,
 				9001248F1DC1F50800192175 /* CYLPlusButton.m in Sources */,
 				906E00201DC340B3007D3DB7 /* JSTabPageViewController+Parts.m in Sources */,
 				90BC977D1DCAE0B100E6645D /* DHLaunchAdPageHUD.m in Sources */,

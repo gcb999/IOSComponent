@@ -17,6 +17,7 @@
 #import "UIImage+imageNamed_bundle_.h"
 #import "JSHotUpdate.h"
 #import "DHGuidePageHUD.h"
+#import "JSPhoto.h"
 
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
@@ -48,8 +49,52 @@
     
     NSLog(@"加载后的图片尺寸:%@",[NSValue valueWithCGSize:imageView.image.size]);
 
+ 
 
 }
+
+//弹出选择框
+-(void)showActionForPhoto
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:nil
+                                  delegate:self
+                                  cancelButtonTitle:@"取消"
+                                  destructiveButtonTitle:nil
+                                  otherButtonTitles:@"拍照",@"从相册选择",nil];
+    actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    [actionSheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)modalView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        JSPhoto *photo=[[JSPhoto alloc] init];
+        [photo camera:self completion:^(BOOL isSucess, NSMutableArray<UIImage *> *image) {
+            if (isSucess) {
+                
+            }
+            else{
+                
+            }
+            
+        }];
+    }else if (buttonIndex == 1){
+          JSPhoto *photo=[[JSPhoto alloc] init];
+        [photo PhotoAlbum:self maximumNumberOfSelection:2 completion:^(BOOL isSucess, NSMutableArray<UIImage *> *image) {
+            imageView.image=[image lastObject];
+            
+        }];
+    }
+}
+
+#pragma mark UINavigationControllerDelegate, QBImagePickerControllerDelegate
+
+- (void)qb_imagePickerController:(QBImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets{
+    
+    
+}
+
 
 #pragma mark - 设置APP静态图片引导页
 - (void)setStaticGuidePage {
@@ -63,7 +108,8 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
   
-    
+       [self showActionForPhoto];
+    return;
     
     
     JSHotUpdate *update=[[JSHotUpdate alloc] init];

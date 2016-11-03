@@ -202,46 +202,46 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__59-[JSNetWork(Download) download:progress:completionHandler:]_block_invoke_2.47"
+                  symbolName = "__59-[JSNetWork(Download) download:progress:completionHandler:]_block_invoke_3"
                   moduleName = "IOS_Compon"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-                  timestampString = "499833037.147582"
+                  timestampString = "499858963.590894"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "323">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "51">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__copy_helper_block_.51"
+                  symbolName = "__copy_helper_block_.48"
                   moduleName = "IOS_Compon"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-                  timestampString = "499833037.14771"
+                  timestampString = "499858963.591067"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "58">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "176">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.52"
+                  symbolName = "__destroy_helper_block_.49"
                   moduleName = "IOS_Compon"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-                  timestampString = "499833037.147817"
+                  timestampString = "499858963.591168"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "39">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "125">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -265,54 +265,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IOS_Compon/MainViewController.m"
-            timestampString = "499837904.358437"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UIComponent/NSCategory/UI/UIImage/HotUpdate/UIImage+imageNamed_bundle_.m"
-            timestampString = "499831309.085762"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "+yf_imageNamed:bundle:cacheDir:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IOS_Compon/MainViewController.m"
-            timestampString = "499844109.234128"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -323,6 +275,70 @@
             startingLineNumber = "14"
             endingLineNumber = "14"
             landmarkName = "-download:progress:completionHandler:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIComponent/Framework/CustomUI/UIPhoto/Helper/JSPhoto+PhotoAlbum.m"
+            timestampString = "499858914.313637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-qb_imagePickerController:didSelectAssets:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIComponent/Framework/CustomUI/UIPhoto/Helper/JSPhoto+PhotoAlbum.m"
+            timestampString = "499858914.313637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-qb_imagePickerController:didSelectAssets:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIComponent/Framework/CustomUI/UIPhoto/Helper/JSPhoto+PhotoAlbum.m"
+            timestampString = "499858914.313637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "-qb_imagePickerControllerDidCancel:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOS_Compon/MainViewController.m"
+            timestampString = "499858721.47906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-qb_imagePickerController:didSelectAssets:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
