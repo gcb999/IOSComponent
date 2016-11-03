@@ -1,8 +1,8 @@
 //
 //  DHGifImageOperation.h
-//  DHLaunchAdPageHUDExample
+//  DHGuidePageHUDExample
 //
-//  Created by Apple on 16/8/16.
+//  Created by Apple on 16/10/10.
 //  Copyright © 2016年 dingding3w. All rights reserved.
 //
 

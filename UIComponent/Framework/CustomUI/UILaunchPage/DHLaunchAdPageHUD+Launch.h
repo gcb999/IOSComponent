@@ -8,6 +8,11 @@
 
 #import "DHLaunchAdPageHUD.h"
 
+/*
+参考文章  https://github.com/dingding3w/DHLaunchPageHUD
+ 
+*/
+
 @interface DHLaunchAdPageHUD (Launch)
 
 

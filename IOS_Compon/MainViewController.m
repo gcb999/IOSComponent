@@ -16,6 +16,7 @@
 #import "JSParallaxEffectViewController.h"
 #import "UIImage+imageNamed_bundle_.h"
 #import "JSHotUpdate.h"
+#import "DHGuidePageHUD.h"
 
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
@@ -38,6 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    [self setStaticGuidePage];
     
     imageView=[[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 200, 200)];
     UIImage * image = [UIImage yf_imageNamed:@"sub/sample"];
@@ -47,6 +49,14 @@
     NSLog(@"加载后的图片尺寸:%@",[NSValue valueWithCGSize:imageView.image.size]);
 
 
+}
+
+#pragma mark - 设置APP静态图片引导页
+- (void)setStaticGuidePage {
+    NSArray *imageNameArray = @[@"header-1.jpg",@"header-1.jpg",@"header-1.jpg",@"header-1.jpg",@"header-1.jpg"];
+    DHGuidePageHUD *guidePage = [[DHGuidePageHUD alloc] dh_initWithFrame:self.view.frame imageNameArray:imageNameArray buttonIsHidden:YES];
+    guidePage.slideInto = YES;
+    [self.navigationController.view addSubview:guidePage];
 }
 
 
