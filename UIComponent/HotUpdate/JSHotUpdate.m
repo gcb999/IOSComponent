@@ -39,16 +39,19 @@
             //本地版本
             NSString * oriMd5 = [[[NSUserDefaults standardUserDefaults] objectForKey: [self yf_sourcePatchKey]] objectForKey:@"md5"];
             
-            if (!IS_NSString(md5) && IS_NSString(oriMd5) && [md5 isEqualToString:oriMd5]) {
+            if (IS_NSString(md5) && IS_NSString(oriMd5) && [md5 isEqualToString:oriMd5]) {
                 NSLog(@"no update");
             }
             else{//下载文件
                 
-                [[JSNetWork shareInstance]  download:urlStr progress:^(NSProgress *downloadProgress) {
+                [[JSNetWork shareInstance]   download:urlStr progress:^(NSProgress *downloadProgress, CGFloat currentProgress) {
                     
-               
+                    NSLog(@"---currentProgress=%f",currentProgress);
+                
                 } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
+        
                     
+                    //解压到指定位置
                     NSString * patchCachePath = [self cachesPathFor: [self yf_relativeCachePathFor:md5]];
                     [SSZipArchive unzipFileAtPath:filePath.path toDestination: patchCachePath overwrite:YES password:nil error:&error];
                     

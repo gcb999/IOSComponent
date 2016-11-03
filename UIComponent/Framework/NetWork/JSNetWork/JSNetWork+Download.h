@@ -10,6 +10,6 @@
 
 @interface JSNetWork (Download)
 
-- (NSURLSessionDownloadTask *)download:(NSString *)url progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
+- (NSURLSessionDownloadTask *)download:(NSString *)url progress:(void (^)(NSProgress *downloadProgress,CGFloat currentProgress)) currentProgress completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
 
 @end

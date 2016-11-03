@@ -82,6 +82,7 @@
 		90E340E11DC9EAE60074B563 /* JSNetWork+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340E01DC9EAE60074B563 /* JSNetWork+Download.m */; };
 		90E340E51DC9EEBC0074B563 /* NSObject+SandboxFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340E41DC9EEBC0074B563 /* NSObject+SandboxFolder.m */; };
 		90E340E71DC9F68D0074B563 /* main.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90E340E61DC9F68D0074B563 /* main.bundle */; };
+		90E3B7101DCAD44600106218 /* JSNetWork+Upload.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3B70F1DCAD44600106218 /* JSNetWork+Upload.m */; };
 		90EF61401DBEF837001C4C44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF613F1DBEF837001C4C44 /* Podfile */; };
 		90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */; };
 		90EF614F1DBEF9D0001C4C44 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EF614D1DBEF9D0001C4C44 /* MGSwipeTableCell.m */; };
@@ -321,6 +322,8 @@
 		90E340E31DC9EEBC0074B563 /* NSObject+SandboxFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SandboxFolder.h"; sourceTree = "<group>"; };
 		90E340E41DC9EEBC0074B563 /* NSObject+SandboxFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SandboxFolder.m"; sourceTree = "<group>"; };
 		90E340E61DC9F68D0074B563 /* main.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = main.bundle; sourceTree = "<group>"; };
+		90E3B70E1DCAD44600106218 /* JSNetWork+Upload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSNetWork+Upload.h"; sourceTree = "<group>"; };
+		90E3B70F1DCAD44600106218 /* JSNetWork+Upload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSNetWork+Upload.m"; sourceTree = "<group>"; };
 		90EF613F1DBEF837001C4C44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90EF614A1DBEF9D0001C4C44 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
 		90EF614B1DBEF9D0001C4C44 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
@@ -1477,6 +1480,8 @@
 				90EF62051DBF3CBE001C4C44 /* JSNetWork.m */,
 				90E340DF1DC9EAE60074B563 /* JSNetWork+Download.h */,
 				90E340E01DC9EAE60074B563 /* JSNetWork+Download.m */,
+				90E3B70E1DCAD44600106218 /* JSNetWork+Upload.h */,
+				90E3B70F1DCAD44600106218 /* JSNetWork+Upload.m */,
 			);
 			path = JSNetWork;
 			sourceTree = "<group>";
@@ -1919,6 +1924,7 @@
 				90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */,
 				90EF62091DBF3CBE001C4C44 /* JSError.m in Sources */,
 				900124391DC1A91900192175 /* JSTableView+CellEditingStyle.m in Sources */,
+				90E3B7101DCAD44600106218 /* JSNetWork+Upload.m in Sources */,
 				9001246F1DC1EE5700192175 /* JSRefreshAutoGifHeader.m in Sources */,
 				90EF61861DBEFA2B001C4C44 /* MJRefreshAutoStateFooter.m in Sources */,
 				90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */,

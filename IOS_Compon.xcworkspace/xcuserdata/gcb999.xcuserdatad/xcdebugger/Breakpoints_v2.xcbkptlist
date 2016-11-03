@@ -197,6 +197,53 @@
             endingLineNumber = "63"
             landmarkName = "-download:progress:completionHandler:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__59-[JSNetWork(Download) download:progress:completionHandler:]_block_invoke_2.47"
+                  moduleName = "IOS_Compon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
+                  timestampString = "499833037.147582"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "323">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.51"
+                  moduleName = "IOS_Compon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
+                  timestampString = "499833037.14771"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.52"
+                  moduleName = "IOS_Compon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
+                  timestampString = "499833037.147817"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -206,27 +253,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-            timestampString = "499773444.175223"
+            timestampString = "499832576.290599"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-download:progress:completionHandler:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-            timestampString = "499773467.073953"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-download:progress:completionHandler:"
             landmarkType = "5">
          </BreakpointContent>
@@ -254,11 +285,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIComponent/NSCategory/UI/UIImage/HotUpdate/UIImage+imageNamed_bundle_.m"
-            timestampString = "499775065.08952"
+            timestampString = "499831309.085762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "+yf_imageNamed:bundle:cacheDir:"
             landmarkType = "5">
          </BreakpointContent>
@@ -286,11 +317,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIComponent/HotUpdate/JSHotUpdate.m"
-            timestampString = "499775677.507589"
+            timestampString = "499833037.042489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-updateCompletion:"
             landmarkType = "5">
          </BreakpointContent>
@@ -302,11 +333,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIComponent/HotUpdate/JSHotUpdate.m"
-            timestampString = "499775684.731506"
+            timestampString = "499833037.042489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-updateCompletion:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
+            timestampString = "499832376.935844"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "-download:progress:completionHandler:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIComponent/HotUpdate/JSHotUpdate.m"
+            timestampString = "499832613.359842"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-updateCompletion:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIComponent/HotUpdate/JSHotUpdate.m"
+            timestampString = "499833037.042489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-updateCompletion:"
             landmarkType = "5">
          </BreakpointContent>

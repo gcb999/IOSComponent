@@ -11,7 +11,7 @@
 @implementation JSNetWork (Download)
 
 
-- (NSURLSessionDownloadTask *)download:(NSString *)url progress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler{
+- (NSURLSessionDownloadTask *)download:(NSString *)url progress:(void (^)(NSProgress *downloadProgress,CGFloat currentProgress)) currentProgress completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler{
     
     //远程地址
     NSURL *URL = [NSURL URLWithString:url];
@@ -36,20 +36,15 @@
     NSURLSessionDownloadTask* downloadTask = [session downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
         
         
-        downloadProgressBlock(downloadProgress);
-        // @property int64_t totalUnitCount;     需要下载文件的总大小
-        // @property int64_t completedUnitCount; 当前已经下载的大小
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            CGFloat progress=1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
+            currentProgress(downloadProgress,progress);
+        });
         
-        // 给Progress添加监听 KVO
-                NSLog(@"%f",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
-        //        // 回到主队列刷新UI
-        //        dispatch_async(dispatch_get_main_queue(), ^{
-        //            // 设置进度条的百分比
-        //
-        //            self.progressView.progress = 1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
-        //        });
+   
         
-    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {//下载到指定位置
         
         //- block的返回值, 要求返回一个URL, 返回的这个URL就是文件的位置的路径
 //        return destination(targetPath,response);
@@ -60,7 +55,12 @@
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         //设置下载完成操作
         // filePath就是你下载文件的位置，你可以解压，也可以直接拿来使用
-        completionHandler(response,filePath,error);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+              completionHandler(response,filePath,error);
+        });
+        
+     
         //        NSString *imgFilePath = [filePath path];// 将NSURL转成NSString
         //        UIImage *img = [UIImage imageWithContentsOfFile:imgFilePath];
         //        self.imageView.image = img;
