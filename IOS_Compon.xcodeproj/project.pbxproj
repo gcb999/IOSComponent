@@ -74,6 +74,10 @@
 		90B0B9FD1DC07D4700B5349E /* UIView+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9F41DC07D4700B5349E /* UIView+Exception.m */; };
 		90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */; };
 		90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */; };
+		90BC977C1DCAE0B100E6645D /* DHGifImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97771DCAE0B100E6645D /* DHGifImageOperation.m */; };
+		90BC977D1DCAE0B100E6645D /* DHLaunchAdPageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97791DCAE0B100E6645D /* DHLaunchAdPageHUD.m */; };
+		90BC977E1DCAE0B100E6645D /* DHRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC977B1DCAE0B100E6645D /* DHRegularExpression.m */; };
+		90BC97811DCAE32000E6645D /* DHLaunchAdPageHUD+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97801DCAE32000E6645D /* DHLaunchAdPageHUD+Launch.m */; };
 		90E340891DC97A270074B563 /* JSParallaxEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */; };
 		90E3408C1DC97A590074B563 /* ParallaxEffectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408B1DC97A590074B563 /* ParallaxEffectTableViewCell.m */; };
 		90E3408F1DC97CF10074B563 /* ParallaxEffectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E3408E1DC97CF10074B563 /* ParallaxEffectModel.m */; };
@@ -307,6 +311,14 @@
 		90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwipeTableCellModel.m; sourceTree = "<group>"; };
 		90B0BA1C1DC0A5B400B5349E /* JSSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwipeTableCell.h; sourceTree = "<group>"; };
 		90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwipeTableCell.m; sourceTree = "<group>"; };
+		90BC97761DCAE0B100E6645D /* DHGifImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHGifImageOperation.h; sourceTree = "<group>"; };
+		90BC97771DCAE0B100E6645D /* DHGifImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHGifImageOperation.m; sourceTree = "<group>"; };
+		90BC97781DCAE0B100E6645D /* DHLaunchAdPageHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHLaunchAdPageHUD.h; sourceTree = "<group>"; };
+		90BC97791DCAE0B100E6645D /* DHLaunchAdPageHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHLaunchAdPageHUD.m; sourceTree = "<group>"; };
+		90BC977A1DCAE0B100E6645D /* DHRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHRegularExpression.h; sourceTree = "<group>"; };
+		90BC977B1DCAE0B100E6645D /* DHRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHRegularExpression.m; sourceTree = "<group>"; };
+		90BC977F1DCAE32000E6645D /* DHLaunchAdPageHUD+Launch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHLaunchAdPageHUD+Launch.h"; sourceTree = "<group>"; };
+		90BC97801DCAE32000E6645D /* DHLaunchAdPageHUD+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DHLaunchAdPageHUD+Launch.m"; sourceTree = "<group>"; };
 		90E340871DC97A270074B563 /* JSParallaxEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSParallaxEffectViewController.h; sourceTree = "<group>"; };
 		90E340881DC97A270074B563 /* JSParallaxEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSParallaxEffectViewController.m; sourceTree = "<group>"; };
 		90E3408A1DC97A590074B563 /* ParallaxEffectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxEffectTableViewCell.h; sourceTree = "<group>"; };
@@ -876,6 +888,7 @@
 		90B0B9B61DC03EAE00B5349E /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				90BC97741DCAE07900E6645D /* UILaunchAdPageHUD */,
 				90E340831DC979CE0074B563 /* UIParallaxEffect */,
 				906E00051DC300D0007D3DB7 /* UITabPage */,
 				906E00011DC2F621007D3DB7 /* UIPickerView */,
@@ -1010,6 +1023,28 @@
 			path = JSSwipeTableCell;
 			sourceTree = "<group>";
 		};
+		90BC97741DCAE07900E6645D /* UILaunchAdPageHUD */ = {
+			isa = PBXGroup;
+			children = (
+				90BC977F1DCAE32000E6645D /* DHLaunchAdPageHUD+Launch.h */,
+				90BC97801DCAE32000E6645D /* DHLaunchAdPageHUD+Launch.m */,
+			);
+			path = UILaunchAdPageHUD;
+			sourceTree = "<group>";
+		};
+		90BC97751DCAE0B100E6645D /* DHLaunchAdPageHUD */ = {
+			isa = PBXGroup;
+			children = (
+				90BC97761DCAE0B100E6645D /* DHGifImageOperation.h */,
+				90BC97771DCAE0B100E6645D /* DHGifImageOperation.m */,
+				90BC97781DCAE0B100E6645D /* DHLaunchAdPageHUD.h */,
+				90BC97791DCAE0B100E6645D /* DHLaunchAdPageHUD.m */,
+				90BC977A1DCAE0B100E6645D /* DHRegularExpression.h */,
+				90BC977B1DCAE0B100E6645D /* DHRegularExpression.m */,
+			);
+			path = DHLaunchAdPageHUD;
+			sourceTree = "<group>";
+		};
 		90E340831DC979CE0074B563 /* UIParallaxEffect */ = {
 			isa = PBXGroup;
 			children = (
@@ -1086,6 +1121,7 @@
 		90EF61411DBEF9AD001C4C44 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				90BC97751DCAE0B100E6645D /* DHLaunchAdPageHUD */,
 				900586121DC83C3900C27B61 /* SDCycleScrollView */,
 				906EFFF71DC2E591007D3DB7 /* HCSStarRatingView */,
 				900124861DC1F50800192175 /* CYLTabBarController */,
@@ -1840,6 +1876,7 @@
 				90E340E51DC9EEBC0074B563 /* NSObject+SandboxFolder.m in Sources */,
 				90EF61A11DBEFF6A001C4C44 /* NSObject+FileStream.m in Sources */,
 				906E00181DC324CF007D3DB7 /* secondCtrl.m in Sources */,
+				90BC97811DCAE32000E6645D /* DHLaunchAdPageHUD+Launch.m in Sources */,
 				90EF620C1DBF3CBE001C4C44 /* JSNetWork.m in Sources */,
 				900124501DC1CD6400192175 /* JSCollectionViewWaterfallLayout.m in Sources */,
 				900124471DC1AD0C00192175 /* JSCollectionView+CollectionView.m in Sources */,
@@ -1895,9 +1932,11 @@
 				90EF61881DBEFA2B001C4C44 /* MJRefreshBackNormalFooter.m in Sources */,
 				9001248F1DC1F50800192175 /* CYLPlusButton.m in Sources */,
 				906E00201DC340B3007D3DB7 /* JSTabPageViewController+Parts.m in Sources */,
+				90BC977D1DCAE0B100E6645D /* DHLaunchAdPageHUD.m in Sources */,
 				90E340E11DC9EAE60074B563 /* JSNetWork+Download.m in Sources */,
 				90EF61DE1DBF33F2001C4C44 /* UIImageView+ImageView.m in Sources */,
 				900124901DC1F50800192175 /* CYLTabBar.m in Sources */,
+				90BC977C1DCAE0B100E6645D /* DHGifImageOperation.m in Sources */,
 				90EF61821DBEFA2B001C4C44 /* MJRefreshFooter.m in Sources */,
 				900586111DC82D2300C27B61 /* SearchDAO.m in Sources */,
 				900124151DC1938A00192175 /* JSGroupTableView+MJRefresh.m in Sources */,
@@ -1950,6 +1989,7 @@
 				90EF61921DBEFA2B001C4C44 /* UIView+MJExtension.m in Sources */,
 				90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */,
 				90EF61901DBEFA2B001C4C44 /* UIScrollView+MJExtension.m in Sources */,
+				90BC977E1DCAE0B100E6645D /* DHRegularExpression.m in Sources */,
 				900124351DC1A8A700192175 /* JSGroupTableView+CellEditingStyle.m in Sources */,
 				900586261DC83C3900C27B61 /* SDCollectionViewCell.m in Sources */,
 				900586281DC83C3900C27B61 /* UIView+SDExtension.m in Sources */,
@@ -2083,6 +2123,7 @@
 			baseConfigurationReference = 902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = IOS_Compon/Info.plist;
@@ -2098,6 +2139,7 @@
 			baseConfigurationReference = 1C2C8F985240ACEBF197DFFC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = IOS_Compon/Info.plist;

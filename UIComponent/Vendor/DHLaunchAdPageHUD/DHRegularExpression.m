@@ -1,43 +1,40 @@
 //
-//  NSString+Regular.m
-//  IOS_Compon
+//  DHRegularExpression.m
+//  DHLaunchAdPageHUDExample
 //
-//  Created by gcb999 on 16/10/25.
-//  Copyright © 2016年 gcb999. All rights reserved.
+//  Created by Apple on 16/8/16.
+//  Copyright © 2016年 dingding3w. All rights reserved.
 //
 
-#import "NSString+Regular.h"
+#import "DHRegularExpression.h"
 
-@implementation NSString (Regular)
-
-
-
+@implementation DHRegularExpression
 /**< BOOL类型非0为真,0为假 */
-- (BOOL)checkUserName:(NSString *)userName {
++ (BOOL)checkUserName:(NSString *)userName {
     NSString *regex   = @"(^[A-Za-z0-9]{3,20}$)";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [pred evaluateWithObject:userName];
 }
 
--  (BOOL)checkPassword:(NSString *)password {
++ (BOOL)checkPassword:(NSString *)password {
     NSString *regex   = @"(^[A-Za-z0-9]{6,20}$)";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [pred evaluateWithObject:password];
 }
 
-- (BOOL)checkEmail:(NSString *)email {
++ (BOOL)checkEmail:(NSString *)email {
     NSString *regex   = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [pred evaluateWithObject:email];
 }
 
--  (BOOL)checkURL:(NSString *)url {
++ (BOOL)checkURL:(NSString *)url {
     NSString *regex   = @"http(s)?:\\/\\/([\\w-]+\\.)+[\\w-]+(\\/[\\w- .\\/?%&=]*)?";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     return [pred evaluateWithObject:url];
 }
 
--  (BOOL)checkTelephoneNumber:(NSString *)telephoneNumber {
++ (BOOL)checkTelephoneNumber:(NSString *)telephoneNumber {
     NSString *MOBILE             = @"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$";
     NSString *CM                 = @"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d)\\d{7}$";
     NSString *CU                 = @"^1(3[0-2]|5[256]|8[56])\\d{8}$";
@@ -50,6 +47,4 @@
     NSPredicate *regextestphs    = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", PHS];
     return [regextestmobile evaluateWithObject:telephoneNumber] || [regextestphs evaluateWithObject:telephoneNumber] || [regextestct evaluateWithObject:telephoneNumber] || [regextestcu evaluateWithObject:telephoneNumber] || [regextestcm evaluateWithObject:telephoneNumber];
 }
-
-
 @end

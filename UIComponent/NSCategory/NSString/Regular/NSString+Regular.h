@@ -10,7 +10,29 @@
 
 @interface NSString (Regular)
 
-- (BOOL)isValidateEmail:(NSString *)email;
+/**
+ *  正则表达式验证UserName
+ */
+- (BOOL)checkUserName:(NSString *)userName;
 
+/**
+ *  正则表达式验证Password
+ */
+- (BOOL)checkPassword:(NSString *)password;
+
+/**
+ *  正则表达式验证Email
+ */
+- (BOOL)checkEmail:(NSString *)email;
+
+/**
+ *  正则表达式验证URL
+ */
+- (BOOL)checkURL:(NSString *)url;
+
+/**
+ *  正则表达式验证TelephoneNumber
+ */
+- (BOOL)checkTelephoneNumber:(NSString *)telephoneNumber;
 
 @end

@@ -11,6 +11,7 @@
 #import "LeftViewController.h"
 #import "MainViewController.h"
 #import "JSHotUpdate.h"
+#import "DHLaunchAdPageHUD.h"
 @interface AppDelegate ()
 
 @end
@@ -31,6 +32,12 @@
     [self.window makeKeyAndVisible];
     
   
+
+    NSString *adimageGIFUrl = @"http://img.ui.cn/data/file/3/4/6/210643.gif";
+    DHLaunchAdPageHUD *launchAd = [[DHLaunchAdPageHUD alloc] initWithFrame:CGRectMake(0, 0, DDScreenW, DDScreenH-100) aDduration:6.0 aDImageUrl:adimageGIFUrl hideSkipButton:NO launchAdClickBlock:^{
+        NSLog(@"[AppDelegate]:点了广告图片");
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    }];
     
 
     return YES;
