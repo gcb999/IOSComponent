@@ -56,7 +56,8 @@
     NSArray *imageNameArray = @[@"header-1.jpg",@"header-1.jpg",@"header-1.jpg",@"header-1.jpg",@"header-1.jpg"];
     DHGuidePageHUD *guidePage = [[DHGuidePageHUD alloc] dh_initWithFrame:self.view.frame imageNameArray:imageNameArray buttonIsHidden:YES];
     guidePage.slideInto = YES;
-    [self.navigationController.view addSubview:guidePage];
+//    [self.navigationController.view addSubview:guidePage];
+    [[UIWindow window] addSubview:guidePage];
 }
 
 

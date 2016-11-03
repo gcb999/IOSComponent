@@ -52,6 +52,7 @@
  DHGuidePageHUD *guidePage = [[DHGuidePageHUD alloc] dh_initWithFrame:self.view.frame imageNameArray:imageNameArray buttonIsHidden:YES];
  guidePage.slideInto = YES;
  [self.navigationController.view addSubview:guidePage];
+    //[[UIWindow window] addSubview:guidePage];
  }
  
  #pragma mark - 设置APP动态图片引导页
@@ -60,6 +61,7 @@
  DHGuidePageHUD *guidePage = [[DHGuidePageHUD alloc] dh_initWithFrame:self.view.frame imageNameArray:imageNameArray buttonIsHidden:YES];
  guidePage.slideInto = YES;
  [self.navigationController.view addSubview:guidePage];
+       //[[UIWindow window] addSubview:guidePage];
  }
  
  #pragma mark - 设置APP视频引导页
@@ -67,6 +69,7 @@
  NSURL *videoURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"guideMovie1" ofType:@"mov"]];
  DHGuidePageHUD *guidePage = [[DHGuidePageHUD alloc] dh_initWithFrame:self.view.bounds videoURL:videoURL];
  [self.navigationController.view addSubview:guidePage];
+    //[[UIWindow window] addSubview:guidePage];
  }
 
 
