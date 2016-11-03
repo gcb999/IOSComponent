@@ -14,6 +14,19 @@
     return [@"patch" stringByAppendingPathComponent:md5];
 }
 
++ (void )yf_reset:(void (^)(BOOL success, NSError * error))completionHandler
+{
+    if ( ! completionHandler) {
+        completionHandler = ^(BOOL success, NSError * error){
+            // nothing to do...
+        };
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey: [self yf_sourcePatchKey]];
+    completionHandler(YES, nil);
+}
+
+
 + (UIImage *)yf_imageNamed:(NSString *)imgName{
     NSString * bundleName = @"main";
     

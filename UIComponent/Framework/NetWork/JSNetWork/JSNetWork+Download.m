@@ -67,6 +67,7 @@
         
     }];
     
+    // 3、执行任务
     [downloadTask resume];
     
     return  downloadTask;

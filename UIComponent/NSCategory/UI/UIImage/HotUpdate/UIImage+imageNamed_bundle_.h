@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface UIImage (imageNamed_bundle_)
-/* load img smart .*/
-+ (UIImage *)yf_imageNamed:(NSString *)imgName;
+
+
+#pragma mark -加载图片
++ (UIImage *)yf_imageNamed:(NSString *)imgName;/* load img smart .*/
+
+
+#pragma mark -重置
++ (void )yf_reset:(void (^)(BOOL success, NSError * error))completionHandler;
 
 
 @end
