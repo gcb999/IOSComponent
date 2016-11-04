@@ -88,7 +88,7 @@
                 }
                 
             }
-            if (i<titles.count) {
+            if (IS_NSArray(titles) &&i<titles.count) {
                 photo.caption =titles[i];
             }
             

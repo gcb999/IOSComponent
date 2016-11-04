@@ -51,6 +51,10 @@
 		900586271DC83C3900C27B61 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005861F1DC83C3900C27B61 /* SDCycleScrollView.m */; };
 		900586281DC83C3900C27B61 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 900586211DC83C3900C27B61 /* UIView+SDExtension.m */; };
 		9005862B1DC873CB00C27B61 /* JSMWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9005862A1DC873CB00C27B61 /* JSMWPhotoBrowser.m */; };
+		901CA6441DCC2F9A000FAC8B /* JSNewFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA6431DCC2F9A000FAC8B /* JSNewFeature.m */; };
+		901CA6481DCC3812000FAC8B /* JSFrameWorkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA6471DCC3812000FAC8B /* JSFrameWorkConfig.m */; };
+		901CA64C1DCC3C73000FAC8B /* JSDetailsPageImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA64B1DCC3C73000FAC8B /* JSDetailsPageImageView.m */; };
+		901CA64F1DCC643A000FAC8B /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901CA64E1DCC643A000FAC8B /* QuickLook.framework */; };
 		906E00001DC2F04F007D3DB7 /* JSDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 906EFFFF1DC2F04F007D3DB7 /* JSDatePicker.m */; };
 		906E00041DC2F62D007D3DB7 /* JSPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00031DC2F62D007D3DB7 /* JSPickerView.m */; };
 		906E00081DC300EA007D3DB7 /* JSTabPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00071DC300EA007D3DB7 /* JSTabPageViewController.m */; };
@@ -266,6 +270,13 @@
 		900586211DC83C3900C27B61 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		900586291DC873CB00C27B61 /* JSMWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMWPhotoBrowser.h; sourceTree = "<group>"; };
 		9005862A1DC873CB00C27B61 /* JSMWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMWPhotoBrowser.m; sourceTree = "<group>"; };
+		901CA6421DCC2F9A000FAC8B /* JSNewFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSNewFeature.h; sourceTree = "<group>"; };
+		901CA6431DCC2F9A000FAC8B /* JSNewFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSNewFeature.m; sourceTree = "<group>"; };
+		901CA6461DCC3812000FAC8B /* JSFrameWorkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSFrameWorkConfig.h; sourceTree = "<group>"; };
+		901CA6471DCC3812000FAC8B /* JSFrameWorkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSFrameWorkConfig.m; sourceTree = "<group>"; };
+		901CA64A1DCC3C73000FAC8B /* JSDetailsPageImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDetailsPageImageView.h; sourceTree = "<group>"; };
+		901CA64B1DCC3C73000FAC8B /* JSDetailsPageImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDetailsPageImageView.m; sourceTree = "<group>"; };
+		901CA64E1DCC643A000FAC8B /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		906E00021DC2F62D007D3DB7 /* JSPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerView.h; sourceTree = "<group>"; };
 		906E00031DC2F62D007D3DB7 /* JSPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerView.m; sourceTree = "<group>"; };
@@ -480,6 +491,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901CA64F1DCC643A000FAC8B /* QuickLook.framework in Frameworks */,
 				D230879668DC5634D3CC749C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -818,6 +830,51 @@
 				9005861B1DC83C3900C27B61 /* TAPageControl.m */,
 			);
 			path = PageControl;
+			sourceTree = "<group>";
+		};
+		901CA6401DCC2F34000FAC8B /* Tool(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				901CA6491DCC3C54000FAC8B /* DetailsPageImage */,
+				901CA6451DCC37FF000FAC8B /* FrameWork */,
+				901CA6411DCC2F7D000FAC8B /* NewFeature */,
+			);
+			path = "Tool(工具)";
+			sourceTree = "<group>";
+		};
+		901CA6411DCC2F7D000FAC8B /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				901CA6421DCC2F9A000FAC8B /* JSNewFeature.h */,
+				901CA6431DCC2F9A000FAC8B /* JSNewFeature.m */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		901CA6451DCC37FF000FAC8B /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				901CA6461DCC3812000FAC8B /* JSFrameWorkConfig.h */,
+				901CA6471DCC3812000FAC8B /* JSFrameWorkConfig.m */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		901CA6491DCC3C54000FAC8B /* DetailsPageImage */ = {
+			isa = PBXGroup;
+			children = (
+				901CA64D1DCC61C2000FAC8B /* PhotoBrower */,
+				901CA64A1DCC3C73000FAC8B /* JSDetailsPageImageView.h */,
+				901CA64B1DCC3C73000FAC8B /* JSDetailsPageImageView.m */,
+			);
+			path = DetailsPageImage;
+			sourceTree = "<group>";
+		};
+		901CA64D1DCC61C2000FAC8B /* PhotoBrower */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PhotoBrower;
 			sourceTree = "<group>";
 		};
 		906E00011DC2F621007D3DB7 /* UIPickerView */ = {
@@ -1652,6 +1709,7 @@
 		90F441BA1DBDFB3A0007C37E = {
 			isa = PBXGroup;
 			children = (
+				901CA6401DCC2F34000FAC8B /* Tool(工具) */,
 				90EF613F1DBEF837001C4C44 /* Podfile */,
 				90F4421E1DBDFC0A0007C37E /* PrefixHeader.pch */,
 				90F441F91DBDFBBA0007C37E /* UIComponent */,
@@ -1752,6 +1810,7 @@
 		D0B787F67F78A78209B29F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				901CA64E1DCC643A000FAC8B /* QuickLook.framework */,
 				03C8259A4649263810F983DC /* libPods.a */,
 			);
 			name = Frameworks;
@@ -1992,6 +2051,7 @@
 				90BC97AB1DCB23AA00E6645D /* JSPhoto+PhotoAlbum.m in Sources */,
 				906EFFFB1DC2E591007D3DB7 /* HCSStarRatingView.m in Sources */,
 				900124541DC1DA9200192175 /* JSCollectionViewCell.m in Sources */,
+				901CA6481DCC3812000FAC8B /* JSFrameWorkConfig.m in Sources */,
 				90EF61EB1DBF3A95001C4C44 /* UIDevice+Extend.m in Sources */,
 				90E340891DC97A270074B563 /* JSParallaxEffectViewController.m in Sources */,
 				90EF620A1DBF3CBE001C4C44 /* JSNetWork+GET.m in Sources */,
@@ -2055,6 +2115,7 @@
 				900124581DC1E56E00192175 /* JSCollectionView+UIScrollView.m in Sources */,
 				900124101DC192ED00192175 /* JSGroupTableView.m in Sources */,
 				90B0B9F81DC07D4700B5349E /* NSMutableDictionary+Exception.m in Sources */,
+				901CA6441DCC2F9A000FAC8B /* JSNewFeature.m in Sources */,
 				90B0B9FA1DC07D4700B5349E /* NSObject+Exception.m in Sources */,
 				90EF618A1DBEFA2B001C4C44 /* MJRefreshGifHeader.m in Sources */,
 				900586231DC83C3900C27B61 /* TAAnimatedDotView.m in Sources */,
@@ -2068,6 +2129,7 @@
 				900586261DC83C3900C27B61 /* SDCollectionViewCell.m in Sources */,
 				900586281DC83C3900C27B61 /* UIView+SDExtension.m in Sources */,
 				90EF61EF1DBF3B11001C4C44 /* UIView+Coordinates.m in Sources */,
+				901CA64C1DCC3C73000FAC8B /* JSDetailsPageImageView.m in Sources */,
 				900586241DC83C3900C27B61 /* TADotView.m in Sources */,
 				90EF617F1DBEFA2B001C4C44 /* MJRefreshAutoFooter.m in Sources */,
 				90EF61BC1DBF0DF9001C4C44 /* NSString+String.m in Sources */,

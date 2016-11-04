@@ -16,9 +16,10 @@
 #import "JSParallaxEffectViewController.h"
 #import "UIImage+imageNamed_bundle_.h"
 #import "JSHotUpdate.h"
-#import "DHGuidePageHUD.h"
 #import "JSPhoto.h"
-
+#import "JSNewFeature.h"
+#import "JSDetailsPageImageView.h"
+#import <QuickLook/QuickLook.h>  
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
 {
@@ -33,6 +34,8 @@
 
 @property(nonatomic,strong) NSMutableArray *details;
 
+@property(nonatomic,strong)JSDetailsPageImageView * imageDetail;
+
 @end
 
 @implementation MainViewController
@@ -40,18 +43,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    [self setStaticGuidePage];
-    
-    imageView=[[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 200, 200)];
-    UIImage * image = [UIImage yf_imageNamed:@"sub/sample"];
-    imageView.image = image;
-    [self.view addSubview:imageView];
-    
-    NSLog(@"加载后的图片尺寸:%@",[NSValue valueWithCGSize:imageView.image.size]);
 
+    [self.view addSubview:self.imageDetail];
+
+    [self.view addSubview:imageView];
  
 
 }
+
+
+
+
+
+-(JSDetailsPageImageView *)imageDetail{
+    if (_imageDetail==nil) {
+        _imageDetail=[[JSDetailsPageImageView alloc] initWithFrame:CGRectMake(0, 0, IPHONScreenWidth, 300) orignUrl: @"http://images.cnitblog.com/blog/215975/201405/311744526507841.png"];
+
+    }
+    return _imageDetail;
+}
+
+
+
+//_imageDetail.smallImgUrls=model.bannerSmallUrls;
+//_imageDetail.bigImgUrls=model.bannerBigUrls;
 
 //弹出选择框
 -(void)showActionForPhoto
@@ -96,19 +111,17 @@
 }
 
 
-#pragma mark - 设置APP静态图片引导页
-- (void)setStaticGuidePage {
-    NSArray *imageNameArray = @[@"header-1.jpg",@"header-1.jpg",@"header-1.jpg",@"header-1.jpg",@"header-1.jpg"];
-    DHGuidePageHUD *guidePage = [[DHGuidePageHUD alloc] dh_initWithFrame:self.view.frame imageNameArray:imageNameArray buttonIsHidden:YES];
-    guidePage.slideInto = YES;
-//    [self.navigationController.view addSubview:guidePage];
-    [[UIWindow window] addSubview:guidePage];
-}
+
 
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-  
-       [self showActionForPhoto];
+    NSArray *urls1=@[
+                    @"http://images.cnitblog.com/blog/215975/201405/311744526507841.png",
+                    @"http://farm4.static.flickr.com/3567/3523321514_371d9ac42f_b.jpg",
+                     @"http://images.cnitblog.com/blog/215975/201405/311744526507841.png"
+                    ];
+      self.imageDetail.smallImgUrls=urls1;
+    self.imageDetail.bigImgUrls=urls1;
     return;
     
     
