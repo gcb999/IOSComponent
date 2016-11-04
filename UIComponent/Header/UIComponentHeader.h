@@ -9,21 +9,31 @@
 #ifndef UIComponentHeader_h
 #define UIComponentHeader_h
 
+
+/*-------------------------Foundation--------------------------*/
 #import "NSObjectHeader.h"
-#import "UImageViewHeader.h"
+#import "NSDataHeader.h"
 #import "NSStringHeader.h"
+#import "NSArrayHeader.h"
+#import "NSDictionaryHeader.h"
+
+
+
+/*-------------------------FUIKit--------------------------*/
+
+#import "UImageViewHeader.h"
+
+#import "UIFont+Extend.h"
+#import "UIDevice+Extend.h"
+#import "UIColor+Hex.h"
+#import "TextViewHeader.h"
 
 #import "MBProgressHUD+Add.h"
 #import "UIWindow+window.h"
 #import "UIView+Coordinates.h"
 #import "UIView+AnimationProperty.h"
 
-//system
-#import "UIFont+Extend.h"
-#import "UIDevice+Extend.h"
-#import "UIColor+Hex.h"
 
-//
 //MJ 模型编码
 #import "MJExtension.h"
 
