@@ -10,7 +10,12 @@
 #define UIComponentHeader_h
 
 
-/*-------------------------Foundation--------------------------*/
+
+#pragma  mark -------------------------------NSCategory-------------------------------
+
+
+//Foundation
+
 #import "NSObjectHeader.h"
 #import "NSDataHeader.h"
 #import "NSStringHeader.h"
@@ -19,7 +24,7 @@
 
 
 
-/*-------------------------UIKit--------------------------*/
+//UIKit
 
 #import "UImageViewHeader.h"
 
@@ -34,25 +39,32 @@
 #import "UIView+AnimationProperty.h"
 
 
-/*-------------------------ExceptionHeader--------------------------*/
+//Exception
 #import "ExceptionHeader.h"
 
 
-//MJ 模型编码
-#import "MJExtension.h"
+#pragma  mark -------------------------------Expand-------------------------------
 
 
-//网络
+
+
+
+/*--------Network (网络 )--------*/
 #import "JSNetWorkHeader.h"
 
+
+/*--------Framework (横栏 & 侧栏)--------*/
+#import "JSFrameWorkHeader.h"
+
+
+/*--------UI --------*/
 
 //列表
 #import "TableViewHeader.h"
 #import "GroupTableVIewHeader.h"
 #import "CollectionViewHeader.h"
 
-//横栏 & 侧栏
-#import "JSFrameWorkHeader.h"
+
 
 
 

@@ -99,14 +99,19 @@
     
     
     
+    if (IS_NSArray(self.bigImgUrls)) {
+        
+        JSMWPhotoBrowser *brower=[[JSMWPhotoBrowser alloc] initWithDelegate:self photos:self.bigImgUrls titles:nil];
+        brower.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+        if (index<self.bigImgUrls.count) {
+//            ctrl.lastPage=index;
+        }
+        
+        [[self viewController] presentViewController:brower animated:YES completion:nil];
+    }
 
     
-    JSMWPhotoBrowser *brower=[[JSMWPhotoBrowser alloc] initWithDelegate:self photos:self.bigImgUrls titles:nil];
     
-    
-        brower.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    
-        [[self viewController] presentViewController:brower animated:YES completion:nil];
     
     
 
