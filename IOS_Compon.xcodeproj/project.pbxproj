@@ -101,6 +101,14 @@
 		901CA76D1DCC8606000FAC8B /* UITextView+PinchZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA7681DCC8606000FAC8B /* UITextView+PinchZoom.m */; };
 		901CA76E1DCC8606000FAC8B /* UITextView+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA76A1DCC8606000FAC8B /* UITextView+PlaceHolder.m */; };
 		901CA76F1DCC8606000FAC8B /* UITextView+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA76C1DCC8606000FAC8B /* UITextView+Select.m */; };
+		901CA78B1DCC8A9F000FAC8B /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA7761DCC8A9F000FAC8B /* NSArray+Exception.m */; };
+		901CA78C1DCC8A9F000FAC8B /* NSMutableArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA7781DCC8A9F000FAC8B /* NSMutableArray+Exception.m */; };
+		901CA78D1DCC8A9F000FAC8B /* NSDictionary+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA77B1DCC8A9F000FAC8B /* NSDictionary+Exception.m */; };
+		901CA78E1DCC8A9F000FAC8B /* NSMutableDictionary+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA77D1DCC8A9F000FAC8B /* NSMutableDictionary+Exception.m */; };
+		901CA78F1DCC8A9F000FAC8B /* NSNull+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA7801DCC8A9F000FAC8B /* NSNull+Exception.m */; };
+		901CA7901DCC8A9F000FAC8B /* NSObject+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA7831DCC8A9F000FAC8B /* NSObject+Exception.m */; };
+		901CA7911DCC8A9F000FAC8B /* NSString+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA7861DCC8A9F000FAC8B /* NSString+Exception.m */; };
+		901CA7921DCC8A9F000FAC8B /* UIView+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA78A1DCC8A9F000FAC8B /* UIView+Exception.m */; };
 		906E00001DC2F04F007D3DB7 /* JSDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 906EFFFF1DC2F04F007D3DB7 /* JSDatePicker.m */; };
 		906E00041DC2F62D007D3DB7 /* JSPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00031DC2F62D007D3DB7 /* JSPickerView.m */; };
 		906E00081DC300EA007D3DB7 /* JSTabPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00071DC300EA007D3DB7 /* JSTabPageViewController.m */; };
@@ -114,14 +122,6 @@
 		906EFFFB1DC2E591007D3DB7 /* HCSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 906EFFF91DC2E591007D3DB7 /* HCSStarRatingView.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
-		90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */; };
-		90B0B9F61DC07D4700B5349E /* NSMutableArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9E01DC07D4700B5349E /* NSMutableArray+Exception.m */; };
-		90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9E31DC07D4700B5349E /* NSDictionary+Exception.m */; };
-		90B0B9F81DC07D4700B5349E /* NSMutableDictionary+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9E51DC07D4700B5349E /* NSMutableDictionary+Exception.m */; };
-		90B0B9F91DC07D4700B5349E /* NSNull+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9E81DC07D4700B5349E /* NSNull+Exception.m */; };
-		90B0B9FA1DC07D4700B5349E /* NSObject+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9EB1DC07D4700B5349E /* NSObject+Exception.m */; };
-		90B0B9FB1DC07D4700B5349E /* NSString+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9EE1DC07D4700B5349E /* NSString+Exception.m */; };
-		90B0B9FD1DC07D4700B5349E /* UIView+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9F41DC07D4700B5349E /* UIView+Exception.m */; };
 		90B0BA1A1DC0A3EB00B5349E /* JSSwipeTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */; };
 		90B0BA1E1DC0A5B400B5349E /* JSSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0BA1D1DC0A5B400B5349E /* JSSwipeTableCell.m */; };
 		90BC977D1DCAE0B100E6645D /* DHLaunchAdPageHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC97791DCAE0B100E6645D /* DHLaunchAdPageHUD.m */; };
@@ -404,6 +404,23 @@
 		901CA76B1DCC8606000FAC8B /* UITextView+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Select.h"; sourceTree = "<group>"; };
 		901CA76C1DCC8606000FAC8B /* UITextView+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Select.m"; sourceTree = "<group>"; };
 		901CA7711DCC8893000FAC8B /* TextViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewHeader.h; sourceTree = "<group>"; };
+		901CA7751DCC8A9F000FAC8B /* NSArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Exception.h"; sourceTree = "<group>"; };
+		901CA7761DCC8A9F000FAC8B /* NSArray+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Exception.m"; sourceTree = "<group>"; };
+		901CA7771DCC8A9F000FAC8B /* NSMutableArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Exception.h"; sourceTree = "<group>"; };
+		901CA7781DCC8A9F000FAC8B /* NSMutableArray+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Exception.m"; sourceTree = "<group>"; };
+		901CA77A1DCC8A9F000FAC8B /* NSDictionary+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Exception.h"; sourceTree = "<group>"; };
+		901CA77B1DCC8A9F000FAC8B /* NSDictionary+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Exception.m"; sourceTree = "<group>"; };
+		901CA77C1DCC8A9F000FAC8B /* NSMutableDictionary+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Exception.h"; sourceTree = "<group>"; };
+		901CA77D1DCC8A9F000FAC8B /* NSMutableDictionary+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Exception.m"; sourceTree = "<group>"; };
+		901CA77F1DCC8A9F000FAC8B /* NSNull+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Exception.h"; sourceTree = "<group>"; };
+		901CA7801DCC8A9F000FAC8B /* NSNull+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Exception.m"; sourceTree = "<group>"; };
+		901CA7821DCC8A9F000FAC8B /* NSObject+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Exception.h"; sourceTree = "<group>"; };
+		901CA7831DCC8A9F000FAC8B /* NSObject+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Exception.m"; sourceTree = "<group>"; };
+		901CA7851DCC8A9F000FAC8B /* NSString+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Exception.h"; sourceTree = "<group>"; };
+		901CA7861DCC8A9F000FAC8B /* NSString+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exception.m"; sourceTree = "<group>"; };
+		901CA7891DCC8A9F000FAC8B /* UIView+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Exception.h"; sourceTree = "<group>"; };
+		901CA78A1DCC8A9F000FAC8B /* UIView+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Exception.m"; sourceTree = "<group>"; };
+		901CA7931DCC8ADA000FAC8B /* ExceptionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionHeader.h; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		906E00021DC2F62D007D3DB7 /* JSPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPickerView.h; sourceTree = "<group>"; };
 		906E00031DC2F62D007D3DB7 /* JSPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPickerView.m; sourceTree = "<group>"; };
@@ -433,23 +450,6 @@
 		90B0B9D41DC0520C00B5349E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		90B0B9D51DC0520C00B5349E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		90B0B9DA1DC07CA800B5349E /* TableViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewHeader.h; sourceTree = "<group>"; };
-		90B0B9DB1DC07D4700B5349E /* CoreExceptionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreExceptionHeader.h; sourceTree = "<group>"; };
-		90B0B9DD1DC07D4700B5349E /* NSArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Exception.h"; sourceTree = "<group>"; };
-		90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Exception.m"; sourceTree = "<group>"; };
-		90B0B9DF1DC07D4700B5349E /* NSMutableArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Exception.h"; sourceTree = "<group>"; };
-		90B0B9E01DC07D4700B5349E /* NSMutableArray+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Exception.m"; sourceTree = "<group>"; };
-		90B0B9E21DC07D4700B5349E /* NSDictionary+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Exception.h"; sourceTree = "<group>"; };
-		90B0B9E31DC07D4700B5349E /* NSDictionary+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Exception.m"; sourceTree = "<group>"; };
-		90B0B9E41DC07D4700B5349E /* NSMutableDictionary+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Exception.h"; sourceTree = "<group>"; };
-		90B0B9E51DC07D4700B5349E /* NSMutableDictionary+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Exception.m"; sourceTree = "<group>"; };
-		90B0B9E71DC07D4700B5349E /* NSNull+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Exception.h"; sourceTree = "<group>"; };
-		90B0B9E81DC07D4700B5349E /* NSNull+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+Exception.m"; sourceTree = "<group>"; };
-		90B0B9EA1DC07D4700B5349E /* NSObject+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Exception.h"; sourceTree = "<group>"; };
-		90B0B9EB1DC07D4700B5349E /* NSObject+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Exception.m"; sourceTree = "<group>"; };
-		90B0B9ED1DC07D4700B5349E /* NSString+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Exception.h"; sourceTree = "<group>"; };
-		90B0B9EE1DC07D4700B5349E /* NSString+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exception.m"; sourceTree = "<group>"; };
-		90B0B9F31DC07D4700B5349E /* UIView+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Exception.h"; sourceTree = "<group>"; };
-		90B0B9F41DC07D4700B5349E /* UIView+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Exception.m"; sourceTree = "<group>"; };
 		90B0BA181DC0A3EB00B5349E /* JSSwipeTableCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwipeTableCellModel.h; sourceTree = "<group>"; };
 		90B0BA191DC0A3EB00B5349E /* JSSwipeTableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSwipeTableCellModel.m; sourceTree = "<group>"; };
 		90B0BA1C1DC0A5B400B5349E /* JSSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSwipeTableCell.h; sourceTree = "<group>"; };
@@ -1312,6 +1312,78 @@
 			path = TextViewHeader;
 			sourceTree = "<group>";
 		};
+		901CA7721DCC8A9F000FAC8B /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				901CA7741DCC8A9F000FAC8B /* NSArrayException */,
+				901CA7791DCC8A9F000FAC8B /* NSDictionary */,
+				901CA77E1DCC8A9F000FAC8B /* NSNullableException */,
+				901CA7811DCC8A9F000FAC8B /* NSObjectException */,
+				901CA7841DCC8A9F000FAC8B /* NSStringException */,
+				901CA7881DCC8A9F000FAC8B /* UIViewException */,
+				901CA7931DCC8ADA000FAC8B /* ExceptionHeader.h */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		901CA7741DCC8A9F000FAC8B /* NSArrayException */ = {
+			isa = PBXGroup;
+			children = (
+				901CA7751DCC8A9F000FAC8B /* NSArray+Exception.h */,
+				901CA7761DCC8A9F000FAC8B /* NSArray+Exception.m */,
+				901CA7771DCC8A9F000FAC8B /* NSMutableArray+Exception.h */,
+				901CA7781DCC8A9F000FAC8B /* NSMutableArray+Exception.m */,
+			);
+			path = NSArrayException;
+			sourceTree = "<group>";
+		};
+		901CA7791DCC8A9F000FAC8B /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				901CA77A1DCC8A9F000FAC8B /* NSDictionary+Exception.h */,
+				901CA77B1DCC8A9F000FAC8B /* NSDictionary+Exception.m */,
+				901CA77C1DCC8A9F000FAC8B /* NSMutableDictionary+Exception.h */,
+				901CA77D1DCC8A9F000FAC8B /* NSMutableDictionary+Exception.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		901CA77E1DCC8A9F000FAC8B /* NSNullableException */ = {
+			isa = PBXGroup;
+			children = (
+				901CA77F1DCC8A9F000FAC8B /* NSNull+Exception.h */,
+				901CA7801DCC8A9F000FAC8B /* NSNull+Exception.m */,
+			);
+			path = NSNullableException;
+			sourceTree = "<group>";
+		};
+		901CA7811DCC8A9F000FAC8B /* NSObjectException */ = {
+			isa = PBXGroup;
+			children = (
+				901CA7821DCC8A9F000FAC8B /* NSObject+Exception.h */,
+				901CA7831DCC8A9F000FAC8B /* NSObject+Exception.m */,
+			);
+			path = NSObjectException;
+			sourceTree = "<group>";
+		};
+		901CA7841DCC8A9F000FAC8B /* NSStringException */ = {
+			isa = PBXGroup;
+			children = (
+				901CA7851DCC8A9F000FAC8B /* NSString+Exception.h */,
+				901CA7861DCC8A9F000FAC8B /* NSString+Exception.m */,
+			);
+			path = NSStringException;
+			sourceTree = "<group>";
+		};
+		901CA7881DCC8A9F000FAC8B /* UIViewException */ = {
+			isa = PBXGroup;
+			children = (
+				901CA7891DCC8A9F000FAC8B /* UIView+Exception.h */,
+				901CA78A1DCC8A9F000FAC8B /* UIView+Exception.m */,
+			);
+			path = UIViewException;
+			sourceTree = "<group>";
+		};
 		906E00011DC2F621007D3DB7 /* UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1460,64 +1532,6 @@
 				90B0BA1B1DC0A57800B5349E /* JSSwipeTableCell */,
 			);
 			path = TableViewCell;
-			sourceTree = "<group>";
-		};
-		90B0B9DC1DC07D4700B5349E /* NSArrayException */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9DD1DC07D4700B5349E /* NSArray+Exception.h */,
-				90B0B9DE1DC07D4700B5349E /* NSArray+Exception.m */,
-				90B0B9DF1DC07D4700B5349E /* NSMutableArray+Exception.h */,
-				90B0B9E01DC07D4700B5349E /* NSMutableArray+Exception.m */,
-			);
-			path = NSArrayException;
-			sourceTree = "<group>";
-		};
-		90B0B9E11DC07D4700B5349E /* NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9E21DC07D4700B5349E /* NSDictionary+Exception.h */,
-				90B0B9E31DC07D4700B5349E /* NSDictionary+Exception.m */,
-				90B0B9E41DC07D4700B5349E /* NSMutableDictionary+Exception.h */,
-				90B0B9E51DC07D4700B5349E /* NSMutableDictionary+Exception.m */,
-			);
-			path = NSDictionary;
-			sourceTree = "<group>";
-		};
-		90B0B9E61DC07D4700B5349E /* NSNullableException */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9E71DC07D4700B5349E /* NSNull+Exception.h */,
-				90B0B9E81DC07D4700B5349E /* NSNull+Exception.m */,
-			);
-			path = NSNullableException;
-			sourceTree = "<group>";
-		};
-		90B0B9E91DC07D4700B5349E /* NSObjectException */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9EA1DC07D4700B5349E /* NSObject+Exception.h */,
-				90B0B9EB1DC07D4700B5349E /* NSObject+Exception.m */,
-			);
-			path = NSObjectException;
-			sourceTree = "<group>";
-		};
-		90B0B9EC1DC07D4700B5349E /* NSStringException */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9ED1DC07D4700B5349E /* NSString+Exception.h */,
-				90B0B9EE1DC07D4700B5349E /* NSString+Exception.m */,
-			);
-			path = NSStringException;
-			sourceTree = "<group>";
-		};
-		90B0B9F21DC07D4700B5349E /* UIViewException */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9F31DC07D4700B5349E /* UIView+Exception.h */,
-				90B0B9F41DC07D4700B5349E /* UIView+Exception.m */,
-			);
-			path = UIViewException;
 			sourceTree = "<group>";
 		};
 		90B0BA141DC0A38B00B5349E /* TableViewCellEditingStyle */ = {
@@ -1771,6 +1785,7 @@
 		90EF61931DBEFB34001C4C44 /* NSCategory */ = {
 			isa = PBXGroup;
 			children = (
+				901CA7721DCC8A9F000FAC8B /* Exception */,
 				901CA7351DCC83E8000FAC8B /* UIKit */,
 				901CA6541DCC7318000FAC8B /* Foundation */,
 			);
@@ -1973,23 +1988,8 @@
 				90EF61A61DBF0109001C4C44 /* Header */,
 				90EF61931DBEFB34001C4C44 /* NSCategory */,
 				90EF61411DBEF9AD001C4C44 /* Vendor */,
-				90F441FA1DBDFBBA0007C37E /* UIException */,
 			);
 			path = UIComponent;
-			sourceTree = "<group>";
-		};
-		90F441FA1DBDFBBA0007C37E /* UIException */ = {
-			isa = PBXGroup;
-			children = (
-				90B0B9DB1DC07D4700B5349E /* CoreExceptionHeader.h */,
-				90B0B9DC1DC07D4700B5349E /* NSArrayException */,
-				90B0B9E11DC07D4700B5349E /* NSDictionary */,
-				90B0B9E61DC07D4700B5349E /* NSNullableException */,
-				90B0B9E91DC07D4700B5349E /* NSObjectException */,
-				90B0B9EC1DC07D4700B5349E /* NSStringException */,
-				90B0B9F21DC07D4700B5349E /* UIViewException */,
-			);
-			path = UIException;
 			sourceTree = "<group>";
 		};
 		D0B787F67F78A78209B29F09 /* Frameworks */ = {
@@ -2198,7 +2198,6 @@
 				900586271DC83C3900C27B61 /* SDCycleScrollView.m in Sources */,
 				900124691DC1EDDD00192175 /* JSRefreshAutoGifFooter.m in Sources */,
 				901CA6F21DCC7828000FAC8B /* NSString+RegexCategory.m in Sources */,
-				90B0B9F71DC07D4700B5349E /* NSDictionary+Exception.m in Sources */,
 				9001247D1DC1F45800192175 /* JSTabBarControllerConfig.m in Sources */,
 				901CA6801DCC75C1000FAC8B /* NSData+Hash.m in Sources */,
 				90EF62081DBF3CBE001C4C44 /* JSUserSingletonModel.m in Sources */,
@@ -2216,9 +2215,9 @@
 				906E00081DC300EA007D3DB7 /* JSTabPageViewController.m in Sources */,
 				90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */,
 				900586071DC82AA500C27B61 /* JSFmdb+fmdb.m in Sources */,
-				90B0B9F91DC07D4700B5349E /* NSNull+Exception.m in Sources */,
 				901CA7311DCC8388000FAC8B /* NSObject+SandboxFolder.m in Sources */,
 				901CA7631DCC8444000FAC8B /* UIColor+Hex.m in Sources */,
+				901CA78B1DCC8A9F000FAC8B /* NSArray+Exception.m in Sources */,
 				901CA67F1DCC75C1000FAC8B /* NSData+Gzip.m in Sources */,
 				90EF61871DBEFA2B001C4C44 /* MJRefreshBackGifFooter.m in Sources */,
 				901CA7321DCC8388000FAC8B /* NSObject+SDWebImage.m in Sources */,
@@ -2232,11 +2231,11 @@
 				9001242F1DC1A39B00192175 /* JSTableView+TableView.m in Sources */,
 				90F3BDB11DC738A500170A16 /* UIScrollView+HeaderScaleImage.m in Sources */,
 				901CA6F91DCC7828000FAC8B /* NSString+UrlEncode.m in Sources */,
+				901CA7901DCC8A9F000FAC8B /* NSObject+Exception.m in Sources */,
 				900124911DC1F50800192175 /* CYLTabBarController.m in Sources */,
-				90B0B9F51DC07D4700B5349E /* NSArray+Exception.m in Sources */,
 				901CA7061DCC7C8D000FAC8B /* NSArray+SafeAccess.m in Sources */,
-				90B0B9F61DC07D4700B5349E /* NSMutableArray+Exception.m in Sources */,
 				901CA7651DCC8444000FAC8B /* UIFont+Extend.m in Sources */,
+				901CA78E1DCC8A9F000FAC8B /* NSMutableDictionary+Exception.m in Sources */,
 				90EF62181DBF4096001C4C44 /* JSSideSlippingControllerConfig.m in Sources */,
 				901CA6ED1DCC7828000FAC8B /* NSString+Encrypt.m in Sources */,
 				900124601DC1E80A00192175 /* JSGroupTableView+UIScrollView.m in Sources */,
@@ -2288,15 +2287,16 @@
 				9001244F1DC1CD6400192175 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				90EF61851DBEFA2B001C4C44 /* MJRefreshAutoNormalFooter.m in Sources */,
 				901CA6F71DCC7828000FAC8B /* NSString+String.m in Sources */,
-				90B0B9FB1DC07D4700B5349E /* NSString+Exception.m in Sources */,
 				9001247E1DC1F45800192175 /* UITabBar+littleRedDotBadge.m in Sources */,
 				90BC978D1DCAE80400E6645D /* DHGuidePageHUD.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
 				90F3BDB41DC738F700170A16 /* JSTableView+HeaderView.m in Sources */,
 				90E340D91DC9DF590074B563 /* JSHotUpdate.m in Sources */,
 				90EF618E1DBEFA2B001C4C44 /* MJRefreshConst.m in Sources */,
+				901CA78D1DCC8A9F000FAC8B /* NSDictionary+Exception.m in Sources */,
 				906E000E1DC303F8007D3DB7 /* DataManager.m in Sources */,
 				901CA7641DCC8444000FAC8B /* UIDevice+Extend.m in Sources */,
+				901CA7911DCC8A9F000FAC8B /* NSString+Exception.m in Sources */,
 				900586041DC82A4700C27B61 /* JSFmdb.m in Sources */,
 				906E001C1DC33796007D3DB7 /* JSTabPageViewController+Style.m in Sources */,
 				901CA7521DCC841F000FAC8B /* MBProgressHUD+Add.m in Sources */,
@@ -2306,18 +2306,19 @@
 				90EF614E1DBEF9D0001C4C44 /* MGSwipeButton.m in Sources */,
 				90EF62091DBF3CBE001C4C44 /* JSError.m in Sources */,
 				900124391DC1A91900192175 /* JSTableView+CellEditingStyle.m in Sources */,
+				901CA78C1DCC8A9F000FAC8B /* NSMutableArray+Exception.m in Sources */,
 				90E3B7101DCAD44600106218 /* JSNetWork+Upload.m in Sources */,
 				9001246F1DC1EE5700192175 /* JSRefreshAutoGifHeader.m in Sources */,
 				90EF61861DBEFA2B001C4C44 /* MJRefreshAutoStateFooter.m in Sources */,
 				90EF62141DBF403C001C4C44 /* UIViewController+JASidePanel.m in Sources */,
 				90EF618C1DBEFA2B001C4C44 /* MJRefreshStateHeader.m in Sources */,
-				90B0B9FD1DC07D4700B5349E /* UIView+Exception.m in Sources */,
 				901CA6FB1DCC7828000FAC8B /* NSString+XML.m in Sources */,
 				901CA7191DCC7D42000FAC8B /* NSDictionary+SafeAccess.m in Sources */,
 				906EFFF01DC2DE77007D3DB7 /* JSRatingView.m in Sources */,
 				9001241B1DC194A200192175 /* JSRefresh.m in Sources */,
 				9001240F1DC192ED00192175 /* JSGroupTableView+GroupTableView.m in Sources */,
 				90BC978C1DCAE80400E6645D /* DHGifImageOperation.m in Sources */,
+				901CA78F1DCC8A9F000FAC8B /* NSNull+Exception.m in Sources */,
 				900124411DC1AA8600192175 /* JSCollectionView+MJRefresh.m in Sources */,
 				90EF618F1DBEFA2B001C4C44 /* NSBundle+MJRefresh.m in Sources */,
 				901CA6F41DCC7828000FAC8B /* NSString+SandboxFolder.m in Sources */,
@@ -2325,9 +2326,7 @@
 				900124581DC1E56E00192175 /* JSCollectionView+UIScrollView.m in Sources */,
 				900124101DC192ED00192175 /* JSGroupTableView.m in Sources */,
 				901CA7581DCC841F000FAC8B /* UIView+Coordinates.m in Sources */,
-				90B0B9F81DC07D4700B5349E /* NSMutableDictionary+Exception.m in Sources */,
 				901CA6441DCC2F9A000FAC8B /* JSNewFeature.m in Sources */,
-				90B0B9FA1DC07D4700B5349E /* NSObject+Exception.m in Sources */,
 				901CA6EC1DCC7828000FAC8B /* NSString+Emoji.m in Sources */,
 				90EF618A1DBEFA2B001C4C44 /* MJRefreshGifHeader.m in Sources */,
 				900586231DC83C3900C27B61 /* TAAnimatedDotView.m in Sources */,
@@ -2341,6 +2340,7 @@
 				901CA7551DCC841F000FAC8B /* UIImageView+Gif.m in Sources */,
 				900586261DC83C3900C27B61 /* SDCollectionViewCell.m in Sources */,
 				900586281DC83C3900C27B61 /* UIView+SDExtension.m in Sources */,
+				901CA7921DCC8A9F000FAC8B /* UIView+Exception.m in Sources */,
 				901CA7541DCC841F000FAC8B /* UIImage+imageNamed_bundle_.m in Sources */,
 				901CA64C1DCC3C73000FAC8B /* JSDetailsPageImageView.m in Sources */,
 				901CA7331DCC8388000FAC8B /* NSObject+TypeConversion.m in Sources */,

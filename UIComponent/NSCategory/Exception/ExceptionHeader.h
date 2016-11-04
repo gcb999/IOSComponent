@@ -1,13 +1,13 @@
 //
-//  CoreExceptionHeader.h
-//  DressLink
+//  ExceptionHeader.h
+//  IOS_Compon
 //
-//  Created by gcb999 on 16/8/22.
-//  Copyright © 2016年 com.sailvan.DressLink. All rights reserved.
+//  Created by gcb999 on 16/11/4.
+//  Copyright © 2016年 gcb999. All rights reserved.
 //
 
-#ifndef CoreExceptionHeader_h
-#define CoreExceptionHeader_h
+#ifndef ExceptionHeader_h
+#define ExceptionHeader_h
 
 
 
@@ -21,4 +21,4 @@
 
 #define CoreExceptionDictionaryM  @"__NSDictionaryM"
 
-#endif /* CoreExceptionHeader_h */
+#endif /* ExceptionHeader_h */
