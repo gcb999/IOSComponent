@@ -46,7 +46,7 @@
                  
                  @"highlighted" : @"home_highlight",
                  
-                 @"ctrl":@"AcountViewController"
+                 @"ctrl":@"MainViewController"
                  },
              
              @{
@@ -56,7 +56,7 @@
                  
                  @"highlighted" : @"home_highlight",
                  
-                 @"ctrl":@"AccountGroupViewController"
+                 @"ctrl":@"LeftViewController"
                  }
              
              ];

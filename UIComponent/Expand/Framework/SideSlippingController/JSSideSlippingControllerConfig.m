@@ -7,7 +7,8 @@
 //
 
 #import "JSSideSlippingControllerConfig.h"
-
+#import "LeftViewController.h"
+#import "MainViewController.h"
 
 //https://github.com/gotosleep/JASidePanels
 

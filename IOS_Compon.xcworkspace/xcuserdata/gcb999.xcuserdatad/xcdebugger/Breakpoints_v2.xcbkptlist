@@ -197,53 +197,6 @@
             endingLineNumber = "63"
             landmarkName = "-download:progress:completionHandler:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__59-[JSNetWork(Download) download:progress:completionHandler:]_block_invoke_3"
-                  moduleName = "IOS_Compon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-                  timestampString = "499934924.424241"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "51">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__copy_helper_block_.48"
-                  moduleName = "IOS_Compon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-                  timestampString = "499934924.424394"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.49"
-                  moduleName = "IOS_Compon"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gcb999/Desktop/IOSComponent/UIComponent/Framework/NetWork/JSNetWork/JSNetWork+Download.m"
-                  timestampString = "499934924.424497"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "125">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -339,6 +292,38 @@
             startingLineNumber = "51"
             endingLineNumber = "51"
             landmarkName = "-setSmallImgUrls:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOS_Compon/MainViewController.m"
+            timestampString = "499945958.987747"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-touchesBegan:withEvent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IOS_Compon/MainViewController.m"
+            timestampString = "499946017.512256"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

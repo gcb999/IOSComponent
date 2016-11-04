@@ -7,7 +7,6 @@
 //
 
 #import "UITabBar+littleRedDotBadge.h"
-#import "JSTabbarItemHelpModel.h"
 
 @implementation UITabBar (littleRedDotBadge)
 - (void)showBadgeOnItemIndex:(int)index badge:(NSString *)badge animation:(BOOL)animation{

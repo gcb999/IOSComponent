@@ -46,7 +46,6 @@
 
     [self.view addSubview:self.imageDetail];
 
-    [self.view addSubview:imageView];
  
 
 }
@@ -65,50 +64,7 @@
 
 
 
-//_imageDetail.smallImgUrls=model.bannerSmallUrls;
-//_imageDetail.bigImgUrls=model.bannerBigUrls;
 
-//弹出选择框
--(void)showActionForPhoto
-{
-    UIActionSheet *actionSheet = [[UIActionSheet alloc]
-                                  initWithTitle:nil
-                                  delegate:self
-                                  cancelButtonTitle:@"取消"
-                                  destructiveButtonTitle:nil
-                                  otherButtonTitles:@"拍照",@"从相册选择",nil];
-    actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-    [actionSheet showInView:self.view];
-}
-
-- (void)actionSheet:(UIActionSheet *)modalView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 0) {
-        JSPhoto *photo=[[JSPhoto alloc] init];
-        [photo camera:self completion:^(BOOL isSucess, NSMutableArray<UIImage *> *image) {
-            if (isSucess) {
-                
-            }
-            else{
-                
-            }
-            
-        }];
-    }else if (buttonIndex == 1){
-          JSPhoto *photo=[[JSPhoto alloc] init];
-        [photo PhotoAlbum:self maximumNumberOfSelection:2 completion:^(BOOL isSucess, NSMutableArray<UIImage *> *image) {
-            imageView.image=[image lastObject];
-            
-        }];
-    }
-}
-
-#pragma mark UINavigationControllerDelegate, QBImagePickerControllerDelegate
-
-- (void)qb_imagePickerController:(QBImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets{
-    
-    
-}
 
 
 

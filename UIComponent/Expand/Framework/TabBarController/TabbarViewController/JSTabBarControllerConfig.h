@@ -7,11 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CYLTabBarController.h"
 
 @interface JSTabBarControllerConfig : NSObject
-
-+(instancetype) shareInstance;
 
 @property (nonatomic, readonly, strong) CYLTabBarController *tabBarController;
 

@@ -51,9 +51,9 @@
 #import "GroupTableVIewHeader.h"
 #import "CollectionViewHeader.h"
 
-//横栏
-#import "JSTabBarControllerConfig.h"
-#import "JSTabBarControllerConfig+Badge.h"
+//横栏 & 侧栏
+#import "JSFrameWorkHeader.h"
+
 
 
 #endif /* UIComponentHeader_h */
