@@ -36,6 +36,12 @@ typedef void (^JSPhotoCompletion)(BOOL isSucess,NSMutableArray<UIImage *> * imag
 
 -(void)camera:(UIViewController *)viewController completion:(JSPhotoCompletion)completion;
 
+#pragma mark -单张相册
+
+-(void)singlePhoto:(UIViewController *)viewController completion:(JSPhotoCompletion)completion;
+
+
+
 #pragma mark -相册
 
 -(void)PhotoAlbum:(UIViewController *)viewController maximumNumberOfSelection:(NSInteger)maximumNumberOfSelection completion:(JSPhotoCompletion)completion;

@@ -170,6 +170,9 @@
 		901CAB361DCC94E8000FAC8B /* main.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 901CAA911DCC94E8000FAC8B /* main.bundle */; };
 		901CAB371DCC94E8000FAC8B /* JSNewFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CAA941DCC94E8000FAC8B /* JSNewFeature.m */; };
 		901CAB381DCC94E8000FAC8B /* SearchDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CAA971DCC94E8000FAC8B /* SearchDAO.m */; };
+		905CCCF21DCD72C8004858F6 /* JSPhoto+Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 905CCCF11DCD72C8004858F6 /* JSPhoto+Camera.m */; };
+		905CCCF51DCD72D3004858F6 /* JSPhoto+SinglePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 905CCCF41DCD72D3004858F6 /* JSPhoto+SinglePhoto.m */; };
+		905CCCF81DCD72DD004858F6 /* JSPhoto+MorePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 905CCCF71DCD72DD004858F6 /* JSPhoto+MorePhoto.m */; };
 		906E00151DC324C0007D3DB7 /* FirstCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00141DC324C0007D3DB7 /* FirstCtrl.m */; };
 		906E00181DC324CF007D3DB7 /* secondCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00171DC324CF007D3DB7 /* secondCtrl.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
@@ -555,6 +558,12 @@
 		901CAA961DCC94E8000FAC8B /* SearchDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDAO.h; sourceTree = "<group>"; };
 		901CAA971DCC94E8000FAC8B /* SearchDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDAO.m; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		905CCCF01DCD72C8004858F6 /* JSPhoto+Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSPhoto+Camera.h"; sourceTree = "<group>"; };
+		905CCCF11DCD72C8004858F6 /* JSPhoto+Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSPhoto+Camera.m"; sourceTree = "<group>"; };
+		905CCCF31DCD72D3004858F6 /* JSPhoto+SinglePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSPhoto+SinglePhoto.h"; sourceTree = "<group>"; };
+		905CCCF41DCD72D3004858F6 /* JSPhoto+SinglePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSPhoto+SinglePhoto.m"; sourceTree = "<group>"; };
+		905CCCF61DCD72DD004858F6 /* JSPhoto+MorePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSPhoto+MorePhoto.h"; sourceTree = "<group>"; };
+		905CCCF71DCD72DD004858F6 /* JSPhoto+MorePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSPhoto+MorePhoto.m"; sourceTree = "<group>"; };
 		906E00131DC324C0007D3DB7 /* FirstCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCtrl.h; sourceTree = "<group>"; };
 		906E00141DC324C0007D3DB7 /* FirstCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCtrl.m; sourceTree = "<group>"; };
 		906E00161DC324CF007D3DB7 /* secondCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondCtrl.h; sourceTree = "<group>"; };
@@ -902,6 +911,7 @@
 		901CA92E1DCC94E8000FAC8B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				905CCCF91DCD7A45004858F6 /* UIViewController */,
 				901CA92F1DCC94E8000FAC8B /* MBProgressHUD */,
 				901CA9321DCC94E8000FAC8B /* MWPhotoBrowser */,
 				901CA9351DCC94E8000FAC8B /* UIColor */,
@@ -1595,6 +1605,9 @@
 		901CA9FE1DCC94E8000FAC8B /* UIPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				905CCCEF1DCD69E7004858F6 /* Camera */,
+				905CCCED1DCD69E1004858F6 /* MorePhoto */,
+				905CCCEE1DCD69E1004858F6 /* SinglePhoto */,
 				901CA9FF1DCC94E8000FAC8B /* Helper */,
 			);
 			path = UIPhoto;
@@ -1977,6 +1990,72 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		905CCCED1DCD69E1004858F6 /* MorePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				905CCCF61DCD72DD004858F6 /* JSPhoto+MorePhoto.h */,
+				905CCCF71DCD72DD004858F6 /* JSPhoto+MorePhoto.m */,
+			);
+			path = MorePhoto;
+			sourceTree = "<group>";
+		};
+		905CCCEE1DCD69E1004858F6 /* SinglePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				905CCCF31DCD72D3004858F6 /* JSPhoto+SinglePhoto.h */,
+				905CCCF41DCD72D3004858F6 /* JSPhoto+SinglePhoto.m */,
+			);
+			path = SinglePhoto;
+			sourceTree = "<group>";
+		};
+		905CCCEF1DCD69E7004858F6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				905CCCF01DCD72C8004858F6 /* JSPhoto+Camera.h */,
+				905CCCF11DCD72C8004858F6 /* JSPhoto+Camera.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		905CCCF91DCD7A45004858F6 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				905CCCFA1DCD7A45004858F6 /* Photo */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		905CCCFA1DCD7A45004858F6 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				905CCCFB1DCD7A45004858F6 /* Camera */,
+				905CCCFC1DCD7A45004858F6 /* MorePhoto */,
+				905CCCFD1DCD7A45004858F6 /* SinglePhoto */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		905CCCFB1DCD7A45004858F6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		905CCCFC1DCD7A45004858F6 /* MorePhoto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MorePhoto;
+			sourceTree = "<group>";
+		};
+		905CCCFD1DCD7A45004858F6 /* SinglePhoto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SinglePhoto;
+			sourceTree = "<group>";
+		};
 		90F441BA1DBDFB3A0007C37E = {
 			isa = PBXGroup;
 			children = (
@@ -2266,6 +2345,7 @@
 				901CAAF31DCC94E8000FAC8B /* JSSwipeTableCellModel.m in Sources */,
 				901CAB271DCC94E8000FAC8B /* MJRefreshConst.m in Sources */,
 				901CAAE31DCC94E8000FAC8B /* JSCollectionViewWaterfallLayout.m in Sources */,
+				905CCCF51DCD72D3004858F6 /* JSPhoto+SinglePhoto.m in Sources */,
 				901CAAEC1DCC94E8000FAC8B /* JSTableView+HeaderView.m in Sources */,
 				901CAAA11DCC94E8000FAC8B /* NSArray+SafeAccess.m in Sources */,
 				901CAB191DCC94E8000FAC8B /* MJRefreshBackFooter.m in Sources */,
@@ -2282,6 +2362,7 @@
 				901CAAD31DCC94E8000FAC8B /* JSTabbarItemHelpModel.m in Sources */,
 				901CAACB1DCC94E8000FAC8B /* UITextView+PlaceHolder.m in Sources */,
 				901CAB341DCC94E8000FAC8B /* JSFrameWorkConfig.m in Sources */,
+				905CCCF81DCD72DD004858F6 /* JSPhoto+MorePhoto.m in Sources */,
 				901CAB021DCC94E8000FAC8B /* JSPhoto.m in Sources */,
 				901CAAF51DCC94E8000FAC8B /* JSRefreshAutoGifFooter.m in Sources */,
 				901CAAF81DCC94E8000FAC8B /* JSRefresh+TableView.m in Sources */,
@@ -2357,6 +2438,7 @@
 				901CAAB11DCC94E8000FAC8B /* NSObject+TypeConversion.m in Sources */,
 				901CAB231DCC94E8000FAC8B /* MJRefreshGifHeader.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
+				905CCCF21DCD72C8004858F6 /* JSPhoto+Camera.m in Sources */,
 				901CAAA81DCC94E8000FAC8B /* NSData+zlib.m in Sources */,
 				901CAAC91DCC94E8000FAC8B /* UIImageView+ImageView.m in Sources */,
 				901CAAE01DCC94E8000FAC8B /* JSCollectionView+CollectionView.m in Sources */,
