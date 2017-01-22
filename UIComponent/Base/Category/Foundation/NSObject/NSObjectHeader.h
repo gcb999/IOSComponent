@@ -9,7 +9,6 @@
 #ifndef NSObjectHeader_h
 #define NSObjectHeader_h
 
-#import "NSObject+SDWebImage.h"
 
 #import "NSObject+UICateGory.h"
 

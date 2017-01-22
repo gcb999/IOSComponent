@@ -64,10 +64,8 @@
 -(void)JSTableView:(JSTableView *)tableView originalData:(NSArray *)originalData content:(id)content indexPath:(NSIndexPath *)indexpath{
     
     ParallaxEffectModel *model=content;
-    
-    [self  loadingImageview:self.picture url:model.url placeholderImageName:nil failedImageName:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
-    }];
+  
+    [self.picture sdNoraml_setNormalImageWithURL:model.url placeholderImage:nil failedImage:nil];
    
     _titleLabel.text = model.title;
     

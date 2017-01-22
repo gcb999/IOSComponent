@@ -318,38 +318,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIComponent/Base/Expand/UI/UIKit/UIPhoto/SinglePhoto/JSPhoto+SinglePhoto.m"
-            timestampString = "500004785.358249"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-singlePhoto:completion:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UIComponent/Base/Expand/UI/UIKit/UIPhoto/SinglePhoto/JSPhoto+SinglePhoto.m"
-            timestampString = "500005052.941032"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UIComponent/Base/Expand/UI/UIKit/UIPhoto/SinglePhoto/JSPhoto+SinglePhoto.m"
             timestampString = "500005054.316669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
