@@ -12,5 +12,6 @@
 
 #import "UIImageView+ImageView.h"
 #import "UIImageView+Gif.h"
+#import "UIImageView+SDWebImage.h"
 
 #endif /* UImageViewHeader_h */

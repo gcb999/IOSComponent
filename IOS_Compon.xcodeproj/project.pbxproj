@@ -33,7 +33,6 @@
 		901CAAAD1DCC94E8000FAC8B /* NSDictionary+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA8F91DCC94E8000FAC8B /* NSDictionary+XML.m */; };
 		901CAAAE1DCC94E8000FAC8B /* NSObject+FileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA8FF1DCC94E8000FAC8B /* NSObject+FileStream.m */; };
 		901CAAAF1DCC94E8000FAC8B /* NSObject+SandboxFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA9031DCC94E8000FAC8B /* NSObject+SandboxFolder.m */; };
-		901CAAB01DCC94E8000FAC8B /* NSObject+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA9061DCC94E8000FAC8B /* NSObject+SDWebImage.m */; };
 		901CAAB11DCC94E8000FAC8B /* NSObject+TypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA9091DCC94E8000FAC8B /* NSObject+TypeConversion.m */; };
 		901CAAB21DCC94E8000FAC8B /* NSObject+UICateGory.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA90C1DCC94E8000FAC8B /* NSObject+UICateGory.m */; };
 		901CAAB31DCC94E8000FAC8B /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA9111DCC94E8000FAC8B /* NSString+Base64.m */; };
@@ -177,6 +176,7 @@
 		906E00181DC324CF007D3DB7 /* secondCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00171DC324CF007D3DB7 /* secondCtrl.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
+		90DE95BE1E344C1B001E466F /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DE95BD1E344C1B001E466F /* UIImageView+SDWebImage.m */; };
 		90EF61401DBEF837001C4C44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF613F1DBEF837001C4C44 /* Podfile */; };
 		90F441C81DBDFB3A0007C37E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441C71DBDFB3A0007C37E /* main.m */; };
 		90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441CA1DBDFB3A0007C37E /* AppDelegate.m */; };
@@ -261,8 +261,6 @@
 		901CA9001DCC94E8000FAC8B /* NSObjectHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectHeader.h; sourceTree = "<group>"; };
 		901CA9021DCC94E8000FAC8B /* NSObject+SandboxFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SandboxFolder.h"; sourceTree = "<group>"; };
 		901CA9031DCC94E8000FAC8B /* NSObject+SandboxFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SandboxFolder.m"; sourceTree = "<group>"; };
-		901CA9051DCC94E8000FAC8B /* NSObject+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SDWebImage.h"; sourceTree = "<group>"; };
-		901CA9061DCC94E8000FAC8B /* NSObject+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SDWebImage.m"; sourceTree = "<group>"; };
 		901CA9081DCC94E8000FAC8B /* NSObject+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TypeConversion.h"; sourceTree = "<group>"; };
 		901CA9091DCC94E8000FAC8B /* NSObject+TypeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TypeConversion.m"; sourceTree = "<group>"; };
 		901CA90B1DCC94E8000FAC8B /* NSObject+UICateGory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UICateGory.h"; sourceTree = "<group>"; };
@@ -572,6 +570,8 @@
 		90B0B9D21DC051F600B5349E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		90B0B9D41DC0520C00B5349E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		90B0B9D51DC0520C00B5349E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		90DE95BC1E344C1B001E466F /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		90DE95BD1E344C1B001E466F /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
 		90EF613F1DBEF837001C4C44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90F441C31DBDFB3A0007C37E /* IOS_Compon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Compon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F441C71DBDFB3A0007C37E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -810,7 +810,6 @@
 				901CA8FD1DCC94E8000FAC8B /* FileStream */,
 				901CA9001DCC94E8000FAC8B /* NSObjectHeader.h */,
 				901CA9011DCC94E8000FAC8B /* sandboxFolder */,
-				901CA9041DCC94E8000FAC8B /* SDWebImage */,
 				901CA9071DCC94E8000FAC8B /* TypeConversion */,
 				901CA90A1DCC94E8000FAC8B /* UICateGory */,
 			);
@@ -833,15 +832,6 @@
 				901CA9031DCC94E8000FAC8B /* NSObject+SandboxFolder.m */,
 			);
 			path = sandboxFolder;
-			sourceTree = "<group>";
-		};
-		901CA9041DCC94E8000FAC8B /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				901CA9051DCC94E8000FAC8B /* NSObject+SDWebImage.h */,
-				901CA9061DCC94E8000FAC8B /* NSObject+SDWebImage.m */,
-			);
-			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 		901CA9071DCC94E8000FAC8B /* TypeConversion */ = {
@@ -1012,6 +1002,8 @@
 			children = (
 				901CA9471DCC94E8000FAC8B /* UIImageView+ImageView.h */,
 				901CA9481DCC94E8000FAC8B /* UIImageView+ImageView.m */,
+				90DE95BC1E344C1B001E466F /* UIImageView+SDWebImage.h */,
+				90DE95BD1E344C1B001E466F /* UIImageView+SDWebImage.m */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -2353,7 +2345,6 @@
 				901CAA9E1DCC94E8000FAC8B /* NSString+Exception.m in Sources */,
 				901CAB031DCC94E8000FAC8B /* JSPickerView.m in Sources */,
 				901CAA9A1DCC94E8000FAC8B /* NSDictionary+Exception.m in Sources */,
-				901CAAB01DCC94E8000FAC8B /* NSObject+SDWebImage.m in Sources */,
 				901CAB1D1DCC94E8000FAC8B /* MJRefreshAutoGifFooter.m in Sources */,
 				901CAAD71DCC94E8000FAC8B /* JSTabBarControllerConfig.m in Sources */,
 				901CAAF61DCC94E8000FAC8B /* JSRefreshAutoGifHeader.m in Sources */,
@@ -2381,6 +2372,7 @@
 				901CAAFE1DCC94E8000FAC8B /* ParallaxEffectTableViewCell.m in Sources */,
 				901CAAF71DCC94E8000FAC8B /* JSRefresh+CollectionView.m in Sources */,
 				901CAB221DCC94E8000FAC8B /* MJRefreshBackStateFooter.m in Sources */,
+				90DE95BE1E344C1B001E466F /* UIImageView+SDWebImage.m in Sources */,
 				901CAADE1DCC94E8000FAC8B /* JSNetWork+Upload.m in Sources */,
 				901CAAEE1DCC94E8000FAC8B /* JSTableView+CellEditingStyle.m in Sources */,
 				901CAAE71DCC94E8000FAC8B /* JSGroupTableView+CellEditingStyle.m in Sources */,
