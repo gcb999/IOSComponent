@@ -11,17 +11,17 @@
 @implementation NSObject (TypeConversion)
 
 
--(NSString *)typeConversionToString:(NSString *)string{
+-(NSString *)converToString:(NSString *)string{
     
     return IS_NSString(string)?string:@"";
 }
 
--(NSArray *)typeConversionToArray:(NSArray *)array{
+-(NSArray *)converToArray:(NSArray *)array{
     
     return IS_NSArray(array)?array:@[];
 }
 
--(NSDictionary *)typeConversionToDictionary:(NSDictionary *)dictionary{
+-(NSDictionary *)converToDictionary:(NSDictionary *)dictionary{
     
     return IS_NSDictionary(dictionary)?dictionary:@{};
 }

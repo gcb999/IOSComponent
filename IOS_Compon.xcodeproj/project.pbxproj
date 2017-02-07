@@ -177,6 +177,9 @@
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
 		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
 		90DE95BE1E344C1B001E466F /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DE95BD1E344C1B001E466F /* UIImageView+SDWebImage.m */; };
+		90E898C91E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E898C81E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m */; };
+		90E898CC1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E898CB1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.m */; };
+		90E898CF1E49CBF30059EAC8 /* NSString+IsNullOrEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E898CE1E49CBF30059EAC8 /* NSString+IsNullOrEmpty.m */; };
 		90EF61401DBEF837001C4C44 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF613F1DBEF837001C4C44 /* Podfile */; };
 		90F441C81DBDFB3A0007C37E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441C71DBDFB3A0007C37E /* main.m */; };
 		90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F441CA1DBDFB3A0007C37E /* AppDelegate.m */; };
@@ -572,6 +575,12 @@
 		90B0B9D51DC0520C00B5349E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		90DE95BC1E344C1B001E466F /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		90DE95BD1E344C1B001E466F /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		90E898C71E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IsNullOrEmpty.h"; sourceTree = "<group>"; };
+		90E898C81E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IsNullOrEmpty.m"; sourceTree = "<group>"; };
+		90E898CA1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+IsNullOrEmpty.h"; sourceTree = "<group>"; };
+		90E898CB1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+IsNullOrEmpty.m"; sourceTree = "<group>"; };
+		90E898CD1E49CBF30059EAC8 /* NSString+IsNullOrEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IsNullOrEmpty.h"; sourceTree = "<group>"; };
+		90E898CE1E49CBF30059EAC8 /* NSString+IsNullOrEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IsNullOrEmpty.m"; sourceTree = "<group>"; };
 		90EF613F1DBEF837001C4C44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90F441C31DBDFB3A0007C37E /* IOS_Compon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Compon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F441C71DBDFB3A0007C37E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -736,6 +745,8 @@
 				901CA8DA1DCC94E8000FAC8B /* NSArray+SafeAccess.h */,
 				901CA8DB1DCC94E8000FAC8B /* NSArray+SafeAccess.m */,
 				901CA8DC1DCC94E8000FAC8B /* NSArrayHeader */,
+				90E898C71E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.h */,
+				90E898C81E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -792,6 +803,8 @@
 				901CA8F81DCC94E8000FAC8B /* NSDictionary+XML.h */,
 				901CA8F91DCC94E8000FAC8B /* NSDictionary+XML.m */,
 				901CA8FA1DCC94E8000FAC8B /* NSDictionaryHeader */,
+				90E898CA1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.h */,
+				90E898CB1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.m */,
 			);
 			path = NSDictionary;
 			sourceTree = "<group>";
@@ -886,6 +899,8 @@
 				901CA92B1DCC94E8000FAC8B /* NSString+UUID.m */,
 				901CA92C1DCC94E8000FAC8B /* NSString+XML.h */,
 				901CA92D1DCC94E8000FAC8B /* NSString+XML.m */,
+				90E898CD1E49CBF30059EAC8 /* NSString+IsNullOrEmpty.h */,
+				90E898CE1E49CBF30059EAC8 /* NSString+IsNullOrEmpty.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -2359,6 +2374,7 @@
 				901CAAF81DCC94E8000FAC8B /* JSRefresh+TableView.m in Sources */,
 				901CAAC21DCC94E8000FAC8B /* MBProgressHUD+Add.m in Sources */,
 				901CAB2E1DCC94E8000FAC8B /* TADotView.m in Sources */,
+				90E898C91E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m in Sources */,
 				901CAB071DCC94E8000FAC8B /* MenuInfo.m in Sources */,
 				901CAACD1DCC94E8000FAC8B /* UIView+AnimationProperty.m in Sources */,
 				901CAAEA1DCC94E8000FAC8B /* JSGroupTableView.m in Sources */,
@@ -2373,6 +2389,7 @@
 				901CAAF71DCC94E8000FAC8B /* JSRefresh+CollectionView.m in Sources */,
 				901CAB221DCC94E8000FAC8B /* MJRefreshBackStateFooter.m in Sources */,
 				90DE95BE1E344C1B001E466F /* UIImageView+SDWebImage.m in Sources */,
+				90E898CF1E49CBF30059EAC8 /* NSString+IsNullOrEmpty.m in Sources */,
 				901CAADE1DCC94E8000FAC8B /* JSNetWork+Upload.m in Sources */,
 				901CAAEE1DCC94E8000FAC8B /* JSTableView+CellEditingStyle.m in Sources */,
 				901CAAE71DCC94E8000FAC8B /* JSGroupTableView+CellEditingStyle.m in Sources */,
@@ -2427,6 +2444,7 @@
 				901CAACF1DCC94E8000FAC8B /* UIWindow+window.m in Sources */,
 				901CAA9D1DCC94E8000FAC8B /* NSObject+Exception.m in Sources */,
 				901CAB241DCC94E8000FAC8B /* MJRefreshNormalHeader.m in Sources */,
+				90E898CC1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.m in Sources */,
 				901CAAB11DCC94E8000FAC8B /* NSObject+TypeConversion.m in Sources */,
 				901CAB231DCC94E8000FAC8B /* MJRefreshGifHeader.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,

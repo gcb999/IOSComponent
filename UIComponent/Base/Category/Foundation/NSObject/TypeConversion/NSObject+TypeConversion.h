@@ -12,13 +12,13 @@
 
 
 //字符串装换
--(NSString *)typeConversionToString:(NSString *)string;
+-(NSString *)converToString:(NSString *)string;
 
 //数组转换
--(NSArray *)typeConversionToArray:(NSArray *)array;
+-(NSArray *)converToArray:(NSArray *)array;
 
 //字典转换
--(NSDictionary *)typeConversionToDictionary:(NSDictionary *)dictionary;
+-(NSDictionary *)converToDictionary:(NSDictionary *)dictionary;
 
 
 

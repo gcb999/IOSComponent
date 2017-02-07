@@ -55,5 +55,8 @@
 
 #import "NSString+MIME.h"
 
+/*--------------------------为空--------------------------*/
+
+#import "NSString+IsNullOrEmpty.h"
 
 #endif /* NSStringHeader_h */

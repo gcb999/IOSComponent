@@ -163,7 +163,7 @@
                 NSString *buglyStr=@"";
                 
                 JSError *error=[[JSError alloc] init];
-                NSString *errcode=[self typeConversionToString:rootDic[@"errcode"]];
+                NSString *errcode=[self converToString:rootDic[@"errcode"]];
                 if ([errcode isEqualToString:@"0x1009"]) {//过期
                     error.errorState=ErrorState_SessionExpire;
                 }

@@ -32,8 +32,8 @@
        
        
             //网络获取
-            NSString * urlStr = [self typeConversionToString:backDic[@"url"]];
-            NSString * md5 = [self typeConversionToString:backDic[@"md5"]];
+            NSString * urlStr = [self converToString:backDic[@"url"]];
+            NSString * md5 = [self converToString:backDic[@"md5"]];
         
         NSString * patchCachePath1 = [self cachesPathFor: [self yf_relativeCachePathFor:md5]];
             //本地版本

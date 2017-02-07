@@ -12,5 +12,6 @@
 #import "NSArray+Block.h"
 
 #import "NSArray+SafeAccess.h"
+#import "NSArray+IsNullOrEmpty.h"
 
 #endif /* NSArrayHeader_h */

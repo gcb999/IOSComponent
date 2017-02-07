@@ -19,4 +19,6 @@
 
 #import "NSDictionary+XML.h"
 
+#import "NSDictionary+IsNullOrEmpty.h"
+
 #endif /* NSDictionaryHeader_h */
