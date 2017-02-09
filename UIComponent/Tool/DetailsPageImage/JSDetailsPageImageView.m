@@ -108,6 +108,8 @@
         }
         
         [[self viewController] presentViewController:brower animated:YES completion:nil];
+        
+      
     }
 
     
