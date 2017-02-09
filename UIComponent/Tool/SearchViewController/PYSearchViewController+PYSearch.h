@@ -12,7 +12,7 @@
 
 @end
 
-/*----------搜索用法--------------
+/*----------搜索用法--------------https://github.com/iphone5solo/PYSearch
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // 1.创建热门搜索
