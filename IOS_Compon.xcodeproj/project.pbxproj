@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		900124711DC1EF4A00192175 /* iOS_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 900124701DC1EF4A00192175 /* iOS_loading.gif */; };
+		900ECC971E55829500490288 /* JSBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900ECC941E55829500490288 /* JSBasicViewController.m */; };
+		900ECC981E55829500490288 /* JSBasicViewController+ThreeDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 900ECC961E55829500490288 /* JSBasicViewController+ThreeDTouch.m */; };
+		900ECCA01E55833100490288 /* JSSimpleNotMoreDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 900ECC9D1E55833100490288 /* JSSimpleNotMoreDataView.m */; };
+		900ECCA11E55833100490288 /* JSSimpleNotMoreDataViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 900ECC9F1E55833100490288 /* JSSimpleNotMoreDataViewHelper.m */; };
+		900ECCA41E5583D600490288 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 900ECCA31E5583D600490288 /* UIImage+Color.m */; };
 		901CA64F1DCC643A000FAC8B /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901CA64E1DCC643A000FAC8B /* QuickLook.framework */; };
 		901CAA981DCC94E8000FAC8B /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA8C21DCC94E8000FAC8B /* NSArray+Exception.m */; };
 		901CAA991DCC94E8000FAC8B /* NSMutableArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CA8C41DCC94E8000FAC8B /* NSMutableArray+Exception.m */; };
@@ -218,6 +223,16 @@
 		03C8259A4649263810F983DC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2C8F985240ACEBF197DFFC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		900124701DC1EF4A00192175 /* iOS_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iOS_loading.gif; sourceTree = "<group>"; };
+		900ECC931E55829500490288 /* JSBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBasicViewController.h; sourceTree = "<group>"; };
+		900ECC941E55829500490288 /* JSBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBasicViewController.m; sourceTree = "<group>"; };
+		900ECC951E55829500490288 /* JSBasicViewController+ThreeDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSBasicViewController+ThreeDTouch.h"; sourceTree = "<group>"; };
+		900ECC961E55829500490288 /* JSBasicViewController+ThreeDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSBasicViewController+ThreeDTouch.m"; sourceTree = "<group>"; };
+		900ECC9C1E55833100490288 /* JSSimpleNotMoreDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleNotMoreDataView.h; sourceTree = "<group>"; };
+		900ECC9D1E55833100490288 /* JSSimpleNotMoreDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleNotMoreDataView.m; sourceTree = "<group>"; };
+		900ECC9E1E55833100490288 /* JSSimpleNotMoreDataViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSimpleNotMoreDataViewHelper.h; sourceTree = "<group>"; };
+		900ECC9F1E55833100490288 /* JSSimpleNotMoreDataViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSimpleNotMoreDataViewHelper.m; sourceTree = "<group>"; };
+		900ECCA21E5583D600490288 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		900ECCA31E5583D600490288 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		901CA64E1DCC643A000FAC8B /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		901CA8BF1DCC94E8000FAC8B /* ExceptionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionHeader.h; sourceTree = "<group>"; };
 		901CA8C11DCC94E8000FAC8B /* NSArray+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Exception.h"; sourceTree = "<group>"; };
@@ -657,6 +672,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		900ECC921E55828A00490288 /* BasicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				900ECC931E55829500490288 /* JSBasicViewController.h */,
+				900ECC941E55829500490288 /* JSBasicViewController.m */,
+				900ECC951E55829500490288 /* JSBasicViewController+ThreeDTouch.h */,
+				900ECC961E55829500490288 /* JSBasicViewController+ThreeDTouch.m */,
+			);
+			path = BasicViewController;
+			sourceTree = "<group>";
+		};
+		900ECC991E55833100490288 /* UIEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				900ECC9A1E55833100490288 /* NotMoreData */,
+			);
+			path = UIEmptyView;
+			sourceTree = "<group>";
+		};
+		900ECC9A1E55833100490288 /* NotMoreData */ = {
+			isa = PBXGroup;
+			children = (
+				900ECC9B1E55833100490288 /* simple */,
+			);
+			path = NotMoreData;
+			sourceTree = "<group>";
+		};
+		900ECC9B1E55833100490288 /* simple */ = {
+			isa = PBXGroup;
+			children = (
+				900ECC9C1E55833100490288 /* JSSimpleNotMoreDataView.h */,
+				900ECC9D1E55833100490288 /* JSSimpleNotMoreDataView.m */,
+				900ECC9E1E55833100490288 /* JSSimpleNotMoreDataViewHelper.h */,
+				900ECC9F1E55833100490288 /* JSSimpleNotMoreDataViewHelper.m */,
+			);
+			path = simple;
+			sourceTree = "<group>";
+		};
 		901CA8BC1DCC94E8000FAC8B /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -1003,6 +1056,8 @@
 		901CA93E1DCC94E8000FAC8B /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				900ECCA21E5583D600490288 /* UIImage+Color.h */,
+				900ECCA31E5583D600490288 /* UIImage+Color.m */,
 				901CA93F1DCC94E8000FAC8B /* HotUpdate */,
 			);
 			path = UIImage;
@@ -1959,6 +2014,8 @@
 		901CAA861DCC94E8000FAC8B /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				900ECC991E55833100490288 /* UIEmptyView */,
+				900ECC921E55828A00490288 /* BasicViewController */,
 				90FF15081E4C598700CDC97C /* SearchViewController */,
 				901CAA871DCC94E8000FAC8B /* DetailsPageImage */,
 				901CAA8B1DCC94E8000FAC8B /* FrameWork */,
@@ -2428,6 +2485,7 @@
 				901CAACB1DCC94E8000FAC8B /* UITextView+PlaceHolder.m in Sources */,
 				901CAB341DCC94E8000FAC8B /* JSFrameWorkConfig.m in Sources */,
 				905CCCF81DCD72DD004858F6 /* JSPhoto+MorePhoto.m in Sources */,
+				900ECC981E55829500490288 /* JSBasicViewController+ThreeDTouch.m in Sources */,
 				901CAB021DCC94E8000FAC8B /* JSPhoto.m in Sources */,
 				901CAAF51DCC94E8000FAC8B /* JSRefreshAutoGifFooter.m in Sources */,
 				901CAAF81DCC94E8000FAC8B /* JSRefresh+TableView.m in Sources */,
@@ -2445,6 +2503,7 @@
 				901CAB1A1DCC94E8000FAC8B /* MJRefreshComponent.m in Sources */,
 				901CAACE1DCC94E8000FAC8B /* UIView+Coordinates.m in Sources */,
 				901CAAFE1DCC94E8000FAC8B /* ParallaxEffectTableViewCell.m in Sources */,
+				900ECCA41E5583D600490288 /* UIImage+Color.m in Sources */,
 				901CAAF71DCC94E8000FAC8B /* JSRefresh+CollectionView.m in Sources */,
 				901CAB221DCC94E8000FAC8B /* MJRefreshBackStateFooter.m in Sources */,
 				90FF15051E4C593A00CDC97C /* PYSearchViewController.m in Sources */,
@@ -2541,6 +2600,7 @@
 				901CAB1F1DCC94E8000FAC8B /* MJRefreshAutoStateFooter.m in Sources */,
 				901CAB011DCC94E8000FAC8B /* JSPhoto+PhotoAlbum.m in Sources */,
 				901CAB381DCC94E8000FAC8B /* SearchDAO.m in Sources */,
+				900ECC971E55829500490288 /* JSBasicViewController.m in Sources */,
 				901CAAF21DCC94E8000FAC8B /* JSTableView+UIScrollView.m in Sources */,
 				901CAAAF1DCC94E8000FAC8B /* NSObject+SandboxFolder.m in Sources */,
 				901CAAB31DCC94E8000FAC8B /* NSString+Base64.m in Sources */,
@@ -2557,6 +2617,7 @@
 				901CAAFB1DCC94E8000FAC8B /* DHGuidePageHUD+GuidePage.m in Sources */,
 				901CAB301DCC94E8000FAC8B /* SDCollectionViewCell.m in Sources */,
 				901CAB091DCC94E8000FAC8B /* JSTabPageViewController+Style.m in Sources */,
+				900ECCA01E55833100490288 /* JSSimpleNotMoreDataView.m in Sources */,
 				901CAAEB1DCC94E8000FAC8B /* JSGroupTableView+UIScrollView.m in Sources */,
 				90FF15061E4C593A00CDC97C /* UIColor+PYSearchExtension.m in Sources */,
 				901CAAF01DCC94E8000FAC8B /* JSTableView+TableView.m in Sources */,
@@ -2564,6 +2625,7 @@
 				901CAAAD1DCC94E8000FAC8B /* NSDictionary+XML.m in Sources */,
 				901CAAE51DCC94E8000FAC8B /* JSCollectionView+UIScrollView.m in Sources */,
 				901CAB2A1DCC94E8000FAC8B /* UIScrollView+MJRefresh.m in Sources */,
+				900ECCA11E55833100490288 /* JSSimpleNotMoreDataViewHelper.m in Sources */,
 				901CAAA01DCC94E8000FAC8B /* NSArray+Block.m in Sources */,
 				901CAAA21DCC94E8000FAC8B /* NSData+APNSToken.m in Sources */,
 				901CAAB51DCC94E8000FAC8B /* NSString+Emoji.m in Sources */,
