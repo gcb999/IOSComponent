@@ -11,7 +11,6 @@
 #import "JSCollectionViewCell.h"
 #import "JSPickerView.h"
 #import "JSTabPageViewController.h"
-#import "SearchDAO.h"
 #import "JSMWPhotoBrowser.h"
 #import "JSParallaxEffectViewController.h"
 #import "UIImage+imageNamed_bundle_.h"

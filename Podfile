@@ -15,6 +15,7 @@ pod 'MWPhotoBrowser'
 pod 'SSZipArchive' # 压缩与解压zip.
 
 pod 'QBImagePickerController' # 相册
+pod 'Bugly' ,'~> 2.3.0'
 
 #pod install --verbose --no-repo-update
 #pod update --verbose --no-repo-update

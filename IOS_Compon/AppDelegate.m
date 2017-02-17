@@ -10,6 +10,7 @@
 
 #import "JSNewFeature.h"
 #import "JSFrameWorkConfig.h"
+#import "AppDelegate+Tool.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +22,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [self initialize];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window setRootViewController:[JSFrameWorkConfig rootViewController:JSFrameWork_Tabbar]];
     [self.window makeKeyAndVisible];
 
-    [JSNewFeature showLaunchAnimation];
+    [JSNewFeature showNewFeature];
+    
 
  
     
