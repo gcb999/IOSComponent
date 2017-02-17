@@ -43,6 +43,8 @@
         
     } @catch (NSException *exception) {
         
+         return NO;
+        
     } @finally {
         
     }
@@ -212,6 +214,8 @@
         return YES;
     } @catch (NSException *exception) {
         
+         return NO;
+        
     } @finally {
         
     }
@@ -235,7 +239,33 @@
 //    return temp;
 //}
 
+#pragma mark -查询
 
++(void)executeQuery:(NSString *)sql queryResBlock:(void (^)(FMResultSet *))queryResBlock{
+   
+    @try {
+           
+        NSString *docs=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+        docs=[docs stringByAppendingPathComponent:@"DLAPP.db"];
+        NSLog(@"--->doc=%@",docs);
+        
+        FMDatabase*   db=[FMDatabase databaseWithPath:docs];
+       
+        if ([db open]) {
+        
+                FMResultSet *rs=[db executeQuery:sql];
+                if(queryResBlock != nil) queryResBlock(rs);
+                NSLog(@"%@",[NSThread currentThread]);
+
+        }
+    } @catch (NSException *exception) {
+        
+        
+        
+    } @finally {
+        
+    }
+}
 
 
 
@@ -270,6 +300,8 @@
         return  YES;
     } @catch (NSException *exception) {
         
+         return NO;
+        
     } @finally {
         
     }
@@ -277,7 +309,7 @@
 }
 #pragma mark -拼接插入sql语句
 
--(NSString *)buildInsertTableName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary {
++(NSString *)buildInsertTableName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary {
     
     @try {
         
@@ -340,7 +372,7 @@
 }
 
 #pragma mark -拼接更新sql语句
--(NSString *)buildUpdateName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary  PID:(int)ID{
++(NSString *)buildUpdateName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary  PID:(int)ID{
     @try {
         
         
