@@ -999,7 +999,6 @@
 		901CA92E1DCC94E8000FAC8B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				905CCCF91DCD7A45004858F6 /* UIViewController */,
 				901CA92F1DCC94E8000FAC8B /* MBProgressHUD */,
 				901CA9321DCC94E8000FAC8B /* MWPhotoBrowser */,
 				901CA9351DCC94E8000FAC8B /* UIColor */,
@@ -2080,45 +2079,6 @@
 				905CCCF11DCD72C8004858F6 /* JSPhoto+Camera.m */,
 			);
 			path = Camera;
-			sourceTree = "<group>";
-		};
-		905CCCF91DCD7A45004858F6 /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				905CCCFA1DCD7A45004858F6 /* Photo */,
-			);
-			path = UIViewController;
-			sourceTree = "<group>";
-		};
-		905CCCFA1DCD7A45004858F6 /* Photo */ = {
-			isa = PBXGroup;
-			children = (
-				905CCCFB1DCD7A45004858F6 /* Camera */,
-				905CCCFC1DCD7A45004858F6 /* MorePhoto */,
-				905CCCFD1DCD7A45004858F6 /* SinglePhoto */,
-			);
-			path = Photo;
-			sourceTree = "<group>";
-		};
-		905CCCFB1DCD7A45004858F6 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Camera;
-			sourceTree = "<group>";
-		};
-		905CCCFC1DCD7A45004858F6 /* MorePhoto */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MorePhoto;
-			sourceTree = "<group>";
-		};
-		905CCCFD1DCD7A45004858F6 /* SinglePhoto */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SinglePhoto;
 			sourceTree = "<group>";
 		};
 		90F441BA1DBDFB3A0007C37E = {

@@ -21,6 +21,8 @@
 #import "JSPhoto.h"
 #import "JSFmdb.h"
 
+//#import "DBCameraContainerViewController.h"
+
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
 {
 
@@ -44,27 +46,7 @@
     [self.view addSubview:imageView];
     
     
-    //先插入
-    NSArray *titleArr=@[@"test1",@"test2"];
     
-    NSString *sql=[JSFmdb buildInsertTableName:@"HistorySearch" keyArray:@[@"title"] valueArrary:titleArr];
-                    
-              
-  BOOL flag=  [JSFmdb insertTablewithSql:sql];
-    
-    if (flag) {
-        
-    [JSFmdb executeQuery:@"select * from HistorySearch " queryResBlock:^(FMResultSet *set) {
-       
-        while ([set next]) {
-
-            NSLog(@"%@",[set stringForColumn:@"title"]);
-        }
-        
-    }];
-        
-    }
-
  
 
 }
