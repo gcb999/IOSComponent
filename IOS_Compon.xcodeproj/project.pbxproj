@@ -170,13 +170,14 @@
 		901CAB341DCC94E8000FAC8B /* JSFrameWorkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CAA8D1DCC94E8000FAC8B /* JSFrameWorkConfig.m */; };
 		901CAB351DCC94E8000FAC8B /* JSHotUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 901CAA901DCC94E8000FAC8B /* JSHotUpdate.m */; };
 		901CAB361DCC94E8000FAC8B /* main.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 901CAA911DCC94E8000FAC8B /* main.bundle */; };
+		9023A8A81E5A7FC100254F3F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9023A8A71E5A7FC100254F3F /* MainViewController.m */; };
+		9023A8AB1E5A7FDE00254F3F /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9023A8AA1E5A7FDE00254F3F /* HomeView.m */; };
 		905CCCF21DCD72C8004858F6 /* JSPhoto+Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 905CCCF11DCD72C8004858F6 /* JSPhoto+Camera.m */; };
 		905CCCF51DCD72D3004858F6 /* JSPhoto+SinglePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 905CCCF41DCD72D3004858F6 /* JSPhoto+SinglePhoto.m */; };
 		905CCCF81DCD72DD004858F6 /* JSPhoto+MorePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 905CCCF71DCD72DD004858F6 /* JSPhoto+MorePhoto.m */; };
 		906E00151DC324C0007D3DB7 /* FirstCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00141DC324C0007D3DB7 /* FirstCtrl.m */; };
 		906E00181DC324CF007D3DB7 /* secondCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 906E00171DC324CF007D3DB7 /* secondCtrl.m */; };
 		90B0B9D31DC051F600B5349E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D21DC051F600B5349E /* LeftViewController.m */; };
-		90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B0B9D51DC0520C00B5349E /* MainViewController.m */; };
 		90DE95BE1E344C1B001E466F /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DE95BD1E344C1B001E466F /* UIImageView+SDWebImage.m */; };
 		90E898C91E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E898C81E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m */; };
 		90E898CC1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E898CB1E49CB8D0059EAC8 /* NSDictionary+IsNullOrEmpty.m */; };
@@ -575,6 +576,10 @@
 		901CAA8F1DCC94E8000FAC8B /* JSHotUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHotUpdate.h; sourceTree = "<group>"; };
 		901CAA901DCC94E8000FAC8B /* JSHotUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHotUpdate.m; sourceTree = "<group>"; };
 		901CAA911DCC94E8000FAC8B /* main.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = main.bundle; sourceTree = "<group>"; };
+		9023A8A61E5A7FC100254F3F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9023A8A71E5A7FC100254F3F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9023A8A91E5A7FDE00254F3F /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		9023A8AA1E5A7FDE00254F3F /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		902C1F41F6F9C9B5E6E06346 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		905CCCF01DCD72C8004858F6 /* JSPhoto+Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSPhoto+Camera.h"; sourceTree = "<group>"; };
 		905CCCF11DCD72C8004858F6 /* JSPhoto+Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSPhoto+Camera.m"; sourceTree = "<group>"; };
@@ -588,8 +593,6 @@
 		906E00171DC324CF007D3DB7 /* secondCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondCtrl.m; sourceTree = "<group>"; };
 		90B0B9D11DC051F500B5349E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		90B0B9D21DC051F600B5349E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
-		90B0B9D41DC0520C00B5349E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		90B0B9D51DC0520C00B5349E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		90DE95BC1E344C1B001E466F /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		90DE95BD1E344C1B001E466F /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
 		90E898C71E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IsNullOrEmpty.h"; sourceTree = "<group>"; };
@@ -2054,6 +2057,33 @@
 			path = HotUpdate;
 			sourceTree = "<group>";
 		};
+		9023A8A31E5A7FB500254F3F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9023A8A41E5A7FB500254F3F /* View */,
+				9023A8A51E5A7FB500254F3F /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9023A8A41E5A7FB500254F3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9023A8A91E5A7FDE00254F3F /* HomeView.h */,
+				9023A8AA1E5A7FDE00254F3F /* HomeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9023A8A51E5A7FB500254F3F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9023A8A61E5A7FC100254F3F /* MainViewController.h */,
+				9023A8A71E5A7FC100254F3F /* MainViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		905CCCED1DCD69E1004858F6 /* MorePhoto */ = {
 			isa = PBXGroup;
 			children = (
@@ -2109,6 +2139,7 @@
 		90F441C51DBDFB3A0007C37E /* IOS_Compon */ = {
 			isa = PBXGroup;
 			children = (
+				9023A8A31E5A7FB500254F3F /* Home */,
 				900124701DC1EF4A00192175 /* iOS_loading.gif */,
 				90F441C91DBDFB3A0007C37E /* AppDelegate.h */,
 				90F441CA1DBDFB3A0007C37E /* AppDelegate.m */,
@@ -2117,8 +2148,6 @@
 				90F441C61DBDFB3A0007C37E /* Supporting Files */,
 				90B0B9D11DC051F500B5349E /* LeftViewController.h */,
 				90B0B9D21DC051F600B5349E /* LeftViewController.m */,
-				90B0B9D41DC0520C00B5349E /* MainViewController.h */,
-				90B0B9D51DC0520C00B5349E /* MainViewController.m */,
 			);
 			path = IOS_Compon;
 			sourceTree = "<group>";
@@ -2500,6 +2529,7 @@
 				901CAAF81DCC94E8000FAC8B /* JSRefresh+TableView.m in Sources */,
 				901CAAC21DCC94E8000FAC8B /* MBProgressHUD+Add.m in Sources */,
 				901CAB2E1DCC94E8000FAC8B /* TADotView.m in Sources */,
+				9023A8A81E5A7FC100254F3F /* MainViewController.m in Sources */,
 				90E898C91E49CAF90059EAC8 /* NSArray+IsNullOrEmpty.m in Sources */,
 				901CAB071DCC94E8000FAC8B /* MenuInfo.m in Sources */,
 				901CAACD1DCC94E8000FAC8B /* UIView+AnimationProperty.m in Sources */,
@@ -2526,7 +2556,6 @@
 				901CAAF41DCC94E8000FAC8B /* JSSwipeTableCell.m in Sources */,
 				901CAB0D1DCC94E8000FAC8B /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				901CAAB41DCC94E8000FAC8B /* NSString+Contains.m in Sources */,
-				90B0B9D61DC0520C00B5349E /* MainViewController.m in Sources */,
 				901CAB121DCC94E8000FAC8B /* DHRegularExpression.m in Sources */,
 				901CAAAC1DCC94E8000FAC8B /* NSDictionary+URL.m in Sources */,
 				901CAAFC1DCC94E8000FAC8B /* DHLaunchAdPageHUD+Launch.m in Sources */,
@@ -2579,6 +2608,7 @@
 				901CAB231DCC94E8000FAC8B /* MJRefreshGifHeader.m in Sources */,
 				90FF15011E4C593A00CDC97C /* NSBundle+PYSearchExtension.m in Sources */,
 				90F441CB1DBDFB3A0007C37E /* AppDelegate.m in Sources */,
+				9023A8AB1E5A7FDE00254F3F /* HomeView.m in Sources */,
 				905CCCF21DCD72C8004858F6 /* JSPhoto+Camera.m in Sources */,
 				901CAAA81DCC94E8000FAC8B /* NSData+zlib.m in Sources */,
 				901CAAC91DCC94E8000FAC8B /* UIImageView+ImageView.m in Sources */,

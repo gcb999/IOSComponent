@@ -20,7 +20,7 @@
 
 #pragma mark - -----------------插入-------
 #pragma mark -拼接插入sql语句
-+(NSString *)buildInsertTableName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary;
++(NSString *)buildInsertTableName:(NSString *)tablename keyArray:(NSArray *)keyArray valueArray:(NSArray *)valueArray;
 
 #pragma mark -插入数据库操作
 +(BOOL)insertTablewithSql:(NSString *)sql;
@@ -33,7 +33,7 @@
 
 #pragma mark - ------------------更新------
 #pragma mark -拼接更新sql语句
-+(NSString *)buildUpdateName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary  PID:(int)ID;
++(NSString *)buildUpdateName:(NSString *)tablename keyArray:(NSArray *)keyArray valueArray:(NSArray *)valueArray  PID:(int)ID;
 
 #pragma mark -更新数据库操作
 +(BOOL)updateTableWithSql:(NSString *)sql;

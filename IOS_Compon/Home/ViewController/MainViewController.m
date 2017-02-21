@@ -20,15 +20,12 @@
 #import "JSDetailsPageImageView.h"
 #import "JSPhoto.h"
 #import "JSFmdb.h"
-
+#import "HomeView.h"
 //#import "DBCameraContainerViewController.h"
 
 @interface MainViewController ()<JSTableViewDelegate,JSGroupTableViewDelegate,JSCollectionViewDelegate>
 {
-
-    
-    UIImageView *imageView;
-    UIImagePickerController *picker;
+    HomeView *homeView;
     
 }
 
@@ -40,14 +37,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
 
-    imageView=[UIImageView imageViewImageName:@"" frame:CGRectMake(200, 200, 50, 50)];
-    [self.view addSubview:imageView];
-    
-    
-    
- 
+    homeView=[[HomeView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:homeView];
+    [homeView reload:@[@"",@""]];
 
 }
 
@@ -57,26 +50,6 @@
 
 
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-   
-
-    
-    JSPhoto *photo=[[JSPhoto alloc] init];
-    
-    [photo singlePhoto:self completion:^(BOOL isSucess, NSMutableArray<UIImage *> *image) {
-       
-        if (isSucess) {
-            NSLog(@"---imag=%@",image);
-            imageView.image=[image lastObject];
-        }
-        
-        
-    }];
-    
-    return;
-    
-    
-}
 
 
 

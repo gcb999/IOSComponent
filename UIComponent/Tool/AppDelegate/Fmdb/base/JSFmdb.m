@@ -309,7 +309,7 @@
 }
 #pragma mark -拼接插入sql语句
 
-+(NSString *)buildInsertTableName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary {
++(NSString *)buildInsertTableName:(NSString *)tablename keyArray:(NSArray *)keyArray valueArray:(NSArray *)valueArray {
     
     @try {
         
@@ -317,14 +317,14 @@
         NSMutableString *paramStr=[NSMutableString string];
         [appendStr appendFormat:@"INSERT INTO %@(",tablename];
         
-        for (int i=0; i<keyArrary.count; i++) {
-            NSString *value=valueArrary[i];
-            if (i==keyArrary.count-1) {
-                [appendStr appendFormat:@"%@)VALUES (",keyArrary[i]];
+        for (int i=0; i<keyArray.count; i++) {
+            NSString *value=valueArray[i];
+            if (i==keyArray.count-1) {
+                [appendStr appendFormat:@"%@)VALUES (",keyArray[i]];
                 [paramStr appendFormat:@"'%@')",value];
             }
             else{
-                [appendStr appendFormat:@"%@,",keyArrary[i]];
+                [appendStr appendFormat:@"%@,",keyArray[i]];
                 [paramStr appendFormat:@"'%@',",value];
             }
         }
@@ -372,19 +372,19 @@
 }
 
 #pragma mark -拼接更新sql语句
-+(NSString *)buildUpdateName:(NSString *)tablename keyArray:(NSArray *)keyArrary valueArrary:(NSArray *)valueArrary  PID:(int)ID{
++(NSString *)buildUpdateName:(NSString *)tablename keyArray:(NSArray *)keyArray valueArray:(NSArray *)valueArray  PID:(int)ID{
     @try {
         
         
         
         NSMutableString *appendStr=[NSMutableString string];
         [appendStr appendFormat:@"UPDATE %@ SET ",tablename];
-        for (int i=0; i<keyArrary.count; i++) {
-            NSString *value=valueArrary[i];
-            if (i==keyArrary.count-1)
-                [appendStr appendFormat:@"%@='%@'",keyArrary[i],value];
+        for (int i=0; i<keyArray.count; i++) {
+            NSString *value=valueArray[i];
+            if (i==keyArray.count-1)
+                [appendStr appendFormat:@"%@='%@'",keyArray[i],value];
             else
-                [appendStr appendFormat:@"%@='%@',",keyArrary[i],value];
+                [appendStr appendFormat:@"%@='%@',",keyArray[i],value];
         }
         [appendStr appendFormat:@"  where PID=%zi",ID];
         return appendStr;
